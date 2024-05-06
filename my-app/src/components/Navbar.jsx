@@ -5,7 +5,7 @@ function Navbar() {
   return (
     <>
     <nav>
-    <div className="logo">CodingNepal</div>
+    <div className="logo">PSP Property Group</div>
     <label htmlFor="btn" className="icon">
       <span className="fa fa-bars" />
     </label>

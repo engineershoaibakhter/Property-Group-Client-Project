@@ -7,9 +7,11 @@ import Navbar from './components/Navbar';
 function App() {
   return (
    <>
-   <Navbar />
-   <Carousel />
-   <Footer />
+   <div><Navbar /></div>
+   <div>
+   <Carousel /></div>
+   <div>
+   <Footer /></div>
    </>
   );
 }

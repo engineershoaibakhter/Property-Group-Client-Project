@@ -21,6 +21,7 @@
     position: relative;
     height: 100vh;
     color: #fff;
+    // z-index: 500;
     
     @mixin sliderReady {
       .slider.s--ready & {

@@ -17,6 +17,15 @@ footer{
   bottom: 0;
   left: 0;
 }
+
+// footer {
+//   flex-shrink: 0; /* Prevent the footer from shrinking */
+//   width: 100%;
+//   background-color: black;
+//   color: white;
+//   text-align: center;
+//   // padding: 20px;
+// }
 footer::before{
   content: '';
   position: absolute;
@@ -25,6 +34,7 @@ footer::before{
   height: 1px;
   width: 100%;
   background: #AFAFB6;
+  
 }
 footer .content{
   max-width: 1250px;
