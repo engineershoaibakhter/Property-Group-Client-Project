@@ -125,7 +125,7 @@ input[type="checkbox"]{
 
 
 .slider-wrapper {
-    margin-top: 80px; /* Adjust based on navbar height */
+    margin-top: 4.7rem; 
   }
 
 
@@ -596,7 +596,7 @@ footer{
 
 #result{
 height: 30rem;
-width: 100%;
+width: 101%;
 }
 
   
