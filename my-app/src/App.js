@@ -1,13 +1,13 @@
 import logo from './logo.svg';
 import './App.css';
-import NavbarWeb from './components/NavbarWeb';
 import Carousel from './components/Carousel';
 import Footer from './components/Footer';
+import Navbar from './components/Navbar';
 
 function App() {
   return (
    <>
-   <NavbarWeb />
+   <Navbar />
    <Carousel />
    <Footer />
    </>
