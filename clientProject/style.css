@@ -14,6 +14,13 @@ nav{
   justify-content: space-between;
   padding: 0 50px 0 100px;
   flex-wrap: wrap;
+
+
+   position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
 }
 nav .logo{
   color: #fff;
@@ -117,6 +124,13 @@ input[type="checkbox"]{
 
 
 
+.slider-wrapper {
+    margin-top: 80px; /* Adjust based on navbar height */
+  }
+
+
+
+
 
 h2{
     font-family: 'Montserrat', sans-serif !important;
@@ -132,6 +146,8 @@ h2{
     margin-left: 30px;
     margin-top: 30px;
     margin-bottom: 30px;
+
+
   }
   
   .slider-wrapper {
@@ -318,12 +334,40 @@ border-radius: 20px;
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
 footer{
     position: relative;
     background: #140B5C;
     width: 100%;
     bottom: 0;
     left: 0;
+    /* position: fixed; */
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
   }
   footer::before{
     content: '';
@@ -549,3 +593,10 @@ footer{
     }
   }
 
+
+#result{
+height: 30rem;
+width: 100%;
+}
+
+  

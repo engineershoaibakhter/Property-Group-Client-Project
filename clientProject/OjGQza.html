@@ -1,16 +1,28 @@
 <!DOCTYPE html>
-<!-- Created By CodingLab - www.codinglabweb.com -->
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-   <title>Responsive Navigation Menu</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="script.js" defer></script>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+<html lang="en">
 
-    
+<head>
+    <meta charset="UTF-8">
+
+
+    <link rel="apple-touch-icon" type="image/png" href="https://cpwebassets.codepen.io/assets/favicon/apple-touch-icon-5ae1a0698dcc2402e9712f7d01ed509a57814f994c660df9f7a952f3060705ee.png" />
+
+    <meta name="apple-mobile-web-app-title" content="CodePen">
+
+    <link rel="shortcut icon" type="image/x-icon" href="https://cpwebassets.codepen.io/assets/favicon/favicon-aec34940fbc1a6e787974dcd360f2c6b63348d4b1f4e06c77743096d55480f33.ico" />
+
+    <link rel="mask-icon" type="image/x-icon" href="https://cpwebassets.codepen.io/assets/favicon/logo-pin-b4b4269c16397ad2f0f7a01bcdf513a1994f4c94b8af2f191c09eb0d601762b1.svg" color="#111" />
+
+
+
+
+    <link rel="stylesheet" media="screen" href="https://cpwebassets.codepen.io/assets/fullpage/fullpage-a7751fce9f8bdda3329296b44cd901f541bfaa7c5417190fba49dc1cf6fd799f.css" />
+
+
+    <link rel="apple-touch-icon" type="image/png" href="https://cpwebassets.codepen.io/assets/favicon/apple-touch-icon-5ae1a0698dcc2402e9712f7d01ed509a57814f994c660df9f7a952f3060705ee.png" />
+
+    <meta name="apple-mobile-web-app-title" content="CodePen">
+
     <link rel="shortcut icon" type="image/x-icon" href="https://cpwebassets.codepen.io/assets/favicon/favicon-aec34940fbc1a6e787974dcd360f2c6b63348d4b1f4e06c77743096d55480f33.ico" />
 
     <link rel="mask-icon" type="image/x-icon" href="https://cpwebassets.codepen.io/assets/favicon/logo-pin-b4b4269c16397ad2f0f7a01bcdf513a1994f4c94b8af2f191c09eb0d601762b1.svg" color="#111" />
@@ -19,37 +31,57 @@
 
 
 
+    <title>CodePen - Cities Slider (React)</title>
+
+    <style>
+        html {
+            font-size: 15px;
+        }
+
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+            min-height: 100%;
+        }
+
+        body {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .referer-warning {
+            background: black;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+            padding: 0.75em;
+            color: white;
+            text-align: center;
+            font-family: 'Lato', 'Lucida Grande', 'Lucida Sans Unicode', Tahoma, system-ui, Sans-Serif;
+            line-height: 1.2;
+            font-size: 1rem;
+            position: relative;
+            z-index: 2;
+        }
+
+        .referer-warning span {
+            font-family: initial;
+        }
+
+        .referer-warning h1 {
+            font-size: 1.2rem;
+            margin: 0;
+        }
+
+        .referer-warning a {
+            color: #56bcf9;
+        }
+    </style>
+</head>
+
+<body class="">
 
 
-
-<script src="pen.js"></script>
-  </head>
-  <body>
-
-    <nav>
-      <div class="logo">Brand</div>
-      <input type="checkbox" id="click">
-      <label for="click" class="menu-btn">
-        <i class="fas fa-bars"></i>
-      </label>
-      <ul>
-        <li><a class="active" href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Services</a></li>
-        <li><a href="#">Gallery</a></li>
-        <li><a href="#">Feedback</a></li>
-      </ul>
-    </nav>
-    <!-- <div class="content">
-      <div>Responsive Navigation Menu Bar Design</div>
-      <div>using only HTML & CSS</div>
-    </div> -->
-
-
-
-
-
- <div class="slider-wrapper">
     <div id="result-iframe-wrap" role="main">
         <iframe id="result" srcdoc="<!DOCTYPE html>
 <html lang=&quot;en&quot; >
@@ -425,7 +457,12 @@ body {
 
 <body translate=&quot;no&quot;>
   <div id=&quot;app&quot;></div>
-
+<a href=&quot;https://dribbble.com/shots/3774469-T-R-A-V-E-L-E-R&quot; target=&quot;_blank&quot; class=&quot;icon-link&quot;>
+  <img src=&quot;http://icons.iconarchive.com/icons/uiconstock/socialmedia/256/Dribbble-icon.png&quot;>
+</a>
+<a href=&quot;https://twitter.com/NikolayTalanov&quot; target=&quot;_blank&quot; class=&quot;icon-link icon-link--twitter&quot;>
+  <img src=&quot;https://cdn1.iconfinder.com/data/icons/logotypes/32/twitter-128.png&quot;>
+</a>
   <script src='https://cdnjs.cloudflare.com/ajax/libs/react/15.6.1/react.min.js'></script>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/react/15.6.1/react-dom.min.js'></script>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/classnames/2.2.5/index.min.js'></script>
@@ -544,150 +581,7 @@ ReactDOM.render( /*#__PURE__*/React.createElement(CitiesSlider, { slides: slides
             allowTransparency="true" allowpaymentrequest="true" allowfullscreen="true" class="result-iframe">
       </iframe>
     </div>
-</div>
 
+</body>
 
-
-
-
-
-
-
-
-
-
-
-
-
-    <div class="container">
-        <h2>Recently Sold</h2>
-        <div class="slider-wrapper">
-          <button id="prev-slide" class="slide-button material-symbols-outlined">
-            chevron_left
-          </button>
-          <ul class="image-list">
-            <li class="image-item">
-                <img src="https://base64.eagleagent.com.au/cFFXZ1o5bVpESWJVemVSMVVpeHYwajFkTFRFPS80MDB4MzAwL3NtYXJ0L2h0dHBzOi8vczMtdXMtd2VzdC0yLmFtYXpvbmF3cy5jb20vZWFnbGVhZ2VudC1vcmlnL2ltYWdlcy8xNzU4NDcxNC83MTg0NTIxMl9fMTY5NTE2OTkwOC02NjQ0LUxpc3RpbmdpbWFnZXMyLmpwZw==/71845212__1695169908-6644-Listingimages2.jpg" alt="img-1"/>
-                <p>88 Paces Lane</p>
-              </li>
-              <li class="image-item">
-                <img src="https://base64.eagleagent.com.au/Um5DTkhNVFgzX21qekcyMVoxV0p0RGNGRUlBPS80MDB4MzAwL3NtYXJ0L2h0dHBzOi8vczMtdXMtd2VzdC0yLmFtYXpvbmF3cy5jb20vZWFnbGVhZ2VudC1vcmlnL2ltYWdlcy8xNjk1ODM1NC82ODE3NTc5NV9fMTY4OTgyNDU0Ny02ODE3NTc5NV9fMTY4OTcyMjgwMS0zMDAwMS1VbnRpdGxlZC0yLmpwZw==/68175795__1689824547-68175795__1689722801-30001-Untitled-2.jpg" alt="img-2" />
-                <p>88 Paces Lane</p>
-              </li>
-              <li class="image-item">
-                <img src="https://base64.eagleagent.com.au/VW1FSVVGZU9qYkljT0xlckhNTHlXUW43SmtnPS80MDB4MzAwL3NtYXJ0L2h0dHBzOi8vczMtdXMtd2VzdC0yLmFtYXpvbmF3cy5jb20vZWFnbGVhZ2VudC1vcmlnL2ltYWdlcy8xNTc0MDcyOC82MzUxNjA3M19fMTY3NjUwMzIxNi0yNTYxNy1uZXdsb3RzMTEuanBn/63516073__1676503216-25617-newlots11.jpg" alt="img-3" />
-                <p>88 Paces Lane</p>
-              </li>
-              <li class="image-item">
-                <img src="https://base64.eagleagent.com.au/cFFXZ1o5bVpESWJVemVSMVVpeHYwajFkTFRFPS80MDB4MzAwL3NtYXJ0L2h0dHBzOi8vczMtdXMtd2VzdC0yLmFtYXpvbmF3cy5jb20vZWFnbGVhZ2VudC1vcmlnL2ltYWdlcy8xNzU4NDcxNC83MTg0NTIxMl9fMTY5NTE2OTkwOC02NjQ0LUxpc3RpbmdpbWFnZXMyLmpwZw==/71845212__1695169908-6644-Listingimages2.jpg" alt="img-1" />
-                <p>88 Paces Lane</p>
-              </li>
-              <li class="image-item">
-                <img src="https://base64.eagleagent.com.au/Um5DTkhNVFgzX21qekcyMVoxV0p0RGNGRUlBPS80MDB4MzAwL3NtYXJ0L2h0dHBzOi8vczMtdXMtd2VzdC0yLmFtYXpvbmF3cy5jb20vZWFnbGVhZ2VudC1vcmlnL2ltYWdlcy8xNjk1ODM1NC82ODE3NTc5NV9fMTY4OTgyNDU0Ny02ODE3NTc5NV9fMTY4OTcyMjgwMS0zMDAwMS1VbnRpdGxlZC0yLmpwZw==/68175795__1689824547-68175795__1689722801-30001-Untitled-2.jpg" alt="img-1" />
-                <p>88 Paces Lane</p>
-              </li>
-              <li class="image-item">
-                <img src="https://base64.eagleagent.com.au/VW1FSVVGZU9qYkljT0xlckhNTHlXUW43SmtnPS80MDB4MzAwL3NtYXJ0L2h0dHBzOi8vczMtdXMtd2VzdC0yLmFtYXpvbmF3cy5jb20vZWFnbGVhZ2VudC1vcmlnL2ltYWdlcy8xNTc0MDcyOC82MzUxNjA3M19fMTY3NjUwMzIxNi0yNTYxNy1uZXdsb3RzMTEuanBn/63516073__1676503216-25617-newlots11.jpg" alt="img-1" />
-                <p>88 Paces Lane</p>
-              </li>
-              <li class="image-item">
-                <img src="https://base64.eagleagent.com.au/cFFXZ1o5bVpESWJVemVSMVVpeHYwajFkTFRFPS80MDB4MzAwL3NtYXJ0L2h0dHBzOi8vczMtdXMtd2VzdC0yLmFtYXpvbmF3cy5jb20vZWFnbGVhZ2VudC1vcmlnL2ltYWdlcy8xNzU4NDcxNC83MTg0NTIxMl9fMTY5NTE2OTkwOC02NjQ0LUxpc3RpbmdpbWFnZXMyLmpwZw==/71845212__1695169908-6644-Listingimages2.jpg" alt="img-1" />
-                <p>88 Paces Lane</p>
-              </li>
-              <li class="image-item">
-                <img src="https://base64.eagleagent.com.au/Um5DTkhNVFgzX21qekcyMVoxV0p0RGNGRUlBPS80MDB4MzAwL3NtYXJ0L2h0dHBzOi8vczMtdXMtd2VzdC0yLmFtYXpvbmF3cy5jb20vZWFnbGVhZ2VudC1vcmlnL2ltYWdlcy8xNjk1ODM1NC82ODE3NTc5NV9fMTY4OTgyNDU0Ny02ODE3NTc5NV9fMTY4OTcyMjgwMS0zMDAwMS1VbnRpdGxlZC0yLmpwZw==/68175795__1689824547-68175795__1689722801-30001-Untitled-2.jpg" alt="img-1" />
-                <p>88 Paces Lane</p>
-              </li>
-              <li class="image-item">
-                <img src="https://base64.eagleagent.com.au/VW1FSVVGZU9qYkljT0xlckhNTHlXUW43SmtnPS80MDB4MzAwL3NtYXJ0L2h0dHBzOi8vczMtdXMtd2VzdC0yLmFtYXpvbmF3cy5jb20vZWFnbGVhZ2VudC1vcmlnL2ltYWdlcy8xNTc0MDcyOC82MzUxNjA3M19fMTY3NjUwMzIxNi0yNTYxNy1uZXdsb3RzMTEuanBn/63516073__1676503216-25617-newlots11.jpg" alt="img-1" />
-                <p>88 Paces Lane</p>
-              </li>
-              <li class="image-item">
-                <img src="https://base64.eagleagent.com.au/cFFXZ1o5bVpESWJVemVSMVVpeHYwajFkTFRFPS80MDB4MzAwL3NtYXJ0L2h0dHBzOi8vczMtdXMtd2VzdC0yLmFtYXpvbmF3cy5jb20vZWFnbGVhZ2VudC1vcmlnL2ltYWdlcy8xNzU4NDcxNC83MTg0NTIxMl9fMTY5NTE2OTkwOC02NjQ0LUxpc3RpbmdpbWFnZXMyLmpwZw==/71845212__1695169908-6644-Listingimages2.jpg" alt="img-1" />
-                <p>88 Paces Lane</p>
-              </li>
-          </ul>
-          <button id="next-slide" class="slide-button material-symbols-outlined">
-            chevron_right
-          </button>
-        </div>
-        <div class="slider-scrollbar">
-          <div class="scrollbar-track">
-            <div class="scrollbar-thumb"></div>
-          </div>
-        </div>
-      </div>
-
-
-
-      
-
-
-
-
-    <footer>
-        <div class="content">
-          <div class="top">
-            <div class="logo-details">
-              <i class="fab fa-slack"></i>
-              <span class="logo_name">CodingLab</span>
-            </div>
-            <div class="media-icons">
-              <a href="#"><i class="fab fa-facebook-f"></i></a>
-              <a href="#"><i class="fab fa-twitter"></i></a>
-              <a href="#"><i class="fab fa-instagram"></i></a>
-              <a href="#"><i class="fab fa-linkedin-in"></i></a>
-              <a href="#"><i class="fab fa-youtube"></i></a>
-            </div>
-          </div>
-          <div class="link-boxes">
-            <ul class="box">
-              <li class="link_name">Company</li>
-              <li><a href="#">Home</a></li>
-              <li><a href="#">Contact us</a></li>
-              <li><a href="#">About us</a></li>
-              <li><a href="#">Get started</a></li>
-            </ul>
-            <ul class="box">
-              <li class="link_name">Services</li>
-              <li><a href="#">App design</a></li>
-              <li><a href="#">Web design</a></li>
-              <li><a href="#">Logo design</a></li>
-              <li><a href="#">Banner design</a></li>
-            </ul>
-            <ul class="box">
-              <li class="link_name">Account</li>
-              <li><a href="#">Profile</a></li>
-              <li><a href="#">My account</a></li>
-              <li><a href="#">Prefrences</a></li>
-              <li><a href="#">Purchase</a></li>
-            </ul>
-            <ul class="box">
-              <li class="link_name">Courses</li>
-              <li><a href="#">HTML & CSS</a></li>
-              <li><a href="#">JavaScript</a></li>
-              <li><a href="#">Photography</a></li>
-              <li><a href="#">Photoshop</a></li>
-            </ul>
-            <ul class="box input-box">
-              <li class="link_name">Subscribe</li>
-              <li><input type="text" placeholder="Enter your email"></li>
-              <li><input type="button" value="Subscribe"></li>
-            </ul>
-          </div>
-        </div>
-        <div class="bottom-details">
-          <div class="bottom_text">
-            <span class="copyright_text">Copyright © 2021 <a href="#">CodingLab.</a>All rights reserved</span>
-            <span class="policy_terms">
-              <a href="#">Privacy policy</a>
-              <a href="#">Terms & condition</a>
-            </span>
-          </div>
-        </div>
-      </footer>
-
-
-
-  </body>
 </html>
