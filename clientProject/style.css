@@ -9,7 +9,9 @@ nav{
   display: flex;
   height: 80px;
   width: 100%;
-  background: #1b1b1b;
+  /* background: #f1f0f0; */
+  background-color: #f5f5f5;
+  /* background-color: #ebeaea; */
   align-items: center;
   justify-content: space-between;
   padding: 0 50px 0 100px;
@@ -21,11 +23,14 @@ nav{
   left: 0;
   width: 100%;
   z-index: 1000;
+
 }
 nav .logo{
   color: #fff;
-  font-size: 35px;
-  font-weight: 600;
+  font-size: 5px;
+  /* font-weight: 600; */
+  max-width: 90%;
+
 }
 nav ul{
   display: flex;
@@ -36,7 +41,7 @@ nav ul li{
   margin: 0 5px;
 }
 nav ul li a{
-  color: #f2f2f2;
+  color: black;
   text-decoration: none;
   font-size: 18px;
   font-weight: 500;
@@ -47,11 +52,12 @@ nav ul li a{
 }
 nav ul li a.active,
 nav ul li a:hover{
-  color: #111;
-  background: #fff;
+  color: white;
+  background: #ff7625;
+  border-radius: 20px;
 }
 nav .menu-btn i{
-  color: #fff;
+  color: black;
   font-size: 22px;
   cursor: pointer;
   display: none;
@@ -63,6 +69,7 @@ input[type="checkbox"]{
   nav{
     padding: 0 40px 0 50px;
   }
+
 }
 @media (max-width: 920px) {
   nav .menu-btn i{
@@ -75,7 +82,7 @@ input[type="checkbox"]{
     position: fixed;
     top: 80px;
     left: -100%;
-    background: #111;
+    background: #f1f0f0;
     height: 100vh;
     width: 100%;
     text-align: center;
@@ -102,7 +109,7 @@ input[type="checkbox"]{
   nav ul li a.active,
   nav ul li a:hover{
     background: none;
-    color: cyan;
+    color: #ff7625;
   }
 }
 /* .content{
@@ -359,7 +366,7 @@ border-radius: 20px;
 
 footer{
     position: relative;
-    background: #140B5C;
+  background-color: #f5f5f5;
     width: 100%;
     bottom: 0;
     left: 0;
@@ -376,7 +383,7 @@ footer{
     top: 100px;
     height: 1px;
     width: 100%;
-    background: #AFAFB6;
+    background-color: black;
   }
   footer .content{
     max-width: 1250px;
@@ -390,7 +397,7 @@ footer{
     margin-bottom: 50px;
   }
   .content .top .logo-details{
-    color: #fff;
+    color: black;
     font-size: 30px;
   }
   .content .top .media-icons{
@@ -404,40 +411,46 @@ footer{
     text-align: center;
     line-height: 40px;
     color: #fff;
+    /* color: blue; */
     font-size: 17px;
     text-decoration: none;
     transition: all 0.4s ease;
   }
   .top .media-icons a:nth-child(1){
-    background: #4267B2;
+    color: #4267B2;
+    background: #fff;
   }
   .top .media-icons a:nth-child(1):hover{
     color: #4267B2;
     background: #fff;
   }
   .top .media-icons a:nth-child(2){
-    background: #1DA1F2;
+    color: #1DA1F2;
+    background: #fff;
   }
   .top .media-icons a:nth-child(2):hover{
     color: #1DA1F2;
     background: #fff;
   }
   .top .media-icons a:nth-child(3){
-    background: #E1306C;
+    color: #E1306C;
+    background: #fff;
   }
   .top .media-icons a:nth-child(3):hover{
     color: #E1306C;
     background: #fff;
   }
   .top .media-icons a:nth-child(4){
-    background: #0077B5;
+    color: #0077B5;
+    background: #fff;
   }
   .top .media-icons a:nth-child(4):hover{
     color: #0077B5;
     background: #fff;
   }
   .top .media-icons a:nth-child(5){
-    background: #FF0000;
+    color: #FF0000;
+    background: #fff;
   }
   .top .media-icons a:nth-child(5):hover{
     color: #FF0000;
@@ -452,7 +465,7 @@ footer{
     width: calc(100% / 5 - 10px);
   }
   .content .link-boxes .box .link_name{
-    color: #fff;
+    color: black;
     font-size: 18px;
     font-weight: 400;
     margin-bottom: 10px;
@@ -465,14 +478,14 @@ footer{
     bottom: -2px;
     height: 2px;
     width: 35px;
-    background: #fff;
+    background-color: black;
   }
   .content .link-boxes .box li{
     margin: 6px 0;
     list-style: none;
   }
   .content .link-boxes .box li a{
-    color: #fff;
+    color: black;
     font-size: 14px;
     font-weight: 400;
     text-decoration: none;
@@ -490,22 +503,22 @@ footer{
     height: 40px;
     width: calc(100% + 55px);
     outline: none;
-    border: 2px solid #AFAFB6;
-    background: #140B5C;
-    border-radius: 4px;
+    border: 2px solid black;
+    background: #d4d4d5;
+    border-radius: 8px;
     padding: 0 15px;
     font-size: 15px;
-    color: #fff;
+    color: black;
     margin-top: 5px;
   }
   .link-boxes .input-box input::placeholder{
-    color: #AFAFB6;
+    color: black;
     font-size: 16px;
   }
   .link-boxes .input-box input[type="button"]{
-    background: #fff;
-    color: #140B5C;
-    border: none;
+    background: black;
+    color: white;
+    border-radius: 20px;
     font-size: 18px;
     font-weight: 500;
     margin: 4px 0;
@@ -518,7 +531,7 @@ footer{
   }
   footer .bottom-details{
     width: 100%;
-    background: #0F0844;
+    background: #f1f0f0;
   }
   footer .bottom-details .bottom_text{
     max-width: 1250px;
@@ -530,8 +543,8 @@ footer{
   .bottom-details .bottom_text span,
   .bottom-details .bottom_text a{
     font-size: 14px;
-    font-weight: 300;
-    color: #fff;
+    font-weight: 400;
+    color: black;
     opacity: 0.8;
     text-decoration: none;
   }
@@ -550,6 +563,10 @@ footer{
       width: 40%;
       margin-top: 10px;
     }
+    .slider__slide-heading{
+      background-color: red;
+      font-size: 100px;
+    }
   }
   @media (max-width: 700px){
     footer{
@@ -557,6 +574,7 @@ footer{
     }
     .content .top .logo-details{
       font-size: 26px;
+      text-align: center;
     }
     .content .top .media-icons a{
       height: 35px;
@@ -576,6 +594,7 @@ footer{
     }
   }
   @media (max-width: 520px){
+    
     footer::before{
       top: 145px;
     }
