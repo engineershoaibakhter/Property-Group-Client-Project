@@ -340,7 +340,78 @@ border-radius: 20px;
 
 
 
+  .container1 {
+    max-width: 1200px; /* Set maximum width of container */
+    margin: 0 auto; /* Center the container */
+    padding: 20px;
+  }
+  
+  .slider-wrapper1 {
+     /* Enable horizontal scrolling */
+    scrollbar-width: none; /* Hide scrollbar */
+    height: 550px;
+  }
+  
+  .image-list1 {
+    display: flex;
+    flex-direction: row; /* Display images vertically */
+    gap: 20px; /* Adjust gap between images */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .image-item1 {
+    text-align: left; /* Center align images */
+  }
+  
+  .image-item1 img {
+    max-width: 100%; /* Ensure images don't exceed container width */
+    height: 100%; /* Preserve aspect ratio */
+    border-radius: 10px; /* Add border radius */
 
+  }
+  .image-item1 h2{
+    margin-bottom: 0px;
+text-align: left;
+font-size: 2rem;
+font-weight: 530;
+  }
+  
+  .image-item1 p {
+    margin-top: 3px; /* Add margin between image and paragraph */
+    text-align: left;
+  }
+  .image-item1 button{
+    margin-bottom: 0px;
+text-align: left;
+font-size: 1.1rem;
+font-weight: 500;
+color: white;
+background: #ff7625;
+border-color: #ff7625;
+padding: 5px;
+border-radius: 20px;
+cursor: pointer;
+margin-top: 7px;
+  }
+  /* Media query for small screens */
+  @media (max-width: 800px) {
+    .slider-wrapper1 {
+     height: 1300px;
+   }
+    .image-list1 {
+      flex-direction: column; /* Display images horizontally */
+      flex-wrap: wrap; /* Allow images to wrap to the next line */
+      justify-content: center; /* Center align images horizontally */
+      align-items: center;
+    }
+  
+    .image-item1 {
+      flex-basis: calc(33.33% - 20px); 
+    }
+  }
+  
 
 
 
@@ -516,8 +587,9 @@ footer{
     font-size: 16px;
   }
   .link-boxes .input-box input[type="button"]{
-    background: black;
     color: white;
+background: #ff7625;
+border-color: #ff7625;
     border-radius: 20px;
     font-size: 18px;
     font-weight: 500;
