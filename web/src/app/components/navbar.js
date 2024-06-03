@@ -1,5 +1,6 @@
 // components/Navbar.js
 "use client";
+import { useState } from "react";
 import Link from "next/link";
 import styled from "styled-components";
 
@@ -8,11 +9,11 @@ const NavbarContainer = styled.nav`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-//   padding: 1rem 2rem;
   color: white;
-  position: fixed;
   width: 100%;
-  z-index: 10;
+  z-index: 15;
+  position: absolute;
+  padding: 1rem 0;
 
   @media (max-width: 768px) {
     padding: 1rem;
@@ -32,8 +33,18 @@ const Logo = styled.div`
 `;
 
 const LogoImage = styled.img`
-  width: auto; /* Adjust the width if needed */
-  height: auto; /* Adjust the height if needed */
+  width: auto;
+  height: auto;
+`;
+
+const HamburgerMenu = styled.div`
+  display: none;
+  cursor: pointer;
+  font-size: 2rem;
+
+  @media (max-width: 768px) {
+    display: block;
+  }
 `;
 
 const NavLinks = styled.div`
@@ -45,6 +56,7 @@ const NavLinks = styled.div`
   @media (max-width: 768px) {
     flex-direction: column;
     align-items: center;
+    display: ${({ open }) => (open ? 'flex' : 'none')};
   }
 `;
 
@@ -60,12 +72,21 @@ const NavLink = styled(Link)`
 `;
 
 const Navbar = () => {
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen);
+  };
+
   return (
     <NavbarContainer>
       <Logo>
         <LogoImage src="https://pomeroypacific.com.au/wp-content/uploads/2020/09/PP_Stacked_REV_W-125x96.png" alt="Pomeroy Pacific Logo" />
       </Logo>
-      <NavLinks>
+      <HamburgerMenu onClick={toggleMenu}>
+        &#9776; {/* This represents the hamburger icon */}
+      </HamburgerMenu>
+      <NavLinks open={menuOpen}>
         <NavLink href="/">Home</NavLink>
         <NavLink href="/#services">Services</NavLink>
         <NavLink href="/#portfolio">Portfolio</NavLink>
