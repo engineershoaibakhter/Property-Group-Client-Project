@@ -6,35 +6,45 @@ import styled from "styled-components";
 
 const NavbarContainer = styled.nav`
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   color: white;
-  width: 100%;
+  width: 95%;
   z-index: 15;
   position: absolute;
-  padding: 1rem 0;
+  padding: 0rem 2rem;
+  // background: #333; 
+  font-family:FranklinGothic-MediumCond, Helvetica, Arial, sans-serif;
 
   @media (max-width: 768px) {
+    flex-direction: column;
+    align-items: flex-start;
     padding: 1rem;
   }
 `;
 
 const Logo = styled.div`
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
-  width: 100%;
-  margin-bottom: 1rem;
 
   @media (max-width: 768px) {
-    margin-bottom: 0.5rem;
+    // margin-bottom: 0.5rem;
+    width: 15vw;
+    height:15vh;
   }
 `;
 
 const LogoImage = styled.img`
-  width: auto;
-  height: auto;
+  width: 14vw; /* Set a width to control logo size */
+  height: 14vh;
+  margin-left:8vw
+
+  @media (max-width: 768px) {
+    margin-bottom: 5rem;
+    
+  }
+
 `;
 
 const HamburgerMenu = styled.div`
@@ -44,26 +54,31 @@ const HamburgerMenu = styled.div`
 
   @media (max-width: 768px) {
     display: block;
+    position: absolute;
+    top: 2rem;
+    right: 3rem;
   }
 `;
 
 const NavLinks = styled.div`
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
+  align-items: center;
   gap: 2rem;
-  width: 100%;
+  width: auto;
 
   @media (max-width: 768px) {
     flex-direction: column;
-    align-items: center;
-    display: ${({ open }) => (open ? 'flex' : 'none')};
+    align-items: flex-start;
+    display: ${({ open }) => (open ? "flex" : "none")};
+    width: 100%;
   }
 `;
 
 const NavLink = styled(Link)`
   color: white;
   text-decoration: none;
-  font-size: 1.5rem;
+  font-size: 1.1rem;
   letter-spacing: 1.2px;
 
   &:hover {
@@ -81,17 +96,21 @@ const Navbar = () => {
   return (
     <NavbarContainer>
       <Logo>
-        <LogoImage src="https://pomeroypacific.com.au/wp-content/uploads/2020/09/PP_Stacked_REV_W-125x96.png" alt="Pomeroy Pacific Logo" />
+        <LogoImage
+          src="/logo.png"
+          alt="Pomeroy Pacific Logo"
+        />
+        
       </Logo>
       <HamburgerMenu onClick={toggleMenu}>
         &#9776; {/* This represents the hamburger icon */}
       </HamburgerMenu>
       <NavLinks open={menuOpen}>
-        <NavLink href="/">Home</NavLink>
-        <NavLink href="/#services">Services</NavLink>
-        <NavLink href="/#portfolio">Portfolio</NavLink>
-        <NavLink href="/#about">About Us</NavLink>
-        <NavLink href="/#contact">Contact Us</NavLink>
+        <NavLink href="/">HOME</NavLink>
+        <NavLink href="/#services">SERVICES</NavLink>
+        <NavLink href="/#portfolio">PORTFOLIO</NavLink>
+        <NavLink href="/#about">ABOUT</NavLink>
+        <NavLink href="/#contact">CONTACT US</NavLink>
       </NavLinks>
     </NavbarContainer>
   );

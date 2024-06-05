@@ -6,8 +6,8 @@ const HomePage = () => {
   return (
     <section id="home" className={styles.HomeSection}>
       <div className={styles.content}>
-        <p>CREATING VALUE THROUGH</p>
-        <h1>PROJECT DELIVERY & <br /> DEVELOPMENT ACQUISITION</h1>
+        <h1>CRAFTING CONNECTED COMMUNITIES</h1>
+        <p>FROM THE GROUND UP</p>
         
         <div className={styles.cardContainer}>
           <div className={styles.card}>
