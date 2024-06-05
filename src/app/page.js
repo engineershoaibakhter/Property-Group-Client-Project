@@ -11,6 +11,7 @@ import BuildingImage from "./components/BuildingImage";
 import About from "./components/About";
 import Footer from "./components/Footer";
 import Contact from "./components/Contact";
+import Partners from "./components/Partners";
 // import Contact from "../components/Contact";
 
 export default function Home() {
@@ -31,6 +32,7 @@ export default function Home() {
         <BuildingImage />
         {/* <Services /> */}
         {/* <Portfolio /> */}
+        <Partners />
         <About />
         <Location />
         <Contact />

@@ -1,0 +1,75 @@
+.partners {
+    background-color: #282827;
+    color: orange;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  
+  .heading {
+    text-align: center;
+    font-family: "FranklinGothic-MediumCond", Sans-serif;
+  }
+  
+  .container {
+    max-width: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .sliderWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .imageList {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .imageItem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25vw;
+    height: 15vh;
+    object-fit: contain;
+    background-color: rgba(255, 255, 255, 0.269);
+    padding: 14px;
+    border-radius: 20px;
+    max-width: 17vw;
+  }
+  
+  .imageItem img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+  
+  @media (max-width: 800px) {
+    .imageList {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .imageItem {
+        width: 40vw;
+      height: 20vh;  /* Adjust height to fit content */
+      margin-bottom: 10px;
+      max-width: none;
+    }
+    .imageItem img {
+        max-width: 100%;
+        max-height: 100%;
+      }
+  }
+  
