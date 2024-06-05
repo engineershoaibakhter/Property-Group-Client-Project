@@ -2,7 +2,7 @@ import styles from '../styles/Location.module.css';
 
 const Contact = () => {
   return (
-    <>
+    <div className={styles.location}>
         <h1 className={styles.heading}>Our Location</h1>
     <div className={styles.container}>
       <div className={styles.content}>
@@ -38,7 +38,7 @@ const Contact = () => {
         </div>
       </div>
     </div>
-    </>
+    </div>
   );
 };
 
