@@ -5,6 +5,7 @@ import { FaLinkedin, FaYoutube, FaTwitter, FaFacebook } from 'react-icons/fa';
 
 const Footer = () => {
   return (
+    <div className={styles.main_footer}>
     <section className={styles.footer}>
       <div className={styles.footerRow}>
         <div className={styles.footerCol}>
@@ -77,6 +78,7 @@ const Footer = () => {
 
       </div>
     </section>
+    </div>
   );
 };
 
