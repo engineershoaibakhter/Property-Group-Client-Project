@@ -22,7 +22,7 @@ const Contact = () => {
           <div className={`${styles.details} ${styles.email}`}>
             <i className="fas fa-envelope"></i>
             <div className={styles.topic}>Email</div>
-            <div className={styles.textOne}>codinglab@gmail.com</div>
+            <div className={styles.textOne}>michael.ellis@bcacorp.com.au</div>
           </div>
         </div>
         <div className={`${styles.rightContent} ${styles.rightSide}`}>

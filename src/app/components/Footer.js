@@ -1,6 +1,7 @@
 "use client";
 import React from 'react';
 import styles from '../styles/Footer.module.css';
+import { FaLinkedin, FaYoutube, FaTwitter, FaFacebook } from 'react-icons/fa';
 
 const Footer = () => {
   return (
@@ -9,7 +10,7 @@ const Footer = () => {
         <div className={styles.footerCol}>
         <ul className={styles.links}>
           <img 
-            src="https://pomeroypacific.com.au/wp-content/uploads/2020/09/PP_Stacked_REV_W-125x96.png" 
+            src="/logo.png" 
             alt="Pomeroy Pacific Logo" 
             className={styles.logo}
           />
@@ -49,13 +50,31 @@ const Footer = () => {
 
         <div className={styles.footerCol}>
           <ul className={styles.links}>
-          <h4>CONNECT WITH US</h4>
-            <li><a href="#">Level 4, 15 Claremont Street</a></li>
-            <li><a href="#">South Yarra, Victoria 3141</a></li>
-            <li><a href="#">+61 3 8825 6777</a></li>
-            <li><a href="#">info@pomeroypacific.com.au</a></li>
+            <h4>CONNECT WITH US</h4>
+            <li className={styles.socialIcons}>
+              <a href="#">
+                <FaLinkedin />
+              </a>
+            </li>
+            <li className={styles.socialIcons}>
+              <a href="#">
+                <FaYoutube />
+              </a>
+            </li>
+            <li className={styles.socialIcons}>
+              <a href="#">
+                <FaTwitter />
+              </a>
+            </li>
+            <li className={styles.socialIcons}>
+              <a href="#">
+                <FaFacebook />
+              </a>
+            </li>
           </ul>
         </div>
+
+
       </div>
     </section>
   );
