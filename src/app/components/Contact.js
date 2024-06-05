@@ -1,12 +1,9 @@
-
-
-
 import styles from '../styles/Contact.module.css';
 import FormExample from './FormExample'; // Import the Bootstrap form component
 
 const Contact = () => {
   return (
-    <>
+    <div className={styles.contact}>
         <h1 className={styles.heading}>Contact US</h1>
     <div className={styles.container}>
       <div className={styles.content}>
@@ -34,7 +31,7 @@ const Contact = () => {
         </div>
       </div>
     </div>
-    </>
+    </div>
   );
 };
 

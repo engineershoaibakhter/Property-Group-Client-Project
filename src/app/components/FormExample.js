@@ -9,8 +9,6 @@ import { AiOutlineUser, AiOutlineMail, AiOutlineMessage } from "react-icons/ai";
 
 function FormExample() {
   const [validated, setValidated] = useState(false);
-  const [emailValidated, setEmailValidated] = useState(true); // Initialized to true
-  const [isEmailCorrect, setIsEmailCorrect] = useState(false);
 
   const handleSubmit = (event) => {
     const form = event.currentTarget;
@@ -21,15 +19,8 @@ function FormExample() {
 
     setValidated(true);
 
-    // Check if the email is valid
-    setIsEmailCorrect(emailValidated);
   };
 
-  const handleEmailValidation = (event) => {
-    const email = event.target.value;
-    const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    setEmailValidated(regex.test(email));
-  };
 
   return (
     <Form noValidate validated={validated} onSubmit={handleSubmit}>
@@ -67,8 +58,6 @@ function FormExample() {
               placeholder="Email"
               aria-describedby="inputGroupPrepend"
               required
-              onChange={handleEmailValidation}
-              isInvalid={!emailValidated && validated} 
             />
             <Form.Control.Feedback type="invalid">
               Please enter a valid email.
@@ -95,17 +84,14 @@ function FormExample() {
               Please write a message.
             </Form.Control.Feedback>
           </InputGroup>
+          <div md="10" style={{textAlign:"center",marginTop:"20px"}}>
+      <Button type="submit" style={{backgroundColor:"orange",color:"black",fontWeight:500,borderColor:"orange"}}>Submit form</Button>
+      </div>
         </Form.Group>
+        
       </Row>
+      
 
-      <Button type="submit">Submit form</Button>
-
-      {/* Display email validation result */}
-      {validated && (
-        <div>
-          Email is {isEmailCorrect ? "correct" : "incorrect"}.
-        </div>
-      )}
     </Form>
   );
 }

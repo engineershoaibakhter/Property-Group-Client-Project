@@ -85,7 +85,6 @@
   }
   @media (max-width: 820px) {
     .container{
-      margin: 40px 0;
       height: 100%;
     }
     .container .content{
@@ -127,21 +126,7 @@
     width: 100%;
   }
   
-  @media (max-width: 820px) {
-    .container .content {
-      flex-direction: column;
-      
-    }
-  
-    .leftContent,
-    .rightContent {
-      width: 100%;
-    }
-  
-    .leftContent::before {
-      display: none;
-    }
-  }
+
   
   .textOne , .textTwo{
     color: white;
