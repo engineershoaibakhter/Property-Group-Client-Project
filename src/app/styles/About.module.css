@@ -61,7 +61,7 @@
 .rightContent {
     width: 100%;
 }
-@media (max-width: 920px) {
+@media (max-width: 1020px) {
     .container {
         height: 100%;
     }
