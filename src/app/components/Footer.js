@@ -42,10 +42,9 @@ const Footer = () => {
         <div className={styles.footerCol}>
           <ul className={styles.links}>
           <h4>MELBOURNE</h4>
-            <li><a href="#">Level 4, 15 Claremont Street</a></li>
-            <li><a href="#">South Yarra, Victoria 3141</a></li>
-            <li><a href="#">+61 3 8825 6777</a></li>
-            <li><a href="#">info@pomeroypacific.com.au</a></li>
+            <li><a href="#">Level 8/468 St Kilda Road Melbourne VIC 3004</a></li>
+            <li><a href="#">03 9222 4000</a></li>
+            <li><a href="#">michael.ellis@bcacorp.com.au</a></li>
           </ul>
         </div>
 

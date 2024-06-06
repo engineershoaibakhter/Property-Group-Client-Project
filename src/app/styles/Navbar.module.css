@@ -1,9 +1,114 @@
 .custom_toggle {
-    background-color: orange; /* Custom background color */
-    border: none;
-    color: white;
+  background-color: orange; /* Custom background color */
+  border: none;
+  color: white;
+}
+
+.custom_toggle:hover {
+  background-color: darkorange; /* Change background on hover */
+  color: white; /* Change text color on hover */
+}
+
+/* Navbar styles */
+.navbar_container {
+  color: white;
+  padding: 0rem 2rem;
+  font-family: FranklinGothic-MediumCond, Helvetica, Arial, sans-serif;
+  width: 100%;
+  z-index: 1000; /* Ensure Navbar is in front */
+  position: absolute;
+  background-color: transparent;
+}
+
+.navbar_container.bg_color {
+  background-color: #333;
+}
+
+.logo {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.logo img {
+  width: 20vw;
+  height: 20vh;
+}
+
+@media (max-width: 1366px) {
+  .logo img {
+    width: 30vw;
+    height: 15vh;
   }
-  .custom_toggle:hover {
-    background-color: darkorange; /* Change background on hover */
-    color: white; /* Change text color on hover */
+}
+
+@media (max-width: 768px) {
+  .navbar_container {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem;
   }
+  
+  .logo img {
+    width: 30vw;
+    height: 15vh;
+  }
+}
+
+.nav_links {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 2rem;
+  width: auto;
+  cursor: pointer;
+}
+
+.nav_link {
+  color: white;
+  text-decoration: none;
+  font-size: 1.1rem;
+  letter-spacing: 1.2px;
+}
+
+.nav_link:hover {
+  color: orange;
+}
+
+@media (max-width: 1366px) {
+  .nav_links{
+  gap: 1rem;
+  }
+  .nav_link {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 1180px) {
+  .nav_link {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav_links {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+  }
+}
+
+.hamburger_menu {
+  display: none;
+  cursor: pointer;
+  font-size: 2rem;
+}
+
+@media (max-width: 768px) {
+  .hamburger_menu {
+    display: block;
+    position: absolute;
+    top: 2rem;
+    right: 3rem;
+  }
+}

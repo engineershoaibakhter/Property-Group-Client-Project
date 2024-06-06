@@ -10,7 +10,7 @@ const Partners = () => {
       <div className={styles.sliderWrapper}>
         <ul className={styles.imageList}>
           <li className={styles.imageItem}><img src="/images/partner1.png" alt="img-1" /></li>
-          <li className={styles.imageItem}><img src="/images/partner2.png" alt="img-2" /></li>
+          <li className={styles.imageItem}><img src="/images/landmark.png" alt="img-2" /></li>
           <li className={styles.imageItem}><img src="/images/partner1.png" alt="img-3" /></li>
         </ul>
       </div>

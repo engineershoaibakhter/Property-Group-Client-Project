@@ -17,14 +17,6 @@ import NavbarWeb from "./components/Navbar";
 export default function Home() {
   return (
     <>
-      <Head>
-        <title>Camping Gear Website</title>
-        <meta
-          name="description"
-          content="Discover top-quality camping gear for unforgettable outdoor adventures."
-        />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
       <NavbarWeb />
       
         <HomePage />
