@@ -17,7 +17,6 @@
     top: 0;
     height: 100%;
     width: 100%;
-    background: rgba(0, 0, 0, 0.2);
   }
   
   .content {
@@ -85,6 +84,45 @@
     font-size: 16px;
     color: white;
   }
+
+
+  @media (max-width: 1366px) {
+    .HomeSection {
+      height: auto;
+      padding: 20px 0;
+    }
+    
+    .content {
+      margin-top: 250px;
+    }
+  
+    .content h1 {
+      font-size: 32px;
+    }
+  
+    .content p {
+      font-size: 18px;
+      letter-spacing: 0.1rem;
+    }
+  
+    .content a {
+      padding: 8px 20px;
+    }
+  
+    .cardContainer {
+      justify-content: space-around; /* Adjust spacing between cards */
+    }
+  
+    .card {
+      max-width: calc(50% - 20px); /* Two cards per row with gap */
+      padding: 15px;
+    }
+  
+    .card p {
+      font-size: 14px;
+    }
+  }
+ 
   
   @media (max-width: 768px) {
     .HomeSection {

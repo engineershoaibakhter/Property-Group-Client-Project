@@ -1,20 +1,24 @@
-// components/Navbar.js
 "use client";
+
 import { useState } from "react";
 import Link from "next/link";
 import styled from "styled-components";
+import Container from 'react-bootstrap/Container';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
+import styles from '../styles/Navbar.module.css'
 
-const NavbarContainer = styled.nav`
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+
+const NavbarContainer = styled(Navbar)`
+background-color: ${({ bgColor }) => bgColor || 'transparent'};
   color: white;
-  width: 95%;
+  padding: 0rem 2rem;
+  font-family: FranklinGothic-MediumCond, Helvetica, Arial, sans-serif;
+  width: 100%;
   z-index: 15;
   position: absolute;
-  padding: 0rem 2rem;
-  // background: #333; 
-  font-family:FranklinGothic-MediumCond, Helvetica, Arial, sans-serif;
+
+  
 
   @media (max-width: 768px) {
     flex-direction: column;
@@ -29,22 +33,58 @@ const Logo = styled.div`
   align-items: center;
 
   @media (max-width: 768px) {
-    // margin-bottom: 0.5rem;
     width: 15vw;
-    height:15vh;
+    height: 15vh;
   }
 `;
 
 const LogoImage = styled.img`
-  width: 14vw; /* Set a width to control logo size */
-  height: 14vh;
-  margin-left:8vw
+  width: 20vw;
+  height: 20vh;
 
-  @media (max-width: 768px) {
-    margin-bottom: 5rem;
-    
+  @media (max-width: 1366px) {
+    width: 30vw;
+  height: 15vh;
   }
 
+  @media (max-width: 768px) {
+    width: 30vw;
+  height: 15vh;
+
+  }
+`;
+
+const NavLinks = styled(Nav)`
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 2rem;
+  width: auto;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+  }
+`;
+
+const NavLink = styled(Link)`
+  color: white;
+  text-decoration: none;
+  font-size: 1.1rem;
+  letter-spacing: 1.2px;
+
+  @media (max-width: 1366px) {
+    font-size: 1.2rem;
+  }
+
+  @media (max-width: 1180px) {
+    font-size: 1.1rem;
+  }
+
+  &:hover {
+    color: orange;
+  }
 `;
 
 const HamburgerMenu = styled.div`
@@ -60,33 +100,7 @@ const HamburgerMenu = styled.div`
   }
 `;
 
-const NavLinks = styled.div`
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  gap: 2rem;
-  width: auto;
-
-  @media (max-width: 768px) {
-    flex-direction: column;
-    align-items: flex-start;
-    display: ${({ open }) => (open ? "flex" : "none")};
-    width: 100%;
-  }
-`;
-
-const NavLink = styled(Link)`
-  color: white;
-  text-decoration: none;
-  font-size: 1.1rem;
-  letter-spacing: 1.2px;
-
-  &:hover {
-    color: #ffcc00;
-  }
-`;
-
-const Navbar = () => {
+const NavbarWeb = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -94,26 +108,29 @@ const Navbar = () => {
   };
 
   return (
-    <NavbarContainer>
-      <Logo>
-        <LogoImage
-          src="/logo.png"
-          alt="Pomeroy Pacific Logo"
-        />
-        
-      </Logo>
-      <HamburgerMenu onClick={toggleMenu}>
-        &#9776; {/* This represents the hamburger icon */}
-      </HamburgerMenu>
-      <NavLinks open={menuOpen}>
-        <NavLink href="/">HOME</NavLink>
-        <NavLink href="/#services">SERVICES</NavLink>
-        <NavLink href="/#portfolio">PORTFOLIO</NavLink>
-        <NavLink href="/#about">ABOUT</NavLink>
-        <NavLink href="/#contact">CONTACT US</NavLink>
-      </NavLinks>
+    <NavbarContainer expand="lg" bgColor={menuOpen ? "#333" : "transparent"}>
+      <Container>
+        <Logo>
+          <LogoImage src="/logo.png" alt="Pomeroy Pacific Logo"/>
+          {/* <img src="/logo.png" alt="Pomeroy Pacific Logo" width={100} height={100}  /> */}
+        </Logo>
+        <Navbar.Toggle aria-controls="basic-navbar-nav" onClick={toggleMenu} className={styles.custom_toggle} />
+        <Navbar.Collapse id="basic-navbar-nav" className={`justify-content-end ${menuOpen ? 'show' : ''}`}>
+          <NavLinks>
+            <Nav.Link href="/" as={NavLink}>HOME</Nav.Link>
+            <Nav.Link href="/#services" as={NavLink}>SERVICES</Nav.Link>
+            <Nav.Link href="/#portfolio" as={NavLink}>PORTFOLIO</Nav.Link>
+            <Nav.Link href="/#about" as={NavLink}>ABOUT</Nav.Link>
+            <Nav.Link href="/#contact" as={NavLink}>CONTACT US</Nav.Link>
+            
+          </NavLinks>
+        </Navbar.Collapse>
+      </Container>
     </NavbarContainer>
   );
 };
 
-export default Navbar;
+export default NavbarWeb;
+
+
+

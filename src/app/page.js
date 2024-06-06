@@ -1,6 +1,5 @@
 import Image from "next/image";
 import styles from "./page.module.css";
-import Navbar from "./components/Navbar";
 import HomePage from "./components/HomePage";
 import Location from "./components/Location"
 import Head from "next/head";
@@ -12,6 +11,7 @@ import About from "./components/About";
 import Footer from "./components/Footer";
 import Contact from "./components/Contact";
 import Partners from "./components/Partners";
+import NavbarWeb from "./components/Navbar";
 // import Contact from "../components/Contact";
 
 export default function Home() {
@@ -25,7 +25,7 @@ export default function Home() {
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Navbar />
+      <NavbarWeb />
       
         <HomePage />
         <ViewAllProject />

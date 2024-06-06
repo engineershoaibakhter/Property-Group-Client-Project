@@ -1,0 +1,9 @@
+.custom_toggle {
+    background-color: orange; /* Custom background color */
+    border: none;
+    color: white;
+  }
+  .custom_toggle:hover {
+    background-color: darkorange; /* Change background on hover */
+    color: white; /* Change text color on hover */
+  }
