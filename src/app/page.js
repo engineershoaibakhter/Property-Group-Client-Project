@@ -12,6 +12,7 @@ import Footer from "./components/Footer";
 import Contact from "./components/Contact";
 import Partners from "./components/Partners";
 import NavbarWeb from "./components/Navbar";
+import Project from "./components/Project";
 // import Contact from "../components/Contact";
 
 export default function Home() {
@@ -25,7 +26,8 @@ export default function Home() {
         {/* <Services /> */}
         {/* <Portfolio /> */}
         <Partners />
-        <About />
+        <Project />
+        {/* <About /> */}
         <Location />
         <Contact />
         <Footer />
