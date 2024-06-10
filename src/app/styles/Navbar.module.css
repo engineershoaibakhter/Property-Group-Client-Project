@@ -37,7 +37,7 @@
 
 @media (max-width: 1366px) {
   .logo img {
-    width: 30vw;
+    width: 20vw;
     height: 15vh;
   }
 }
@@ -50,7 +50,7 @@
   }
   
   .logo img {
-    width: 30vw;
+    width: 40vw;
     height: 15vh;
   }
 }

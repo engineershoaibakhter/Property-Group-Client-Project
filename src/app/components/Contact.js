@@ -8,8 +8,9 @@ const Contact = () => {
     <div className={styles.container}>
       <div className={styles.content}>
         <div className={`${styles.leftContent} ${styles.leftSide}`}>
+          <img src='/images/contact-image.jpg' alt='contact-image' width="70%" height="70%"/>
           {/* Add your left content here */}
-          <div className={`${styles.details} ${styles.address}`}>
+          {/* <div className={`${styles.details} ${styles.address}`}>
             <i className="fas fa-map-marker-alt"></i>
             <div className={styles.topic}>Address</div>
             <div className={styles.textOne}>Level 8/468 St Kilda Road</div>
@@ -24,7 +25,7 @@ const Contact = () => {
             <i className="fas fa-envelope"></i>
             <div className={styles.topic}>Email</div>
             <div className={styles.textOne}>michael.ellis@bcacorp.com.au</div>
-          </div>
+          </div> */}
         </div>
         <div className={`${styles.rightContent} ${styles.rightSide}`}>
           <FormExample />
