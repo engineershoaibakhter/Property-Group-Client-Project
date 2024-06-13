@@ -13,6 +13,7 @@ import Contact from "./components/Contact";
 import Partners from "./components/Partners";
 import NavbarWeb from "./components/Navbar";
 import Project from "./components/Project";
+import Testimonials from "./components/Testimonials";
 // import Contact from "../components/Contact";
 
 export default function Home() {
@@ -23,6 +24,7 @@ export default function Home() {
         <HomePage />
         <ViewAllProject />
         <BuildingImage />
+        <Testimonials />
         {/* <Services /> */}
         {/* <Portfolio /> */}
         <Partners />
