@@ -1,141 +1,197 @@
 .Project {
-    text-align: center;
-    color: orange;
-    background-color: #282827;
-  }
+  text-align: center;
+  color: white;
+  background-color: #1b1a3f;
+}
+
+.Heading {
+  margin-bottom: 50px;
+}
+
+.container {
+  max-width: 95%;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.sliderWrapper {
+  position: relative;
+}
+
+.slideButton {
+  position: absolute;
+  top: 50%;
+  outline: none;
+  border-radius: 10px;
+  border-color: #353557;
+  height: 50px;
+  width: 50px;
+  z-index: 5;
+  display: flex;
+  cursor: pointer;
+  font-size: 2.2rem;
+  align-items: center;
+  justify-content: center;
+  transform: translateY(-50%);
+  background-color: #353557;
+}
+
+.leftButton {
+  left: 0; /* Change from -25px to 0 to remove the red gap */
+}
+
+.rightButton {
+  right: 0; /* Change from -25px to 0 to remove the red gap */
+}
+
+.imageList {
+  display: flex;
+  list-style: none;
+  margin-bottom: 30px;
+  overflow: hidden; /* Prevent horizontal scroll */
+  scroll-behavior: smooth;
+  scrollbar-width: none;
   
-  .Heading {
-    margin-bottom: 50px;
-  }
-  
-  .container {
-    max-width: 1200px;
-    width: 95%;
-    margin: 0 auto;
-  }
-  
-  .sliderWrapper {
-    position: relative;
-  }
-  
+  padding: 0; /* Remove any padding that may cause gaps */
+}
+
+.imageList::-webkit-scrollbar {
+  display: none;
+}
+
+.imageItemWrapper {
+  flex: 0 0 50%; /* Show 2 images at a time */
+  max-width: 50%; /* Ensure each image takes up half of the container */
+  overflow: hidden; /* Hide any part of images exceeding the wrapper */
+}
+
+.imageItem {
+  width: 100%; /* Ensure image takes full width of its wrapper */
+  height: 400px;
+  object-fit: cover;
+  background-color: #2a2a5d;
+  border-radius: 40px;
+}
+
+.allImage{
+  background-color: #1b1a3f;
+  padding: 20px;
+}
+
+.companyContent{
+  padding: 30px;
+
+}
+.companyName{
+  text-align: start;
+  font-size: 30px;
+  font-weight: 600;
+}
+.companyInfo{
+  text-align: start;
+  font-weight: 600;
+  min-height: 30vh;
+}
+
+
+.row {
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.row img {
+  margin-right: 20px; /* Space between image and text */
+  border-radius: 50%;
+}
+
+.textContainer {
+  display: flex;
+  flex-direction: column;
+}
+.authorName{
+  font-size: 21px;
+    font-weight: 600;
+    line-height: 24px;
+    text-align: start;
+}
+.authorPosition{
+  font-size: 14px;
+    line-height: 18px;
+    display: inline-block;
+    text-align: start;
+}
+
+
+
+
+.sliderScrollbar {
+  height: 24px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.scrollbarTrack {
+  background: black;
+  width: 100%;
+  height: 2px;
+  display: flex;
+  align-items: center;
+  border-radius: 4px;
+  position: relative;
+}
+
+.scrollbarTrack:hover {
+  height: 4px;
+}
+
+.scrollbarThumb {
+  position: absolute;
+  background: orange;
+  top: 0;
+  bottom: 0;
+  height: 100%;
+  cursor: grab;
+  border-radius: inherit;
+  width: 20%;
+}
+
+.scrollbarThumb:active {
+  cursor: grabbing;
+  height: 8px;
+  top: -2px;
+}
+
+.scrollbarThumb::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -10px;
+  bottom: -10px;
+}
+
+@media only screen and (max-width: 1023px) {
   .slideButton {
-    position: absolute;
-    top: 50%;
-    outline: none;
-    border: none;
-    height: 50px;
-    width: 50px;
-    z-index: 5;
-    display: flex;
-    cursor: pointer;
-    font-size: 2.2rem;
-    align-items: center;
-    justify-content: center;
-    transform: translateY(-50%);
-    background-color: orange;
+    display: none !important;
   }
-  
-  .leftButton {
-    left: -25px;
-  }
-  
-  .rightButton {
-    right: -25px;
-  }
-  
+
   .imageList {
-    display: flex;
-    gap: 18px;
-    list-style: none;
-    margin-bottom: 30px;
-    overflow: hidden; /* Prevent horizontal scroll */
-    scroll-behavior: smooth;
-    scrollbar-width: none;
+    gap: 10px;
+    margin-bottom: 15px;
+    scroll-snap-type: x mandatory;
   }
-  
-  .imageList::-webkit-scrollbar {
-    display: none;
-  }
-  
+
   .imageItemWrapper {
-    flex: 0 0 50%; /* Show 2 images at a time */
-    max-width: 50%; /* Ensure each image takes up half of the container */
+    width: 280px;
   }
-  
+
   .imageItem {
-    width: 100%;
-    height: 400px;
-    object-fit: cover;
+    height: 380px;
   }
-  
-  .sliderScrollbar {
-    height: 24px;
-    width: 100%;
-    display: flex;
-    align-items: center;
-  }
-  
-  .scrollbarTrack {
-    background: black;
-    width: 100%;
-    height: 2px;
-    display: flex;
-    align-items: center;
-    border-radius: 4px;
-    position: relative;
-  }
-  
-  .scrollbarTrack:hover {
-    height: 4px;
-  }
-  
+
   .scrollbarThumb {
-    position: absolute;
-    background: orange;
-    top: 0;
-    bottom: 0;
-    height: 100%;
-    cursor: grab;
-    border-radius: inherit;
     width: 20%;
   }
-  
-  .scrollbarThumb:active {
-    cursor: grabbing;
-    height: 8px;
-    top: -2px;
-  }
-  
-  .scrollbarThumb::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: -10px;
-    bottom: -10px;
-  }
-  
-  @media only screen and (max-width: 1023px) {
-    .slideButton {
-      display: none !important;
-    }
-  
-    .imageList {
-      gap: 10px;
-      margin-bottom: 15px;
-      scroll-snap-type: x mandatory;
-    }
-  
-    .imageItemWrapper {
-      width: 280px;
-    }
-  
-    .imageItem {
-      height: 380px;
-    }
-  
-    .scrollbarThumb {
-      width: 20%;
-    }
-  }
-  
+}
