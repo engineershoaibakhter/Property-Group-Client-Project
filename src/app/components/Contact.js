@@ -9,7 +9,6 @@ const Contact = () => {
     <div className={styles.contactContainer}>
       <div className={styles.leftSection}>
         <h2 className={styles.h2}>CONTACT US</h2>
-        <h1 className={styles.h1}>To Know More About Properties</h1>
         <div className={styles.contactDetails}>
           <div className={styles.detailItem}>
             <FontAwesomeIcon icon={faGlobe} className={styles.icon} />
@@ -23,7 +22,6 @@ const Contact = () => {
             <div>
               <h3>Contact Us</h3>
               <p>03 9222 4000</p>
-              <p>03 9222 4000</p>
             </div>
           </div>
           <div className={styles.detailItem}>
@@ -31,14 +29,12 @@ const Contact = () => {
             <div>
               <h3>Working Hours</h3>
               <p>Mon-Fri: 8 AM - 5 PM</p>
-              <p>Sat-Sun: 8 AM - 2 PM</p>
             </div>
           </div>
           <div className={styles.detailItem}>
             <FontAwesomeIcon icon={faEnvelope} className={styles.icon} />
             <div>
               <h3>Email Us</h3>
-              <p>michael.ellis@bcacorp.com.au</p>
               <p>michael.ellis@bcacorp.com.au</p>
             </div>
           </div>

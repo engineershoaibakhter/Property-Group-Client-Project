@@ -1,0 +1,51 @@
+.HeaderNavbar{
+    background-color: #1b1a3f;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 8px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.RightContent,.LeftContent,.AddressContainer,.NumberContainer,.TimingContainer{
+    display: flex;
+    justify-content: space-between;
+}
+
+.RightContent .BreakLine,
+.LeftContent .BreakLine{
+    margin-left: 20px;
+    margin-right: 20px;
+    font-weight: 100;
+}
+
+.RightContent{
+
+}
+
+.LeftContent{
+
+}
+
+.AddressContainer,.NumberContainer,.TimingContainer{
+    padding-top:4px;
+}
+
+.h6{
+    font-size: 15px;
+}
+
+.icons {
+    display: flex;
+  }
+  
+  .icon {
+    color: white;
+    margin-right: 20px;
+    transition: color 0.3s ease;
+  }
+  
+  .icon:hover {
+    color: #ff5722;
+  }

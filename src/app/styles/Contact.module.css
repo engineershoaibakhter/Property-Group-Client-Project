@@ -2,8 +2,8 @@
   display: flex;
   flex-direction: column;
   padding: 20px;
-  /* background-color: #f0f4f8; */
-  background-color: #1b1a3f;
+  background-color: #f0f4f8;
+  /* background-color: #1b1a3f; */
   color: white;
 }
 
@@ -12,25 +12,19 @@
 }
 
 .rightSection {
-  /* background: #fff; */
-  background-color: #2a2a5d;
+  background: #fff;
+  /* background-color: #2a2a5d; */
   padding: 20px;
   border-radius: 30px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
 .h2 {
-  color: #ff5722;
+  /* color: #ff5722; */
+  color: rgb(250,123,37);
   font-family: 'Jost', sans-serif;
   font-weight: 600;
-  font-size: 1em;
-}
-
-.h1 {
-  font-size: 2em;
-  margin-bottom: 20px;
-  font-family: 'Jost', sans-serif;
-  font-weight: 600;
+  font-size: 1.5em;
 }
 
 .contactDetails {
@@ -47,7 +41,6 @@
   font-size: 30px;
   color: #ff5722;
   margin-right: 10px;
-  background-color: white;
   padding: 10px;
   border-radius: 50px;
 
@@ -58,12 +51,13 @@
   font-size: 1.2em;
   font-family: 'Jost', sans-serif;
   font-weight: 600;
+  color: black;
 }
 
 .detailItem p {
   margin: 0;
-  /* color: #555; */
-  color: white;
+  color: #555;
+  /* color: white; */
   font-size: 0.9em;
   font-family: 'Jost', sans-serif;
 }
@@ -75,6 +69,8 @@
 
 .formGroup {
   margin-bottom: 15px;
+  color: black;
+
 }
 
 .formGroup.row {
@@ -99,9 +95,9 @@
   border: 1px solid #eaf0f5;
   border-radius: 15px;
   font-size: 1em;
-  /* background-color: #eaf0f5; */
-  background-color: rgba(255, 255, 255, .1);
-  color: white;
+  background-color: #eaf0f5;
+  /* background-color: rgba(255, 255, 255, .1); */
+  color: black;
 }
 
 .formGroup textarea {
@@ -111,12 +107,13 @@
 .formGroup input::placeholder,
 .formGroup textarea::placeholder{
   color: #b1b9c0;
+  
 }
 
 .submitButton {
   padding: 10px 20px;
-  background-color: #ff5722;
-  color: white;
+  background-color: rgb(255,120,36);
+  color: black;
   border: none;
   border-radius: 15px;
   cursor: pointer;
@@ -124,12 +121,8 @@
   font-family: 'Jost', sans-serif;
   font-weight: 600;
   font-size: 1em;
+  font-family: 'BinancePlex';
 }
-
-.submitButton:hover {
-  background-color: #e64a19;
-}
-
 /* Media queries for responsive design */
 @media (min-width: 768px) {
   .contactContainer {

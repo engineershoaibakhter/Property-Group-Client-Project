@@ -14,13 +14,14 @@ import Partners from "./components/Partners";
 import NavbarWeb from "./components/Navbar";
 import Project from "./components/Project";
 import Testimonials from "./components/Testimonials";
+import HeaderNavbar from "./components/HeaderNavbar";
 // import Contact from "../components/Contact";
 
 export default function Home() {
   return (
     <>
+      <HeaderNavbar />
       <NavbarWeb />
-      
         <HomePage />
         <ViewAllProject />
         <BuildingImage />

@@ -2,15 +2,17 @@
   text-align: center;
   color: white;
   background-color: #1b1a3f;
+  
 }
 
 .Heading {
   text-align: start;
-  font-family: 'Jost', sans-serif;
-  font-weight: 600;
-  font-size: 2em;
   padding-top: 20px;
   padding-left: 20px;
+  color: #ff5722;
+  font-family: 'Jost', sans-serif;
+  font-weight: 600;
+  font-size: 1.5em;
 }
 
 .container {
@@ -83,6 +85,7 @@
 .allImage {
   background-color: #1b1a3f;
   padding: 20px;
+  /* background-image: url('https://cdn.prod.website-files.com/639ae597e1266c6fa92002d6/6530fe8c12a2a596828cf5a1_Verida%20Private%20Storage%20Network%20bg-min.png'); */
 }
 
 .companyContent {
@@ -91,13 +94,15 @@
   flex-direction: column;
   justify-content: space-between; /* Ensures the row div is at the bottom */
   height: 100%; /* Adjust according to your needs */
+
 }
 
 .companyName {
   text-align: start;
+  color: #ff5722;
   font-family: 'Jost', sans-serif;
   font-weight: 600;
-  font-size: 1.6em;
+  font-size: 1.5em;
 }
 
 .companyInfo {

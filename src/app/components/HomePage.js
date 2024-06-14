@@ -6,7 +6,7 @@ const HomePage = () => {
   return (
     <section id="home" className={styles.HomeSection}>
       <div className={styles.content}>
-        <h1>CRAFTING CONNECTED COMMUNITIES</h1>
+        <h1>BUILDING COMMUNITY ASSETS</h1>
         <p>FROM THE GROUND UP</p>
         
         <div className={styles.cardContainer}>
