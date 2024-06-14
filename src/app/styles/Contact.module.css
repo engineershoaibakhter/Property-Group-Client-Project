@@ -1,29 +1,36 @@
 .contactContainer {
   display: flex;
+  flex-direction: column;
   padding: 20px;
-  background-color: #f0f4f8;
+  /* background-color: #f0f4f8; */
+  background-color: #1b1a3f;
+  color: white;
 }
 
 .leftSection {
-  flex: 1;
-  margin-right: 20px;
+  margin-bottom: 20px;
 }
 
 .rightSection {
-  flex: 1;
-  background: #fff;
+  /* background: #fff; */
+  background-color: #2a2a5d;
   padding: 20px;
-  border-radius: 10px;
+  border-radius: 30px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
 .h2 {
   color: #ff5722;
+  font-family: 'Jost', sans-serif;
+  font-weight: 600;
+  font-size: 1em;
 }
 
 .h1 {
   font-size: 2em;
   margin-bottom: 20px;
+  font-family: 'Jost', sans-serif;
+  font-weight: 600;
 }
 
 .contactDetails {
@@ -36,20 +43,29 @@
   margin-bottom: 20px;
 }
 
-.detailItem img {
-  width: 40px;
-  height: 40px;
+.icon {
+  font-size: 30px;
+  color: #ff5722;
   margin-right: 10px;
+  background-color: white;
+  padding: 10px;
+  border-radius: 50px;
+
 }
 
 .detailItem h3 {
   margin: 0;
   font-size: 1.2em;
+  font-family: 'Jost', sans-serif;
+  font-weight: 600;
 }
 
 .detailItem p {
   margin: 0;
-  color: #555;
+  /* color: #555; */
+  color: white;
+  font-size: 0.9em;
+  font-family: 'Jost', sans-serif;
 }
 
 .contactForm {
@@ -63,7 +79,7 @@
 
 .formGroup.row {
   display: flex;
-  gap: 20px;
+  flex-direction: column;
 }
 
 .formGroup.row .formGroup {
@@ -81,14 +97,15 @@
   width: 100%;
   padding: 10px 15px;
   border: 1px solid #eaf0f5;
-  border-radius: 15px; /* Adjust border-radius to match the image */
+  border-radius: 15px;
   font-size: 1em;
-  height: 60px; /* Adjust height to match the image */
-  background-color: #eaf0f5;
+  /* background-color: #eaf0f5; */
+  background-color: rgba(255, 255, 255, .1);
+  color: white;
 }
 
 .formGroup textarea {
-  height: 30vh; /* Ensure textarea height is auto to fit content */
+  height: 30vh;
 }
 
 .formGroup input::placeholder,
@@ -101,12 +118,36 @@
   background-color: #ff5722;
   color: white;
   border: none;
-  border-radius: 15px; /* Adjust border-radius to match the image */
+  border-radius: 15px;
   cursor: pointer;
+  height: 45px;
+  font-family: 'Jost', sans-serif;
+  font-weight: 600;
   font-size: 1em;
-  height: 45px; /* Adjust height to match the image */
 }
 
 .submitButton:hover {
   background-color: #e64a19;
+}
+
+/* Media queries for responsive design */
+@media (min-width: 768px) {
+  .contactContainer {
+    flex-direction: row;
+  }
+  
+  .leftSection {
+    flex: 1;
+    margin-right: 20px;
+    margin-bottom: 0;
+  }
+  
+  .rightSection {
+    flex: 1;
+  }
+  
+  .formGroup.row {
+    flex-direction: row;
+    gap: 20px;
+  }
 }

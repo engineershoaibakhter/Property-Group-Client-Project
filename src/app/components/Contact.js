@@ -1,6 +1,8 @@
-"use client"
+"use client";
 import React from 'react';
 import styles from '../styles/Contact.module.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faGlobe, faPhone, faClock, faEnvelope } from '@fortawesome/free-solid-svg-icons';
 
 const Contact = () => {
   return (
@@ -10,22 +12,22 @@ const Contact = () => {
         <h1 className={styles.h1}>To Know More About Properties</h1>
         <div className={styles.contactDetails}>
           <div className={styles.detailItem}>
-            <img src="globe-icon.png" alt="Address" />
+            <FontAwesomeIcon icon={faGlobe} className={styles.icon} />
             <div>
               <h3>Our Address</h3>
-              <p>291 Roderick Wells, UK, Connecticut, 08429</p>
+              <p>Level 8/468 St Kilda Road Melbourne VIC 3004</p>
             </div>
           </div>
           <div className={styles.detailItem}>
-            <img src="phone-icon.png" alt="Phone" />
+            <FontAwesomeIcon icon={faPhone} className={styles.icon} />
             <div>
               <h3>Contact Us</h3>
-              <p>+(000) 123-456-789</p>
-              <p>+(0000) 1234-56789</p>
+              <p>03 9222 4000</p>
+              <p>03 9222 4000</p>
             </div>
           </div>
           <div className={styles.detailItem}>
-            <img src="location-icon.png" alt="Working Hours" />
+            <FontAwesomeIcon icon={faClock} className={styles.icon} />
             <div>
               <h3>Working Hours</h3>
               <p>Mon-Fri: 8 AM - 5 PM</p>
@@ -33,11 +35,11 @@ const Contact = () => {
             </div>
           </div>
           <div className={styles.detailItem}>
-            <img src="email-icon.png" alt="Email" />
+            <FontAwesomeIcon icon={faEnvelope} className={styles.icon} />
             <div>
               <h3>Email Us</h3>
-              <p>info@example.com</p>
-              <p>contact@example.com</p>
+              <p>michael.ellis@bcacorp.com.au</p>
+              <p>michael.ellis@bcacorp.com.au</p>
             </div>
           </div>
         </div>
@@ -47,7 +49,7 @@ const Contact = () => {
           <div className={`${styles.formGroup} ${styles.row}`}>
             <div className={styles.formGroup}>
               <label htmlFor="name">Name*</label>
-              <input type="text" id="name" name="name" placeholder="Mimosic john" required />
+              <input type="text" id="name" name="name" placeholder="Mimosic John" required />
             </div>
             <div className={styles.formGroup}>
               <label htmlFor="email">Email*</label>

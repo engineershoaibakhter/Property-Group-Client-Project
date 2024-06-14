@@ -6,6 +6,11 @@
 
 .Heading {
   text-align: start;
+  font-family: 'Jost', sans-serif;
+  font-weight: 600;
+  font-size: 2em;
+  padding-top: 20px;
+  padding-left: 20px;
 }
 
 .container {
@@ -35,6 +40,7 @@
   transform: translateY(-50%);
   border-width: 1px;
   background-color: rgba(255, 255, 255, .1);
+  
 }
 
 .leftButton {
@@ -89,14 +95,17 @@
 
 .companyName {
   text-align: start;
-  font-size: 30px;
+  font-family: 'Jost', sans-serif;
   font-weight: 600;
+  font-size: 1.6em;
 }
 
 .companyInfo {
   text-align: start;
-  font-weight: 600;
   /* min-height: 20vh; */
+  font-family: 'Jost', sans-serif;
+  font-weight: 600;
+  font-size: 1em;
 }
 
 .row {
@@ -116,10 +125,11 @@
 }
 
 .authorName {
-  font-size: 21px;
-  font-weight: 600;
   line-height: 24px;
   text-align: start;
+  font-family: 'Jost', sans-serif;
+  font-weight: 600;
+  font-size: 1.3em;
 }
 
 .authorPosition {
