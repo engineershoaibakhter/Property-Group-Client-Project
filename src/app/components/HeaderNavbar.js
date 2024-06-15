@@ -15,7 +15,7 @@ const HeaderNavbar = () => {
         <span className={styles.BreakLine}>|</span>
         <div className={styles.NumberContainer}>
           <FontAwesomeIcon icon={faPhoneVolume} className={styles.icon} />
-          <h6 className={styles.h6}>03 9222 4000</h6>
+          <h6 className={styles.h6}><a href="tel:0392224000" className={styles.phoneLink}>03 9222 4000</a></h6>
         </div>
       </div>
       <div className={styles.LeftContent}>

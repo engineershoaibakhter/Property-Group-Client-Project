@@ -1,6 +1,6 @@
-.HeaderNavbar{
-    background-color: #1b1a3f;
-    color: white;
+.HeaderNavbar {
+    background-color: #f0f4f8;
+    color: black;
     display: flex;
     justify-content: space-between;
     padding: 8px;
@@ -8,44 +8,83 @@
     padding-right: 30px;
 }
 
-.RightContent,.LeftContent,.AddressContainer,.NumberContainer,.TimingContainer{
+.RightContent,
+.LeftContent,
+.AddressContainer,
+.NumberContainer,
+.TimingContainer {
     display: flex;
     justify-content: space-between;
 }
 
 .RightContent .BreakLine,
-.LeftContent .BreakLine{
+.LeftContent .BreakLine {
     margin-left: 20px;
     margin-right: 20px;
     font-weight: 100;
 }
 
-.RightContent{
-
+.AddressContainer,
+.NumberContainer,
+.TimingContainer {
+    padding-top: 4px;
 }
 
-.LeftContent{
-
-}
-
-.AddressContainer,.NumberContainer,.TimingContainer{
-    padding-top:4px;
-}
-
-.h6{
+.h6 {
     font-size: 15px;
 }
 
 .icons {
     display: flex;
-  }
-  
-  .icon {
-    color: white;
-    margin-right: 20px;
-    transition: color 0.3s ease;
-  }
-  
-  .icon:hover {
+    margin-top: 1px;
+}
+
+.icon {
     color: #ff5722;
-  }
+    margin-right: 10px; /* Adjust margin for balanced spacing */
+    transition: color 0.3s ease;
+    cursor: pointer;
+    background-color: white;
+    padding: 9px 12px;
+    border-radius: 50%; /* Use 50% to make it a perfect circle */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.TimingContainer .icon,
+.AddressContainer .icon,
+.NumberContainer .icon {
+    padding: 0;
+    background-color: transparent; /* Set to transparent for icons other than social media */
+}
+
+.icon:hover,
+.phoneLink:hover {
+    color: #ff5722;
+}
+
+.phoneLink {
+    color: black;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 850px) {
+    .HeaderNavbar {
+       
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .RightContent {
+        display: none;
+    }
+    .LeftContent {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .BreakLine{
+        display: none;
+    }
+}

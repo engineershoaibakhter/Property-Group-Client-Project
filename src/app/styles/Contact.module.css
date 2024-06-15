@@ -3,7 +3,6 @@
   flex-direction: column;
   padding: 20px;
   background-color: #f0f4f8;
-  /* background-color: #1b1a3f; */
   color: white;
 }
 
@@ -13,16 +12,13 @@
 
 .rightSection {
   background: #fff;
-  /* background-color: #2a2a5d; */
   padding: 20px;
   border-radius: 30px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
 .h2 {
-  /* color: #ff5722; */
   color: rgb(250,123,37);
-  font-family: 'Jost', sans-serif;
   font-weight: 600;
   font-size: 1.5em;
 }
