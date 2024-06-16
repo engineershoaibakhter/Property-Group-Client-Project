@@ -15,6 +15,7 @@ import Project from "./components/Project";
 import Testimonials from "./components/Testimonials";
 import HeaderNavbar from "./components/HeaderNavbar";
 import Team from "./components/Team";
+import LatestNews from "./components/LatestNews";
 // import Contact from "../components/Contact";
 
 export default function Home() {
@@ -25,6 +26,7 @@ export default function Home() {
         <HomePage />
         <ViewAllProject />
         <Team />
+        <LatestNews />
         <BuildingImage />
         <Testimonials />
         {/* <Services /> */}

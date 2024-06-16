@@ -162,7 +162,7 @@ const Testimonials = () => {
                 <div className={styles.row}>
   <img src={content.imgSrc} width={100} height={100} />
   <div className={styles.textContainer}>
-    <h6 className={styles.authorName}>{content.authorName}</h6>
+    <h3 className={styles.authorName}>{content.authorName}</h3>
     <p className={styles.authorPosition}>{content.authorPosition}</p>
   </div>
 </div>
