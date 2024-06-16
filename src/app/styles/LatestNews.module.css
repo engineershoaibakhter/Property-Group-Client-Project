@@ -67,8 +67,6 @@
     background-color: #1e2139;
     border: none;
     color: #fff;
-    /* padding: 10px 15px; */
-    /* border-radius: 50%; */
     cursor: pointer;
     transition: background-color 0.3s;
 
@@ -78,13 +76,11 @@
     border-color: rgba(255, 255, 255, .1);
     height: 45px;
     width: 50px;
-    /* z-index: 5; */
     display: flex;
     cursor: pointer;
     font-size: 2.2rem;
     align-items: center;
     justify-content: center;
-    /* transform: translateY(-50%); */
     border-width: 1px;
     background-color: #ff5722;
   }

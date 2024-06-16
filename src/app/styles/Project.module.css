@@ -1,11 +1,16 @@
 .Project{
-    text-align: center;
     color: orange;
-    background-color: #282827;
-}
-
-.Heading{
+    background-color: #f0f4f8;
+    
+  }
+  
+  .Heading{
+    text-transform: uppercase;
+    padding-left: 20px;
     margin-bottom: 50px;
+    color: rgb(250,123,37);
+  font-weight: 600;
+  font-size: 1.5em;
 }
 
 .container {
@@ -23,7 +28,7 @@
     top: 50%;
     outline: none;
     border: none;
-    height: 50px;
+    height: 45px;
     width: 50px;
     z-index: 5;
     display: flex;
@@ -32,7 +37,10 @@
     align-items: center;
     justify-content: center;
     transform: translateY(-50%);
-    background-color: orange;
+    background-color: #ff5722;
+    border-radius: 12px;
+
+
   }
   
   .leftButton {

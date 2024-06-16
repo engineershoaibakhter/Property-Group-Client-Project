@@ -9,7 +9,7 @@
   font-weight: 600;
   font-size: 1.5em;
   text-transform: uppercase;
-  margin-left: 10px;
+  padding-left: 20px;
 }
 
 @keyframes scroll {

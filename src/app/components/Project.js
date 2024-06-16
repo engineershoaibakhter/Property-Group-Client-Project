@@ -1,4 +1,3 @@
-
 "use client";
 import React, { useState, useRef, useEffect } from 'react';
 import { MdChevronLeft, MdChevronRight } from 'react-icons/md';
@@ -94,7 +93,7 @@ const Project = () => {
 
   return (
     <div className={styles.Project}>
-        <h1 className={styles.Heading}>Our Projects</h1>
+        <h2 className={styles.Heading}>Our Projects</h2>
     <div className={styles.container}>
       <div className={styles.sliderWrapper}>
         <button
@@ -102,7 +101,7 @@ const Project = () => {
           className={`${styles.slideButton} ${styles.leftButton}`}
           onClick={handlePrevSlide}
         >
-          <MdChevronLeft style={{ color: 'orange', backgroundColor: 'black', borderRadius: '50%' }} />
+          <MdChevronLeft style={{ color: 'white' }} />
         </button>
         <ul className={styles.imageList} ref={imageListRef}>
           {images.map((src, index) => (
@@ -116,7 +115,7 @@ const Project = () => {
           className={`${styles.slideButton} ${styles.rightButton}`}
           onClick={handleNextSlide}
         >
-          <MdChevronRight style={{ color: 'orange', backgroundColor: 'black', borderRadius: '50%' }} />
+          <MdChevronRight style={{ color: 'white' }} />
         </button>
       </div>
       <div className={styles.sliderScrollbar}>
