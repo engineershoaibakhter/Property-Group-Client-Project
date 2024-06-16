@@ -1,79 +1,61 @@
-.partners {
-    background-color: #282827;
-    color: orange;
-    padding-top: 30px;
-    padding-bottom: 30px;
-  }
-  
-  .heading {
-    text-align: center;
-    font-family: "FranklinGothic-MediumCond", Sans-serif;
-  }
-  
-  .container {
-    max-width: 100%;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-  }
-  
-  .sliderWrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-  }
-  
-  .imageList {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 20px;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  .imageItem {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 25vw;
-    height: 15vh;
-    object-fit: contain;
-    background-color: rgba(255, 255, 255, 0.269);
-    padding: 14px;
-    border-radius: 20px;
-    max-width: 17vw;
-  }
-  
-  .imageItem img {
-    width: 90%;
-    height: 60%;
-    /* max-width: 100%;
-    max-height: 100%; */
-    object-fit:fill;
-    /* object-fit: contain; */
-  }
-  
-  @media (max-width: 800px) {
-    .imageList {
-      flex-direction: column;
-      align-items: center;
-    }
-  
-    .imageItem {
-        width: 40vw;
-      height: 20vh;  /* Adjust height to fit content */
-      margin-bottom: 10px;
-      max-width: none;
-    }
-    .imageItem img {
-        max-width: 100%;
-        max-height: 100%;
-      }
-  }
-  
+/* styles/Partners.module.css */
+.Partners {
+  background: #f0f4f8;
+  height: auto;
+  padding: 30px 20px;
+}
+
+.h2{
+  color: rgb(250,123,37);
+  font-weight: 600;
+  font-size: 1.5em;
+  text-transform: uppercase;
+}
+
+@keyframes scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(calc(-250px * 7)); }
+}
+
+.slider {
+  background: white;
+  box-shadow: 0 10px 20px -5px rgba(0, 0, 0, .125);
+  height: 100px;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.slider::before,
+.slider::after {
+  background: linear-gradient(to right, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
+  content: "";
+  height: 100px;
+  position: absolute;
+  width: 200px;
+  z-index: 2;
+}
+
+.slider::after {
+  right: 0;
+  top: 0;
+  transform: rotateZ(180deg);
+}
+
+.slider::before {
+  left: 0;
+  top: 0;
+}
+
+.slideTrack {
+  animation: scroll 40s linear infinite;
+  display: flex;
+  width: calc(250px * 14);
+}
+
+.slide {
+  height: 100px;
+  width: 250px;
+}
