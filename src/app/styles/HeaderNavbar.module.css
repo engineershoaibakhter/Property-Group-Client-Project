@@ -3,40 +3,37 @@
     color: black;
     display: flex;
     justify-content: space-between;
-    padding: 8px;
-    padding-left: 30px;
-    padding-right: 30px;
+    align-items: center; /* Align items vertically in the center */
+    padding: 8px 30px;
 }
 
 .RightContent,
-.LeftContent,
-.AddressContainer,
-.NumberContainer,
-.TimingContainer {
+.LeftContent {
     display: flex;
-    justify-content: space-between;
+    align-items: center; /* Align items vertically in the center */
 }
 
 .RightContent .BreakLine,
 .LeftContent .BreakLine {
-    margin-left: 20px;
-    margin-right: 20px;
+    margin: 0 20px;
     font-weight: 100;
 }
 
 .AddressContainer,
 .NumberContainer,
 .TimingContainer {
-    padding-top: 4px;
+    display: flex;
+    align-items: center; /* Align items vertically in the center */
 }
 
 .h6 {
     font-size: 15px;
+    margin: 0; /* Remove default margin */
 }
 
 .icons {
     display: flex;
-    margin-top: 1px;
+    align-items: center; /* Align items vertically in the center */
 }
 
 .icon {
@@ -71,9 +68,9 @@
 
 @media screen and (max-width: 850px) {
     .HeaderNavbar {
-       
-        padding-left: 15px;
-        padding-right: 15px;
+        flex-direction: column; /* Stack items vertically on small screens */
+        padding: 8px 15px;
+        text-align: center; /* Center text alignment */
     }
     .RightContent {
         display: none;
@@ -84,7 +81,7 @@
         justify-content: space-between;
         width: 100%;
     }
-    .BreakLine{
+    .BreakLine {
         display: none;
     }
 }

@@ -47,7 +47,7 @@ const Team = () => {
     {
       name: 'Sean Gares',
       title: 'CO-FOUNDER',
-      imgSrc: 'http://demo.themeton.com/cooper/wp-content/uploads/sites/68/2016/07/member3.jpg',
+      imgSrc: '/images/man/leftman.png',
       social: [
         { platform: 'facebook', link: '#' },
         { platform: 'twitter', link: '#' },
@@ -57,7 +57,7 @@ const Team = () => {
     {
       name: 'Eduardo Gares',
       title: 'Director',
-      imgSrc: 'http://demo.themeton.com/cooper/wp-content/uploads/sites/68/2016/07/member1.jpg',
+      imgSrc: '/images/man/centerman.png',
       social: [
         { platform: 'facebook', link: '#' },
         { platform: 'twitter', link: '#' },
@@ -67,7 +67,7 @@ const Team = () => {
     {
       name: 'Sean Banderas',
       title: 'Consultant',
-      imgSrc: 'http://demo.themeton.com/cooper/wp-content/uploads/sites/68/2016/07/member2.jpg',
+      imgSrc: '/images/man/rightman.png',
       social: [
         { platform: 'twitter', link: '#' },
         { platform: 'linkedin', link: '#' },
