@@ -1,7 +1,25 @@
 // components/Team.js
+import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faFacebook, faTwitter, faLinkedin, faInstagram } from '@fortawesome/free-brands-svg-icons';
 import styles from '../styles/Team.module.css';
 
 const TeamMember = ({ name, title, imgSrc, social }) => {
+  const getIcon = (platform) => {
+    switch (platform) {
+      case 'facebook':
+        return faFacebook;
+      case 'twitter':
+        return faTwitter;
+      case 'linkedin':
+        return faLinkedin;
+      case 'instagram':
+        return faInstagram;
+      default:
+        return null;
+    }
+  };
+
   return (
     <div className={styles.teamMember}>
       <div className={styles.entryHover}>
@@ -11,7 +29,9 @@ const TeamMember = ({ name, title, imgSrc, social }) => {
           <ul>
             {social.map((item, index) => (
               <li key={index}>
-                <a href={item.link}><i className={`fa fa-${item.platform}`}></i></a>
+                <a href={item.link}>
+                  <FontAwesomeIcon icon={getIcon(item.platform)} />
+                </a>
               </li>
             ))}
           </ul>

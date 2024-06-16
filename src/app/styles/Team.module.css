@@ -1,96 +1,94 @@
-
 .teamSection {
-    text-align: center;
-    padding: 2rem 0;
-    background-color: #f4f4f4;
-  }
-  
-  .header h2 {
-    color: rgb(250,123,37);
+  text-align: center;
+  padding: 2rem 0;
+  background-color: #f4f4f4;
+}
+
+.header h2 {
+  color: rgb(250,123,37);
   font-weight: 600;
   font-size: 1.5em;
-  }
-  
-  .header p {
-    margin-bottom: 1rem;
-    color: #555;
+}
+
+.header p {
+  margin-bottom: 1rem;
+  color: #555;
   font-size: 0.9em;
-  }
-  
-  .decorativeLine {
-    width: 50px;
-    height: 2px;
-    background-color: #d9534f;
-    margin: 0.5rem auto;
-  }
-  
-  .gallery {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 2rem;
-  }
-  
-  .teamMember {
-    text-align: center;
-    position: relative;
-    flex: 0 0 30%;
-    min-width: 30%;
-  }
+}
 
-  
-  
- 
-  
-  
-  .teamImage {
-    width: 100%;
-    transition: filter 0.3s ease;
-    filter: grayscale(100%);
-  }
-  
-  .teamMember:hover .teamImage {
-    filter: grayscale(0%);
-  }
-  
-  .entryHover {
-    position: relative;
-    opacity: 1;
-    color: black;
-    text-shadow: none;
-    margin-bottom: 0.5rem;
-  }
+.decorativeLine {
+  width: 50px;
+  height: 2px;
+  background-color: #d9534f;
+  margin: 0.5rem auto;
+}
 
-  .entryHover h3{
-    font-size: 1.2em;
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.teamMember {
+  text-align: center;
+  position: relative;
+  flex: 0 0 30%;
+  min-width: 30%;
+}
+
+.teamImage {
+  width: 100%;
+  transition: filter 0.3s ease;
+  filter: grayscale(100%);
+}
+
+.teamMember:hover .teamImage {
+  filter: grayscale(0%);
+}
+
+.entryHover {
+  position: relative;
+  opacity: 1;
+  color: black;
+  text-shadow: none;
+  margin-bottom: 0.5rem;
+}
+
+.entryHover h3 {
+  font-size: 1.2em;
   font-weight: 600;
   color: black;
-  }
-  
-  .elPos {
-    font-size: 0.9rem;
-    margin-bottom: 0.5rem;
-  }
-  
-  .distSocial ul {
-    list-style: none;
-    padding: 0;
-  }
-  
-  .distSocial li {
-    display: inline;
-    margin: 0 5px;
-  }
-  
-  .distSocial a {
-    color: black;
-    text-decoration: none;
-  }
-  
+}
 
-  @media (max-width: 768px) {
-    .teamMember {
-      flex: 0 0 100%;
-      min-width: 30%;
-    }
+.elPos {
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+}
+
+.distSocial ul {
+  list-style: none;
+  padding: 0;
+}
+
+.distSocial li {
+  display: inline-block;
+  margin: 0 5px;
+  transition: all 0.4s;
+}
+
+.distSocial a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ff5722;
+  border-radius: 3px;
+  transition: all 0.4s;
+}
+
+@media (max-width: 768px) {
+  .teamMember {
+    flex: 0 0 100%;
+    min-width: 30%;
   }
+}
