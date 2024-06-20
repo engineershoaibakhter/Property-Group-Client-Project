@@ -20,7 +20,6 @@ const NavbarWeb = () => {
         <a href="#projects">Projects</a>
         <a href="#partners">Partners</a>
         <a href="#news">News</a>
-        <a href="#">About Us</a>
         <a href="#contact_us">Contact Us</a>
       </div>
       <div className={styles.hamburger} onClick={toggleMenu}>
