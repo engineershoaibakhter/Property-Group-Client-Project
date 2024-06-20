@@ -1,12 +1,12 @@
-'use client';
+"use client";
 
-import React, { useState, useEffect } from 'react';
-import styles from '../styles/ModernCarousel.module.css';
+import React, { useState, useEffect } from "react";
+import styles from "../styles/ModernCarousel.module.css";
 
 const images = [
-  "http://demo.themeton.com/cooper/wp-content/uploads/sites/68/2016/08/slide1.jpg",
+  "/images/laptop.jpg",
   "/images/projectImage1.webp",
-  "https://images.squarespace-cdn.com/content/v1/657a4d4e67692d471cfca870/d85f65d1-6b10-411d-bb91-b6e53747940f/image+to+replace+Msquare+-+new+point+aeriel.jpg",
+  "/images/cars.jpg",
   "/images/building.jpg",
 ];
 
@@ -30,7 +30,9 @@ const ModernCarousel = () => {
 
   return (
     <div className={styles.carousel}>
-      <button className={styles.prev} onClick={prevSlide}>‹</button>
+      <button className={styles.prev} onClick={prevSlide}>
+        ‹
+      </button>
       <div className={styles.slides}>
         {images.map((image, index) => (
           <div
@@ -38,7 +40,7 @@ const ModernCarousel = () => {
             className={styles.slide}
             style={{
               backgroundImage: `url(${image})`,
-              display: currentIndex === index ? 'block' : 'none',
+              display: currentIndex === index ? "block" : "none",
             }}
           >
             <div className={styles.text}>
@@ -48,7 +50,9 @@ const ModernCarousel = () => {
           </div>
         ))}
       </div>
-      <button className={styles.next} onClick={nextSlide}>›</button>
+      <button className={styles.next} onClick={nextSlide}>
+        ›
+      </button>
     </div>
   );
 };
