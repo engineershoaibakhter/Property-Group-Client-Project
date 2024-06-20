@@ -14,7 +14,7 @@ const Partners = () => {
   ];
 
   return (
-    <div className={styles.Partners}>
+    <div className={styles.Partners} id='partners'>
       <h2 className={styles.h2}>Our Partners</h2>
     <div className={styles.slider}>
       <div className={styles.slideTrack}>

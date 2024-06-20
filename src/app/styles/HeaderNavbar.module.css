@@ -1,6 +1,6 @@
 .HeaderNavbar {
-    background-color: #f0f4f8;
-    color: black;
+    background-color: #1f232b;
+    color: white;
     display: flex;
     justify-content: space-between;
     align-items: center; /* Align items vertically in the center */
@@ -41,7 +41,7 @@
     margin-right: 10px; /* Adjust margin for balanced spacing */
     transition: color 0.3s ease;
     cursor: pointer;
-    background-color: white;
+    background-color: #14161b;
     padding: 9px 12px;
     border-radius: 50%; /* Use 50% to make it a perfect circle */
     display: flex;
@@ -62,7 +62,7 @@
 }
 
 .phoneLink {
-    color: black;
+    color: white;
     text-decoration: none;
 }
 

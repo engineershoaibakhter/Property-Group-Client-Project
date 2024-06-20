@@ -1,5 +1,5 @@
 .Partners {
-  background: #f0f4f8;
+  background: #242932;
   height: auto;
   padding: 30px 0px;
 }
@@ -54,7 +54,6 @@
   display: flex;
   width: calc(250px * 14);
 }
-
 .slide {
   height: 100px;
   width: 250px;

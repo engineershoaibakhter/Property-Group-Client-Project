@@ -1,7 +1,7 @@
 .teamSection {
   text-align: center;
   padding: 2rem 0;
-  background-color: #f4f4f4;
+  background-color: #242932;
 }
 
 .header h2 {
@@ -12,7 +12,7 @@
 
 .header p {
   margin-bottom: 1rem;
-  color: #555;
+  color: white;
   font-size: 0.9em;
 }
 
@@ -41,6 +41,7 @@
   width: 100%;
   transition: filter 0.3s ease;
   filter: grayscale(100%);
+  border-radius: 20px;
 }
 
 .teamMember:hover .teamImage {
@@ -50,7 +51,7 @@
 .entryHover {
   position: relative;
   opacity: 1;
-  color: black;
+  color: white;
   text-shadow: none;
   margin-bottom: 0.5rem;
 }
@@ -58,7 +59,6 @@
 .entryHover h3 {
   font-size: 1.2em;
   font-weight: 600;
-  color: black;
 }
 
 .elPos {

@@ -63,7 +63,7 @@ const LatestNews = () => {
     };
 
     return (
-        <div className={styles.latestNews}>
+        <div className={styles.latestNews} id='news'>
             <h2 className={styles.title}>Latest News</h2>
             <div className={styles.cardContainer} ref={scrollContainerRef}>
                 {newsData.map((news, index) => (

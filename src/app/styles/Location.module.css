@@ -1,6 +1,6 @@
 .location{
-  background-color: #282827;
-  color: orange;
+  background-color: #242932;
+  color: rgb(250,123,37);
 }
 .heading{
     text-align: center;
@@ -65,7 +65,7 @@
 .phone,.address, .email{
     text-align: center;
     margin-top: 5vh;
-    color: orange;
+    color: #ff5722;
 }
   .content .left-side .details .text-one,
   .content .left-side .details .text-two{

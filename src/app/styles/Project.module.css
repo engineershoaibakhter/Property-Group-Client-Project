@@ -1,7 +1,6 @@
 .Project{
     color: orange;
-    background-color: #f0f4f8;
-    
+    background-color: #242932;
   }
   
   .Heading{
@@ -37,7 +36,7 @@
     align-items: center;
     justify-content: center;
     transform: translateY(-50%);
-    background-color: #ff5722;
+    background-color: black;
     border-radius: 12px;
 
 
