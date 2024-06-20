@@ -1,114 +1,77 @@
-.custom_toggle {
-  background-color: orange; /* Custom background color */
-  border: none;
-  color: white;
-}
-
-.custom_toggle:hover {
-  background-color: darkorange; /* Change background on hover */
-  color: white; /* Change text color on hover */
-}
-
-/* Navbar styles */
-.navbar_container {
-  color: white;
-  padding: 0rem 2rem;
-  font-family: FranklinGothic-MediumCond, Helvetica, Arial, sans-serif;
-  width: 100%;
-  z-index: 1000; /* Ensure Navbar is in front */
-  position: absolute;
-  background-color: transparent;
-}
-
-.navbar_container.bg_color {
-  background-color: #333;
-}
-
-.logo {
+.navbar {
+  position: sticky;
+  top: 0;
+  background-color: #242932;
+  color: #fff;
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: center;
+  padding: 10px 20px;
+  z-index: 1000;
 }
 
 .logo img {
-  width: 20vw;
-  height: 20vh;
-}
-
-@media (max-width: 1366px) {
-  .logo img {
-    width: 20vw;
-    height: 15vh;
-  }
-}
-
-@media (max-width: 768px) {
-  .navbar_container {
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 1rem;
-  }
-  
-  .logo img {
-    width: 40vw;
-    height: 15vh;
-  }
-}
-
-.nav_links {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  gap: 2rem;
+  height: 15vh;
   width: auto;
-  cursor: pointer;
 }
 
-.nav_link {
-  color: white;
+.menu {
+  display: flex;
+  gap: 20px;
+}
+
+.menu a {
+  color: #fff;
   text-decoration: none;
-  font-size: 1.1rem;
-  letter-spacing: 1.2px;
+  font-size: 20px;
 }
 
-.nav_link:hover {
-  color: orange;
+.menu a:hover {
+  color: rgb(250,123,37);
 }
 
-@media (max-width: 1366px) {
-  .nav_links{
-  gap: 1rem;
-  }
-  .nav_link {
-    font-size: 1.2rem;
-  }
-}
-
-@media (max-width: 1180px) {
-  .nav_link {
-    font-size: 1.1rem;
-  }
-}
-
-@media (max-width: 768px) {
-  .nav_links {
-    flex-direction: column;
-    align-items: flex-start;
-    width: 100%;
-  }
-}
-
-.hamburger_menu {
+.hamburger {
   display: none;
+  flex-direction: column;
   cursor: pointer;
-  font-size: 2rem;
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  margin: 4px 0;
 }
 
 @media (max-width: 768px) {
-  .hamburger_menu {
-    display: block;
+  .menu {
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #242932;
     position: absolute;
-    top: 2rem;
-    right: 3rem;
+    top: 60px;
+    right: 0;
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+  }
+
+  .menu.open {
+    display: flex;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo img {
+    height: 30px;
+  }
+
+  .menu a {
+    font-size: 14px;
   }
 }

@@ -1,5 +1,5 @@
 .main_footer{
-  background: #1C1C1C;
+  background: #242932;
 }
 .footer {
   position: relative;
@@ -23,7 +23,7 @@
 }
 
 .footerCol h4 {
-  color: orange;
+  color: rgb(250,123,37);
   font-size: 1.2rem;
   font-weight: 400;
 }
@@ -48,20 +48,23 @@
 }
 
 .logo {
-  width: 90%;
-  height: auto;
+  width: auto;
+  height: 20vh;
 }
 
 .socialIcons {
   display: inline-block;
   margin-right: 20px; 
 }
+.icon{
+  color: #ff5722;
+}
 
-@media (max-width: 768px) {
-    .logo {
+@media (max-width: 1000px) {
+    /* .logo {
         width: 40%;
         height: 40%;
-      }
+      } */
   .footer {
     position: relative;
     transform: none;

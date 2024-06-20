@@ -11,7 +11,7 @@ const Footer = () => {
         <div className={styles.footerCol}>
         <ul className={styles.links}>
           <img 
-            src="/logo.png" 
+            src="/Companylogo.png" 
             alt="Pomeroy Pacific Logo" 
             className={styles.logo}
           />
@@ -53,22 +53,22 @@ const Footer = () => {
             <h4>CONNECT WITH US</h4>
             <li className={styles.socialIcons}>
               <a href="#">
-                <FaLinkedin />
+                <FaLinkedin className={styles.icon}/>
               </a>
             </li>
             <li className={styles.socialIcons}>
               <a href="#">
-                <FaYoutube />
+                <FaYoutube className={styles.icon}/>
               </a>
             </li>
             <li className={styles.socialIcons}>
               <a href="#">
-                <FaTwitter />
+                <FaTwitter className={styles.icon}/>
               </a>
             </li>
             <li className={styles.socialIcons}>
               <a href="#">
-                <FaFacebook />
+                <FaFacebook className={styles.icon}/>
               </a>
             </li>
           </ul>

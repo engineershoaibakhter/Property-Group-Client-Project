@@ -6,7 +6,7 @@ import { faGlobe, faPhone, faClock, faEnvelope } from '@fortawesome/free-solid-s
 
 const Contact = () => {
   return (
-    <div className={styles.contactContainer}>
+    <div className={styles.contactContainer} id='contact_us'>
       <div className={styles.leftSection}>
         <h2 className={styles.h2}>CONTACT US</h2>
         <div className={styles.contactDetails}>

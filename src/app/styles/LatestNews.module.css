@@ -1,6 +1,6 @@
 .latestNews {
     padding: 20px;
-  background-color: #f0f4f8;
+  background-color: #242932;
   color: rgb(250,123,37);
   
   }
@@ -24,8 +24,8 @@
   }
   
   .card {
-    background-color: white;
-    color: black;
+    background-color: #242932;
+    color: white;
     border-radius: 8px;
     width: 31%;
     flex-shrink: 0;
@@ -46,7 +46,6 @@
   
   .date {
     font-size: 14px;
-  color: #555;
     margin: 10px;
   }
   
@@ -82,7 +81,7 @@
     align-items: center;
     justify-content: center;
     border-width: 1px;
-    background-color: #ff5722;
+    background-color: black;
   }
   
   .navButton:hover {
