@@ -11,7 +11,7 @@ const Footer = () => {
         <div className={styles.footerCol}>
         <ul className={styles.links}>
           <img 
-            src="/Companylogo.png" 
+            src="/logo.png" 
             alt="Pomeroy Pacific Logo" 
             className={styles.logo}
           />

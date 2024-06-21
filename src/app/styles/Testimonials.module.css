@@ -19,6 +19,7 @@
   max-width: 100%;
   width: 100%;
   margin: 0 auto;
+  margin-bottom: 0px;
 }
 
 .sliderWrapper {
@@ -56,11 +57,11 @@
 .imageList {
   display: flex;
   list-style: none;
-  margin-bottom: 30px;
   overflow: hidden;
   scroll-behavior: smooth;
   scrollbar-width: none;
   padding: 0;
+  margin-bottom: 0px;
 }
 
 .imageList::-webkit-scrollbar {
@@ -139,7 +140,6 @@
 @media only screen and (max-width: 1024px) {
 
   .imageList {
-    margin-bottom: 15px;
     scroll-snap-type: x mandatory;
   }
 

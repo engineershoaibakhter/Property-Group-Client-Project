@@ -34,13 +34,20 @@
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.5);
+    /* background-color: rgba(0, 0, 0, 0.5); */
+    background-color: black;
     color: white;
     border: none;
     padding: 6px 15px;
     cursor: pointer;
     font-size: 24px; /* Ensures the arrow icons are large enough */
     z-index: 10; /* Ensures the buttons are above other elements */
+    border-radius: 12px;
+    height: 45px;
+  width: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .prev {

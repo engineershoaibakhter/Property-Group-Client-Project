@@ -17,7 +17,7 @@ const NavbarWeb = () => {
   return (
     <div className={styles.navbar}>
       <div className={styles.logo}>
-        <img src={'/Companylogo.png'} alt="Company Logo" className={styles.logoImage} />
+        <img src={'/logo.png'} alt="Company Logo" className={styles.logoImage} />
       </div>
       <div className={`${styles.menu} ${isOpen ? styles.open : ''}`}>
         <a href="/" onClick={closeMenu}>Home</a>
