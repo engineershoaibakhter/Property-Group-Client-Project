@@ -17,6 +17,7 @@ import HeaderNavbar from "./components/HeaderNavbar";
 import Team from "./components/Team";
 import LatestNews from "./components/LatestNews";
 import ModernCarousel from "./components/ModernCarousel";
+import CompanyVideo from "./components/CompanyVideo";
 // import Contact from "../components/Contact";
 
 export default function Home() {
@@ -25,6 +26,7 @@ export default function Home() {
       <HeaderNavbar />
       <NavbarWeb />
       <ModernCarousel />
+      <CompanyVideo />
         {/* <HomePage /> */}
         {/* <ViewAllProject /> */}
         <Team />
