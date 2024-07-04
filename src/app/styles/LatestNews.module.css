@@ -2,26 +2,27 @@
   padding: 20px;
   background-color: #242932;
   color: rgb(250, 123, 37);
-  position: relative; 
+  position: relative;
+  overflow: hidden;
 }
 
 .title {
   font-size: 24px;
   font-weight: 600;
   margin-bottom: 20px;
-  text-align: start; /* Center the title text */
+  text-align: start; 
 }
 
 .cardContainer {
   display: flex;
   overflow-x: scroll;
   gap: 30px;
-  scrollbar-width: none; /* Firefox */
-  -ms-overflow-style: none;  /* IE 10+ */
+  scrollbar-width: none; 
+  -ms-overflow-style: none; 
 }
 
 .cardContainer::-webkit-scrollbar {
-  display: none; /* Safari and Chrome */
+  display: none;
 }
 
 .card {

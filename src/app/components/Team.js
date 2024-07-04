@@ -45,7 +45,7 @@ const TeamMember = ({ name, title, imgSrc, social }) => {
 const Team = () => {
   const teamMembers = [
     {
-      name: 'Sean Gares',
+      name: 'Nick',
       title: 'CO-FOUNDER',
       imgSrc: '/images/man/leftman.png',
       social: [
@@ -55,7 +55,7 @@ const Team = () => {
       ]
     },
     {
-      name: 'Eduardo Gares',
+      name: 'Michael',
       title: 'Director',
       imgSrc: '/images/man/centerman.png',
       social: [
@@ -65,13 +65,13 @@ const Team = () => {
       ]
     },
     {
-      name: 'Sean Banderas',
+      name: 'Manpreet',
       title: 'Consultant',
       imgSrc: '/images/man/rightman.png',
       social: [
+        { platform: 'facebook', link: '#' },
         { platform: 'twitter', link: '#' },
-        { platform: 'linkedin', link: '#' },
-        { platform: 'instagram', link: '#' }
+        { platform: 'linkedin', link: '#' }
       ]
     }
   ];

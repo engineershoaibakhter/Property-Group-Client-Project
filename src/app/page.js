@@ -29,15 +29,19 @@ export default function Home() {
       <CompanyVideo />
         {/* <HomePage /> */}
         {/* <ViewAllProject /> */}
+
         <Team />
-        <LatestNews />
+        {/* <LatestNews /> */}
         <BuildingImage />
         <Testimonials />
         {/* <Services /> */}
         {/* <Portfolio /> */}
+
         <Partners />
         <Project />
+
         {/* <About /> */}
+
         <Contact />
         <Location />
         <Footer />

@@ -25,17 +25,17 @@ const Contact = () => {
             </div>
           </div>
           <div className={styles.detailItem}>
-            <FontAwesomeIcon icon={faClock} className={styles.icon} />
+            <FontAwesomeIcon icon={faPhone} className={styles.icon} />
             <div>
-              <h3>Working Hours</h3>
-              <p>Mon-Fri: 8 AM - 5 PM</p>
+              <h3>Michael’s Mobile Number</h3>
+              <p> ??? </p>
             </div>
           </div>
           <div className={styles.detailItem}>
             <FontAwesomeIcon icon={faEnvelope} className={styles.icon} />
             <div>
               <h3>Email Us</h3>
-              <p>michael.ellis@bcacorp.com.au</p>
+              <p>info@bcacorp.com.au</p>
             </div>
           </div>
         </div>
