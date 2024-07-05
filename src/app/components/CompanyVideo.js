@@ -5,7 +5,7 @@ function CompanyVideo() {
     <>
     <div className={styles.videoContainer}>
         <video className={styles.video} controls>
-            <source src='/video/company.mp4' type='video/mp4'/>
+            <source src='/video/homebg.mp4' type='video/mp4'/>
             Your browser does not support the video tag.
         </video>
 

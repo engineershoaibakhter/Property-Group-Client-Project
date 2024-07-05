@@ -43,7 +43,6 @@
   transform: translateY(-50%);
   border-width: 1px;
   background-color: black;
-  
 }
 
 .leftButton {
@@ -84,6 +83,13 @@
 
 .allImage {
   padding: 20px;
+}
+
+.CompanyLogoImage{
+  width: fit-content;
+  height: 17%;
+  /* background-color: wheat; */
+  margin-bottom: 10px;
 }
 
 .companyContent {

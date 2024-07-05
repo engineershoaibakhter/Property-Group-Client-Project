@@ -13,6 +13,8 @@ const images = [
 
 const ModernCarousel = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [videoLoaded,setVideoLoaded]=useState(false);
+
   const intervalRef = useRef(null);
 
   const startInterval = () => {
@@ -37,13 +39,17 @@ const ModernCarousel = () => {
     startInterval();
   };
 
+  const handleCanPlay=()=>{
+    setVideoLoaded(true);
+  }
+
   return (
     <div className={styles.carousel}>
-      <button className={styles.prev} onClick={prevSlide}>
+      {/* <button className={styles.prev} onClick={prevSlide}>
       <MdChevronLeft size={24} />
-      </button>
+      </button> */}
       <div className={styles.slides}>
-        {images.map((image, index) => (
+        {/* {images.map((image, index) => (
           <div
             key={index}
             className={styles.slide}
@@ -57,11 +63,23 @@ const ModernCarousel = () => {
               <h2>Building Community Assets</h2>
             </div>
           </div>
-        ))}
+        ))} */}
+{/* {videoLoaded?( */}
+  <video  muted autoPlay loop className={styles.video} onCanPlay={handleCanPlay}>
+<source  src='/video/homebg.mp4' type='video/mp4'/>
+</video>
+{/* // ):(
+// <img src="/images/projectImage1.webp" alt="image" onLoad={() => setVideoLoaded(false)} className={styles.video}/>
+// )} */}
+
+<div className={styles.text}>
+              <h1>BCA Corp</h1>
+              <h2>Building Community Assets</h2>
+            </div>
       </div>
-      <button className={styles.next} onClick={nextSlide}>
+      {/* <button className={styles.next} onClick={nextSlide}>
       <MdChevronRight size={24} />
-      </button>
+      </button> */}
     </div>
   );
 };

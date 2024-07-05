@@ -11,14 +11,14 @@
   
     const testimonials = [
       {
-        companyName: "PolyGonID",
+        companyLogo: "/images/clients/fitness.png",
         companyInfo: "The integration of Verida’s decentralised identity storage wallet with the cheqd network offers a compelling vision of ‘Not your keys, not your identity’. People’s digital selves should be in their control, and this includes being able to store their credentials outside of the control of Big Tech providers.",
         authorName: "Sebastian Rodriguez",
         authorPosition: "VP of Product, Polygon ID",
         imgSrc: "/images/testimonials/firstImage.png"
       },
       {
-        companyName: "NEAR",
+        companyLogo: "/images/clients/iga.svg",
         companyInfo: "We’re excited to support the Verida team as they add more NEAR features to their excellent product. Ease of use and low switching costs are key to mainstream Web3 adoption, so it’s exciting that the Verida Wallet will soon make DIDs and messaging available to NEAR users on mobile.",
         authorName: "Illia Polosukhin",
         authorPosition: "Co-Founder, NEAR",
@@ -149,10 +149,11 @@
                   <div className={styles.allImage}>
                     <div className={styles.imageItem}>
                       <div className={styles.companyContent}>
-                        <h1 className={styles.companyName}>{content.companyName}</h1>
+                      <Image src={content.companyLogo} width={100} height={100} alt={'Company Logo'} className={styles.CompanyLogoImage}/>
+                        {/* <h1 className={styles.companyName}>{content.companyName}</h1> */}
                         <p className={styles.companyInfo}>{content.companyInfo}</p>
                         <div className={styles.row}>
-                          <Image src={content.imgSrc} width={100} height={100} alt={content.authorName || 'Client Image'} />
+                          {/* <Image src={content.imgSrc} width={100} height={100} alt={content.authorName || 'Client Image'} /> */}
                           <div className={styles.textContainer}>
                             <h3 className={styles.authorName}>{content.authorName}</h3>
                             <p className={styles.authorPosition}>{content.authorPosition}</p>

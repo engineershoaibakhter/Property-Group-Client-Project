@@ -40,7 +40,7 @@ export default function Home() {
         <Partners />
         <Project />
 
-        {/* <About /> */}
+        <About />
 
         <Contact />
         <Location />

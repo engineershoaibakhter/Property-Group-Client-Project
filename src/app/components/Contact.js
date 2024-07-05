@@ -13,7 +13,7 @@ const Contact = () => {
           <div className={styles.detailItem}>
             <FontAwesomeIcon icon={faGlobe} className={styles.icon} />
             <div>
-              <h3>Our Address</h3>
+              <h3>Address</h3>
               <p>Level 8/468 St Kilda Road Melbourne VIC 3004</p>
             </div>
           </div>
@@ -24,17 +24,17 @@ const Contact = () => {
               <p>03 9222 4000</p>
             </div>
           </div>
-          <div className={styles.detailItem}>
+          {/* <div className={styles.detailItem}>
             <FontAwesomeIcon icon={faPhone} className={styles.icon} />
             <div>
               <h3>Michael’s Mobile Number</h3>
-              <p> ??? </p>
+              <p>04 1306 6115</p>
             </div>
-          </div>
+          </div> */}
           <div className={styles.detailItem}>
             <FontAwesomeIcon icon={faEnvelope} className={styles.icon} />
             <div>
-              <h3>Email Us</h3>
+              <h3>Email</h3>
               <p>info@bcacorp.com.au</p>
             </div>
           </div>

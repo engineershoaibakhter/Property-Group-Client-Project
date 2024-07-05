@@ -45,32 +45,26 @@ const TeamMember = ({ name, title, imgSrc, social }) => {
 const Team = () => {
   const teamMembers = [
     {
-      name: 'Nick',
+      name: 'Nick Gupta',
       title: 'CO-FOUNDER',
       imgSrc: '/images/man/leftman.png',
       social: [
-        { platform: 'facebook', link: '#' },
-        { platform: 'twitter', link: '#' },
         { platform: 'linkedin', link: '#' }
       ]
     },
     {
-      name: 'Michael',
+      name: 'Michael Ellis',
       title: 'Director',
       imgSrc: '/images/man/centerman.png',
       social: [
-        { platform: 'facebook', link: '#' },
-        { platform: 'twitter', link: '#' },
         { platform: 'linkedin', link: '#' }
       ]
     },
     {
-      name: 'Manpreet',
+      name: 'Manpreet Dandiwal',
       title: 'Consultant',
       imgSrc: '/images/man/rightman.png',
       social: [
-        { platform: 'facebook', link: '#' },
-        { platform: 'twitter', link: '#' },
         { platform: 'linkedin', link: '#' }
       ]
     }
