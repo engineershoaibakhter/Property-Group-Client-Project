@@ -10,14 +10,14 @@ const NavbarWeb = () => {
     setIsOpen(!isOpen);
   };
 
-  const closeMenu=()=>{
-    setIsOpen(false)
-  }
+  const closeMenu = () => {
+    setIsOpen(false);
+  };
 
   return (
     <div className={styles.navbar}>
       <div className={styles.logo}>
-        <img src={'/logo1.jpg'} alt="Company Logo" className={styles.logoImage} />
+        <img src={'/weblogo.png'} alt="Company Logo" className={styles.logoImage} />
       </div>
       <div className={`${styles.menu} ${isOpen ? styles.open : ''}`}>
         <a href="/" onClick={closeMenu}>Home</a>
@@ -33,4 +33,5 @@ const NavbarWeb = () => {
     </div>
   );
 };
+
 export default NavbarWeb;

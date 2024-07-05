@@ -1,20 +1,27 @@
 .navbar {
   position: sticky;
   top: 0;
-  background-color: #242932;
-  color: #fff;
+  /* background-color: #242932; */
+  background-color: #fff;
+  color: black;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 20px;
+  padding: 0 20px; /* Remove top and bottom padding */
+  height: 60px; /* Set a fixed height for the navbar */
   z-index: 1000;
 }
 
-.logo img {
-  height: 15vh;
-  width: auto;
+.logo {
+  /* display: flex;
+  align-items: center; */
+  height: 200%;
 }
 
+.logo img {
+  height: 100%; /* Adjust the height of the logo to cover its parent */
+  width: auto; /* Maintain aspect ratio */
+}
 
 .menu {
   display: flex;
@@ -22,13 +29,14 @@
 }
 
 .menu a {
-  color: #fff;
+  color: black;
   text-decoration: none;
   font-size: 20px;
+  line-height: 60px; /* Align the text vertically */
 }
 
 .menu a:hover {
-  color: rgb(250,123,37);
+  color: rgb(250, 123, 37);
 }
 
 .hamburger {
@@ -39,8 +47,9 @@
 
 .bar {
   width: 25px;
-  height: 3px;
+  height: 2px;
   background-color: #fff;
+  background-color: black;
   margin: 4px 0;
 }
 
@@ -51,7 +60,7 @@
     gap: 10px;
     background-color: #242932;
     position: absolute;
-    top: 60px;
+    top: 60px; /* Adjust to align with the navbar height */
     right: 0;
     width: 100%;
     text-align: center;
@@ -63,15 +72,18 @@
 
   .hamburger {
     display: flex;
+    
   }
+
 }
 
 @media (max-width: 480px) {
   .logo img {
-    height: 30px;
+    height: 30px; /* Adjust the logo size for smaller screens */
   }
 
   .menu a {
     font-size: 14px;
+    line-height: 30px; /* Align the text vertically */
   }
 }

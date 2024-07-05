@@ -11,14 +11,14 @@
   
     const testimonials = [
       {
-        companyLogo: "/images/clients/fitness.png",
+        companyLogo: "/images/clients/iga.svg",
         companyInfo: "The integration of Verida’s decentralised identity storage wallet with the cheqd network offers a compelling vision of ‘Not your keys, not your identity’. People’s digital selves should be in their control, and this includes being able to store their credentials outside of the control of Big Tech providers.",
         authorName: "Sebastian Rodriguez",
         authorPosition: "VP of Product, Polygon ID",
         imgSrc: "/images/testimonials/firstImage.png"
       },
       {
-        companyLogo: "/images/clients/iga.svg",
+        companyLogo: "/images/clients/client logo web2.png",
         companyInfo: "We’re excited to support the Verida team as they add more NEAR features to their excellent product. Ease of use and low switching costs are key to mainstream Web3 adoption, so it’s exciting that the Verida Wallet will soon make DIDs and messaging available to NEAR users on mobile.",
         authorName: "Illia Polosukhin",
         authorPosition: "Co-Founder, NEAR",

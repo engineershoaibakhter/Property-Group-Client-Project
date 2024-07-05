@@ -26,7 +26,7 @@ export default function Home() {
       <HeaderNavbar />
       <NavbarWeb />
       <ModernCarousel />
-      <CompanyVideo />
+      {/* <CompanyVideo /> */}
         {/* <HomePage /> */}
         {/* <ViewAllProject /> */}
 

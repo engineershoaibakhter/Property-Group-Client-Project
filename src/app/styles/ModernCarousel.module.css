@@ -62,3 +62,18 @@
 .next {
     right: 10px;
 }
+
+@media screen and (max-width:700px) {
+    .text {
+        bottom: 20px;
+        left: 20px;
+        color: white;
+        background-color: rgba(0, 0, 0, 0.5);
+        padding: 10px;
+        border-radius: 20px;
+    }
+    .text h1,
+    .text h2{
+        font-size: 20px;
+    }
+}
