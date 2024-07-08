@@ -1,28 +1,22 @@
-/* styles/ModernCarousel.module.css */
+
+
 .carousel {
     position: relative;
     width: 100%;
+    height: 80vh;
     overflow: hidden;
 }
 
-.video{
+.video {
     width: 100%;
     height: 100%;
+    object-fit: cover;
 }
-
 
 .slides {
     display: flex;
     width: 100%;
     height: 100%;
-}
-
-.slide {
-    min-width: 100%;
-    height: 100%;
-    background-size: cover;
-    background-position: center;
-    position: relative;
 }
 
 .text {
@@ -35,45 +29,141 @@
     border-radius: 20px;
 }
 
-.prev, .next {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    /* background-color: rgba(0, 0, 0, 0.5); */
-    background-color: black;
-    color: white;
-    border: none;
-    padding: 6px 15px;
-    cursor: pointer;
-    font-size: 24px; /* Ensures the arrow icons are large enough */
-    z-index: 10; /* Ensures the buttons are above other elements */
-    border-radius: 12px;
-    height: 45px;
-  width: 50px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
 
-.prev {
-    left: 10px;
-}
-
-.next {
-    right: 10px;
-}
-
-@media screen and (max-width:700px) {
+/* @media screen and (max-width: 700px) {
+    .carousel{
+        height: 85vh;
+    }
     .text {
         bottom: 20px;
         left: 20px;
-        color: white;
-        background-color: rgba(0, 0, 0, 0.5);
         padding: 10px;
-        border-radius: 20px;
     }
     .text h1,
-    .text h2{
+    .text h2 {
+        font-size: 20px;
+    }
+} */
+
+
+
+@media screen and (min-width: 360px) {
+    .carousel{
+        height: 85vh;
+    }
+    .text {
+        bottom: 30px;
+        left: 10px;
+        padding: 10px;
+    }
+}
+
+@media screen and (min-width: 375px) {
+    .carousel{
+        
+        height: 84vh;
+    }
+    .text {
+        bottom: 20px;
+        left: 20px;
+        padding: 10px;
+    }
+    .text h1,
+    .text h2 {
         font-size: 20px;
     }
 }
+
+
+
+@media screen and (min-width: 390px) {
+    .carousel{
+        height: 88vh;
+    }
+}
+
+
+
+@media screen and (min-width: 414px) {
+    .carousel{
+        height: 88vh;
+    }
+}
+
+@media screen and (min-width: 500px) {
+    .carousel{
+        
+        height: 83vh;
+    }
+}
+
+
+
+@media screen and (min-width: 768px) {
+    .carousel{
+        height: 90vh;
+    }
+    .text h1,
+    .text h2 {
+        font-size: 40px;
+    }
+}
+
+@media screen and (min-width: 853px) {
+    .text h1,
+    .text h2 {
+        font-size: 50px;
+    }
+}
+
+@media screen and (min-width: 860px) {
+    .carousel{
+        height: 80vh;
+    }
+    .text h1,
+    .text h2 {
+        font-size: 40px;
+    }
+}
+
+@media screen and (min-width: 912px) {
+    .carousel{
+        height: 92vh;
+    }
+    .text h1,
+    .text h2 {
+        font-size: 40px;
+    }
+}
+
+
+
+@media screen and (min-width: 1024px) {
+    .carousel{
+        height: 93vh;
+    }
+    .text {
+        bottom: 80px;
+        left: 20px;
+    }
+}
+
+@media screen and (min-width: 1025px) {
+    .carousel{
+        height: 83vh;
+    }
+    .text {
+        bottom: 80px;
+        left: 20px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .carousel{
+        height: 87vh;
+    }
+}
+
+
+
+

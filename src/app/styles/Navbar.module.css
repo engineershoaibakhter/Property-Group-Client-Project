@@ -77,13 +77,3 @@
 
 }
 
-@media (max-width: 480px) {
-  .logo img {
-    height: 30px; /* Adjust the logo size for smaller screens */
-  }
-
-  .menu a {
-    font-size: 14px;
-    line-height: 30px; /* Align the text vertically */
-  }
-}
