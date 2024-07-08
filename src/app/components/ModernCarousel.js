@@ -45,41 +45,16 @@ const ModernCarousel = () => {
 
   return (
     <div className={styles.carousel}>
-      {/* <button className={styles.prev} onClick={prevSlide}>
-      <MdChevronLeft size={24} />
-      </button> */}
       <div className={styles.slides}>
-        {/* {images.map((image, index) => (
-          <div
-            key={index}
-            className={styles.slide}
-            style={{
-              backgroundImage: `url(${image})`,
-              display: currentIndex === index ? "block" : "none",
-            }}
-          >
-            <div className={styles.text}>
-              <h1>BCA Corp</h1>
-              <h2>Building Community Assets</h2>
-            </div>
-          </div>
-        ))} */}
-{/* {videoLoaded?( */}
   <video  muted autoPlay loop className={styles.video} onCanPlay={handleCanPlay}>
 <source  src='/video/company_video.mp4' type='video/mp4'/>
 </video>
-{/* // ):(
-// <img src="/images/projectImage1.webp" alt="image" onLoad={() => setVideoLoaded(false)} className={styles.video}/>
-// )} */}
-
 <div className={styles.text}>
               <h1>BCA Corp</h1>
               <h2>Building Community Assets</h2>
             </div>
       </div>
-      {/* <button className={styles.next} onClick={nextSlide}>
-      <MdChevronRight size={24} />
-      </button> */}
+
     </div>
   );
 };
