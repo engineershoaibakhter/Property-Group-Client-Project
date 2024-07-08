@@ -58,7 +58,8 @@
     display: none;
     flex-direction: column;
     gap: 10px;
-    background-color: #242932;
+    /* background-color: #242932; */
+  background-color: #fff;
     position: absolute;
     top: 60px; /* Adjust to align with the navbar height */
     right: 0;
