@@ -1,12 +1,16 @@
 .about {
     background-color: #282827;
-    color: orange;
+    color: rgb(250,123,37);
     padding-top: 30px;
     padding-bottom: 30px;
 }
 
 .heading {
-    text-align: center;
+    font-weight: 600;
+  font-size: 1.5em;
+  text-align: left;
+  padding-left: 20px;
+  text-transform: uppercase;
 }
 
 .container {
@@ -23,7 +27,7 @@
     align-items: center; /* Adjust alignment to flex-start */
     justify-content: space-between;
     border-width: 80px;
-    border-color: rgb(255, 102, 0);
+    border-color: rgb(250,123,37);
     border-radius: 20px;
     box-shadow: 4px 5px 10px rgba(235, 106, 8, 0.789);
     padding: 20px;
@@ -39,7 +43,7 @@
     font-size: 18px;
     line-height: 1.3em;
     color: white;
-    font-family: "FranklinGothic-MediumCond", Sans-serif;
+    font-family: 'Jost', sans-serif;
 }
 
 .leftContent {
