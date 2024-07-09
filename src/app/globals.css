@@ -6,7 +6,11 @@
   
 }
 body{
-  background-color: #242932;
+  /* background-color: #242932; */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Jost', sans-serif;
 }
 a {
   color: inherit;
