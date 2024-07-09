@@ -1,13 +1,19 @@
+.contact_us{
+
+  color: white;
+  background-color: #242932;
+}
+
 .contactContainer {
   display: flex;
   flex-direction: column;
   padding: 20px;
-  background-color: #242932;
-  color: white;
+  align-items: center; /* Centering the container */
 }
 
 .leftSection {
   margin-bottom: 20px;
+  width: 100%;
 }
 
 .rightSection {
@@ -15,22 +21,31 @@
   padding: 20px;
   border-radius: 30px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  width: 100%;
 }
 
 .h2 {
   color: rgb(250,123,37);
   font-weight: 600;
   font-size: 1.5em;
+  text-align: left;
+  padding-left: 20px;
 }
 
 .contactDetails {
   margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%; /* Ensuring the details take the full width */
 }
 
 .detailItem {
   display: flex;
   align-items: center;
   margin-bottom: 20px;
+  width: 100%;
+  justify-content: center; /* Centering each detail item */
 }
 
 .icon {
@@ -39,7 +54,13 @@
   margin-right: 10px;
   padding: 10px;
   border-radius: 50px;
+}
 
+.textContainer {
+  flex-grow: 1; /* Ensures the text container takes up remaining space */
+  max-width: 400px; /* Sets a max-width for consistent alignment */
+  display: flex;
+  flex-direction: column;
 }
 
 .detailItem h3 {
@@ -62,7 +83,6 @@
 
 .formGroup {
   margin-bottom: 15px;
-
 }
 
 .formGroup.row {
@@ -88,7 +108,6 @@
   border-radius: 15px;
   font-size: 1em;
   background-color: #242932;
-  /* background-color: rgba(255, 255, 255, .1); */
   color: white;
 }
 
@@ -99,7 +118,6 @@
 .formGroup input::placeholder,
 .formGroup textarea::placeholder{
   color: #b1b9c0;
-  
 }
 
 .submitButton {
@@ -113,24 +131,23 @@
   font-family: 'Jost', sans-serif;
   font-weight: 600;
   font-size: 1em;
-  font-family: 'BinancePlex';
 }
-/* Media queries for responsive design */
+
 @media (min-width: 768px) {
   .contactContainer {
     flex-direction: row;
   }
-  
+
   .leftSection {
     flex: 1;
     margin-right: 20px;
     margin-bottom: 0;
   }
-  
+
   .rightSection {
     flex: 1;
   }
-  
+
   .formGroup.row {
     flex-direction: row;
     gap: 20px;
