@@ -18,6 +18,7 @@ import Team from "./components/Team";
 import LatestNews from "./components/LatestNews";
 import ModernCarousel from "./components/ModernCarousel";
 import CompanyVideo from "./components/CompanyVideo";
+import Commercial from "./components/Commercial";
 // import Contact from "../components/Contact";
 
 export default function Home() {
@@ -26,6 +27,7 @@ export default function Home() {
       <HeaderNavbar />
       <NavbarWeb />
       <ModernCarousel />
+      <Commercial />
       {/* <CompanyVideo /> */}
         {/* <HomePage /> */}
         {/* <ViewAllProject /> */}

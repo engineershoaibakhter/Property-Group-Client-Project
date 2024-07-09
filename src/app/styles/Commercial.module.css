@@ -1,0 +1,124 @@
+.commercial{
+    color: white;
+    background-color: #242932;
+  font-family: 'Jost', sans-serif;
+
+}
+.commercialContainer {
+    padding: 20px;
+    max-width: 95vw;
+    margin: 0 auto;
+  }
+  
+  .header {
+    text-align: left;
+    margin-bottom: 40px;
+  }
+  
+  .title {
+    margin-bottom: 10px;
+    color: rgb(250,123,37);
+  font-weight: 600;
+  font-size: 1.5em;
+  }
+  
+  .description {
+    line-height: 1.5;
+    color: #c6c5c5;
+    font-size: 0.9em;
+  font-family: 'Jost', sans-serif;
+  }
+  
+  .cardsContainer {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .card {
+    background: black;
+    border: 1px solid black;
+    border-radius: 15px;
+    overflow: hidden;
+    flex: 1 1 calc(50% - 20px);
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .imageContainer {
+    position: relative;
+    height: 100%;
+  }
+  
+  .image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .assetTag {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background: black;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 0.9em;
+    font-weight: bold;
+  }
+  
+  .cardContent {
+    padding: 20px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .location {
+    color: #c6c5c5;
+    margin-bottom: 10px;
+  }
+  
+  .projectName {
+    font-size: 1.3em;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .features {
+    font-size: 1em;
+    color: #c6c5c5;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .footer {
+    margin-top: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .leasing {
+    font-size: 1em;
+    color: #28a745;
+  }
+  
+  .detailsLink {
+    font-size: 1em;
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .detailsLink:hover {
+    text-decoration: underline;
+  }
+
+  @media (max-width: 768px) {
+    .card {
+      flex: 1 1 100%; /* Each card takes up full width */
+    }
+  }
+  
