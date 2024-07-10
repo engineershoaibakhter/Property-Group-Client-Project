@@ -2,6 +2,7 @@
 
 import CentralPlaceSydney from "@/app/components/CentralPlaceSydney"
 import CommercialCarousel from "@/app/components/CommercialCarousel"
+import CommercialLocation from "@/app/components/CommercialLocation"
 import CommercialProjectInfo from "@/app/components/CommercialProjectInfo"
 import CommercialProjectMoreInfo from "@/app/components/CommercialProjectMoreInfo"
 import CommercialService from "@/app/components/CommercialService"
@@ -16,6 +17,7 @@ const CommercialDetails = () => {
    <CommercialService />
    <CentralPlaceSydney />
    <CommercialProjectMoreInfo />
+   <CommercialLocation />
    <Gallery />
    </>
   )
