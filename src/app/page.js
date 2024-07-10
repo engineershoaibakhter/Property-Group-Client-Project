@@ -24,8 +24,6 @@ import Commercial from "./components/Commercial";
 export default function Home() {
   return (
     <>
-      <HeaderNavbar />
-      <NavbarWeb />
       <ModernCarousel />
       <Commercial />
       {/* <CompanyVideo /> */}
@@ -46,7 +44,6 @@ export default function Home() {
 
         <Contact />
         <Location />
-        <Footer />
       
     </>
   );

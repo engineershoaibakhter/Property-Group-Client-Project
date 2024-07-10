@@ -2,6 +2,7 @@
 
 import React from 'react';
 import styles from '../styles/Commercial.module.css';
+import Link from 'next/link';
 
 const Commercial = () => {
   return (
@@ -27,7 +28,7 @@ const Commercial = () => {
             </p>
             <div className={styles.footer}>
               <p className={styles.leasing}>Leasing now</p>
-              <a href="#" className={styles.detailsLink}>More details ➔</a>
+              <Link href={'../pages/CommercialDetails'} className={styles.detailsLink}>More details ➔</Link>
             </div>
           </div>
         </div>
@@ -44,7 +45,7 @@ const Commercial = () => {
             </p>
             <div className={styles.footer}>
               <p className={styles.leasing}>Leasing now</p>
-              <a href="#" className={styles.detailsLink}>More details ➔</a>
+              <Link href={'/pages/CommercialDetails'} className={styles.detailsLink}>More details ➔</Link>
             </div>
           </div>
         </div>

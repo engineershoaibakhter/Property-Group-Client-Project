@@ -27,13 +27,14 @@ const Contact = () => {
         </div>
         <div className={`${styles.rightContent} ${styles.rightSide}`}>
         <iframe
-    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12603.295360381187!2d144.9766528!3d-37.8410097!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xff44c17fc4653b83!2sPSP%20Property%20Group!5e0!3m2!1sen!2sau!4v1666158748109!5m2!1sen!2sau"
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3150.820788404048!2d144.9738940752896!3d-37.84108113559879!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad6681bed7b7575%3A0x276e5d58b462d42!2s8%2F468%20St%20Kilda%20Rd%2C%20Melbourne%20VIC%203004%2C%20Australia!5e0!3m2!1sen!2s!4v1720614641305!5m2!1sen!2s"
     width="100%"
     height="400"
     style={{ border: 0 }}
     allowFullScreen=""
     loading="lazy"
     referrerPolicy="no-referrer-when-downgrade"
+    Title="BCA CORP"
   ></iframe>
 
         </div>
