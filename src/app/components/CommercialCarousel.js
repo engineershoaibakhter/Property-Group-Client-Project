@@ -6,7 +6,7 @@ const CommercialCarousel = () => {
     <>
     <div className={styles.carousel}>
       <div className={styles.carouselSlide}>
-        <img src="/images/cars.jpg" alt="Central Place Sydney" />
+        <img src="/images/webimages2.jpg" alt="Central Place Sydney" />
         <div className={styles.carouselContent}>
           <h1>Central Place Sydney</h1>
           <p>The new home for tomorrow’s game changers.</p>
