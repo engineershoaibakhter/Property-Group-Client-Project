@@ -1,13 +1,14 @@
 .Project{
-    color: orange;
-    background-color: #242932;
+  padding-top: 10px;
+    color: white;
+    background-color:#001443;
   }
   
   .Heading{
     text-transform: uppercase;
     padding-left: 20px;
     margin-bottom: 50px;
-    color: rgb(250,123,37);
+    color: white;
   font-weight: 600;
   font-size: 1.5em;
 }

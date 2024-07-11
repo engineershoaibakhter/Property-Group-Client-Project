@@ -1,5 +1,5 @@
 .main_footer{
-  background-color: #001443;
+  background-color: #082360;
   color: white;
 }
 .footer {
@@ -85,6 +85,7 @@
 .copyright{
   text-align: center;
   padding: 10px 0px;
+  background-color: #001443;
 }
 
 .copyright p{

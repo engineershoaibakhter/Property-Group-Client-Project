@@ -1,6 +1,6 @@
-/* .commercial{
+.commercial{
     color: white;
-    background-color: #242932;
+    background-color: #001443;
   font-family: 'Jost', sans-serif;
 
 }
@@ -17,7 +17,7 @@
   
   .title {
     margin-bottom: 10px;
-    color: rgb(250,123,37);
+    color: white;
   font-weight: 600;
   font-size: 1.5em;
   }
@@ -36,13 +36,14 @@
   }
   
   .card {
-    background: black;
+    background: white;
     border: 1px solid black;
     border-radius: 15px;
     overflow: hidden;
     flex: 1 1 calc(50% - 20px);
     display: flex;
     flex-direction: column;
+    color: black;
   }
   
   .imageContainer {
@@ -56,17 +57,7 @@
     object-fit: cover;
   }
   
-  .assetTag {
-    position: absolute;
-    top: 20px;
-    left: 20px;
-    background: black;
-    color: white;
-    padding: 5px 10px;
-    border-radius: 4px;
-    font-size: 0.9em;
-    font-weight: bold;
-  }
+
   
   .cardContent {
     padding: 20px;
@@ -76,7 +67,7 @@
   }
   
   .location {
-    color: #c6c5c5;
+    color: black;
     margin-bottom: 10px;
   }
   
@@ -88,7 +79,7 @@
   
   .features {
     font-size: 1em;
-    color: #c6c5c5;
+    color: black;
     margin-bottom: 20px;
     display: flex;
     align-items: center;
@@ -103,12 +94,12 @@
   
   .leasing {
     font-size: 1em;
-    color: #28a745;
+    color: #001443;
   }
   
   .detailsLink {
     font-size: 1em;
-    color: #007bff;
+    color: #04287b;
     text-decoration: none;
   }
   
@@ -121,11 +112,11 @@
       flex: 1 1 100%; 
     }
   }
-   */
+  
 
 
 
-   .newsSection {
+   /* .newsSection {
     background-color: #07294d;
     color: #ffffff;
     padding: 4rem 2rem;
@@ -230,5 +221,5 @@
     .articles {
       grid-template-columns: 1fr;
     }
-  }
+  } */
   
