@@ -25,12 +25,12 @@ const Team = () => {
     },
     {
       name: 'Michael Ellis',
-      title: 'Director',
+      title: 'DIRECTOR',
       imgSrc: '/images/man/centerman.png',
     },
     {
       name: 'Manpreet Dandiwal',
-      title: 'Consultant',
+      title: 'CONSULTANT',
       imgSrc: '/images/man/rightman.png',
     },
   ];
