@@ -1,14 +1,16 @@
 .centralPlaceSydney{
     display: flex;
     flex-wrap: wrap;
-    margin: 20px 80px;
+    margin: 20px 40px;
     gap: 10;
+    padding: 0px 10px;
+
 }
 .heading{
     flex: 1;
 }
 .heading h1{
-    font-weight: 700;
+    font-weight: 500;
 }
 .paragraph{
     flex: 3;

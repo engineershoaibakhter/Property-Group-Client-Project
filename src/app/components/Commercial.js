@@ -27,7 +27,9 @@ const Commercial = () => {
             </p>
             <div className={styles.footer}>
               <p className={styles.leasing}>Leasing now</p>
-              <Link href={'../pages/CommercialDetails'} className={styles.detailsLink}>More details ➔</Link>
+              <p>
+                <Link href={'../pages/CommercialDetails'} className={styles.detailsLink}>More details ➔</Link>
+              </p>
             </div>
           </div>
         </div>

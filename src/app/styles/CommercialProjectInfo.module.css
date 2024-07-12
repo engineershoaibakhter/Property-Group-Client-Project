@@ -1,126 +1,135 @@
 .container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    margin: 50px 40px;
-  }
-  
-  .leftContent {
-    flex: 2;
-  }
-  
-  .rightContent {
-    flex: 1.5;
-    display: flex;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin: 50px 40px;
+  padding: 0px 10px;
+}
+
+.leftContent {
+  flex: 2;
+}
+
+.rightContent {
+  flex: 1.5;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.description {
+  font-size: 1.2em;
+  line-height: 1.5;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.featuresList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.featuresList li {
+  font-size: 1em;
+  color: #666;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  border-top: 1px solid #e4e2e2;
+  border-left: none;
+  border-right: none;
+  padding: 15px;
+}
+
+.featuresList li:last-child {
+  border-bottom: 1px solid #e4e2e2;
+}
+
+.featuresList li::before {
+  content: url("/images/redTick.svg");
+  margin-right: 10px;
+}
+
+.status,
+.location {
+  background: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: left;
+}
+
+.status h3,
+.location h3 {
+  margin: 0 0 10px 0;
+  font-size: 1.2em;
+  color: #999;
+}
+
+.status p,
+.location p {
+  margin: 0;
+  font-size: 1em;
+  color: #333;
+}
+
+.mapLink {
+  color: #d32f2f;
+  text-decoration: none;
+}
+
+.mapLink:hover {
+  text-decoration: underline;
+}
+
+.buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.updateButton,
+.enquiryButton {
+  flex: 1;
+  padding: 10px 10px;
+  font-size: 1em;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.updateButton {
+  background: #d32f2f;
+  color: white;
+}
+
+.updateButton:hover {
+  background: #fe0707;
+}
+
+.enquiryButton {
+  background: white;
+  color: #d32f2f;
+  border-color: #d32f2f;
+}
+
+.enquiryButton:hover {
+  background: #d32f2f;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .container {
     flex-direction: column;
-    gap: 20px;
-  }
-  
-  .description {
-    font-size: 1.2em;
-    line-height: 1.5;
-    color: #333;
-    margin-bottom: 20px;
-  }
-  
-  .featuresList {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  .featuresList li {
-    font-size: 1em;
-    color: #666;
-    margin-bottom: 10px;
-    display: flex;
-    align-items: center;
-    border-top: 1px solid #e4e2e2;
-    border-left: none;
-    border-right: none;
-    padding: 15px;
+    margin: 50px 0px;
   }
 
-  .featuresList li:last-child{
-    border-bottom: 1px solid #e4e2e2;
+  .leftContent,
+  .rightContent {
+    flex: 1 1 100%;
   }
-  
-  .featuresList li::before {
-    content: url('/images/redTick.svg');
-    margin-right: 10px;
-  }
-  
-  .status, .location {
-    background: #f9f9f9;
-    padding: 20px;
-    border-radius: 8px;
-    text-align: left;
-  }
-  
-  .status h3, .location h3 {
-    margin: 0 0 10px 0;
-    font-size: 1.2em;
-    color: #999;
-  }
-  
-  .status p, .location p {
-    margin: 0;
-    font-size: 1em;
-    color: #333;
-  }
-  
-  .mapLink {
-    color: #d32f2f;
-    text-decoration: none;
-  }
-  
-  .mapLink:hover {
-    text-decoration: underline;
-  }
-  
-  .buttons {
-    display: flex;
-    gap: 10px;
-  }
-  
-  .updateButton, .enquiryButton {
-    flex: 1;
-    padding: 10px 20px;
-    font-size: 1em;
-    border: 1px solid transparent;
-    border-radius: 5px;
-    cursor: pointer;
-    text-align: center;
-  }
-  
-  .updateButton {
-    background: #d32f2f;
-    color: white;
-  }
-
-  .updateButton:hover {
-    background: #fe0707;
-  }
-  
-  .enquiryButton {
-    background: white;
-    color: #d32f2f;
-    border-color: #d32f2f;
-  }
-  
-  .enquiryButton:hover {
-    background: #d32f2f;
-    color: white;
-  }
-  
-  @media (max-width: 768px) {
-    .container {
-      flex-direction: column;
-      margin: 50px 0px;
-    }
-  
-    .leftContent, .rightContent {
-      flex: 1 1 100%;
-    }
-  }
-  
+  .updateButton,
+.enquiryButton {
+  padding: 10px 10px;
+}
+}

@@ -21,16 +21,24 @@
   .text {
     position: absolute;
     top: 50%;
-    transform: translate(70%, -50%);
+    left: 50%;
+    transform: translate(-50%, -50%);
     color: white;
     text-align: center;
+    white-space: nowrap;
   }
-
-  .text h1{
+  
+  .text h1 {
     display: inline-block;
     margin-right: 10px;
-    font-size: 4.2em;
-    
+    font-size: 3.8em;
+    line-height: 1.2;
+    vertical-align: middle;
+  }
+
+  .text h2{
+    display: inline;
+    /* font-size: 2em; */
   }
   
   .dynamicTextContainer {
@@ -39,14 +47,16 @@
     padding: 0 10px;
     overflow: hidden;
     white-space: nowrap;
-    animation: changeText 9s infinite;
-    min-height: 1vh;
-}
-
-.dynamicText {
-    font-size: 2.3em;
+    line-height: 1.2;
+    vertical-align: middle;
+  }
+  
+  .dynamicText {
+    font-size: 1.8em;
     display: inline-block;
-    animation: slide-in 3s infinite;
+    animation: slide-in 6s infinite;
+    line-height: 1.2;
+    vertical-align: middle;
   }
   
   @keyframes slide-in {
@@ -74,7 +84,7 @@
   
   .dynamicText::before {
     content: "Communities";
-    animation: changeTextContent 9s infinite;
+    animation: changeTextContent 18s infinite;
   }
   
   @keyframes changeTextContent {
@@ -93,20 +103,46 @@
     .carousel {
       height: 85vh;
     }
-    /* .text h1 {
-      font-size: 20px;
-    } */
+    
+    .text {
+        top: 50%;
+        transform: translate(-50%, -50%);
+      }
+      .text h1 {
+        font-size: 2.1em;
+    }
+    .dynamicText {
+        font-size: 1.5em;
+      }
+  }
+
+  @media screen and (min-width: 344px) {
+    .carousel {
+        height: 88vh;
+      }
+    .text h1 {
+        font-size: 1.5em;
+    }
+    .dynamicText {
+        font-size: 1.3em;
+      }
   }
   
   @media screen and (min-width: 360px) {
     .carousel {
-      height: 85vh;
+      height: 86vh;
     }
+    .text h1 {
+        font-size: 1.8em;
+    }
+    .dynamicText {
+        font-size: 1.4em;
+      }
   }
   
   @media screen and (min-width: 375px) {
     .carousel {
-      height: 84vh;
+      height: 85vh;
     }
   }
   
@@ -116,15 +152,21 @@
     }
   }
   
-  @media screen and (min-width: 414px) {
+  @media screen and (min-width: 412px) {
     .carousel {
-      height: 88vh;
+      height: 90vh;
     }
+    .text h1 {
+        font-size: 2em;
+    }
+    .dynamicText {
+        font-size: 1.5em;
+      }
   }
   
   @media screen and (min-width: 500px) {
     .carousel {
-      height: 83vh;
+      height: 85vh;
     }
   }
   
@@ -132,15 +174,20 @@
     .carousel {
       height: 90vh;
     }
-    /* .text h1 {
-      font-size: 40px;
-    } */
+
+    .text h1 {
+        font-size: 3em;
+    }
+    .dynamicText {
+        font-size: 2em;
+      }
+    
   }
   
-  @media screen and (min-width: 853px) {
-    /* .text h1 {
-      font-size: 50px;
-    } */
+  @media screen and (min-width: 820px) {
+    .carousel {
+        height: 92vh;
+      }
   }
   
   @media screen and (min-width: 860px) {
@@ -165,10 +212,14 @@
     .carousel {
       height: 93vh;
     }
-    /* .text {
-      bottom: 80px;
-      left: 20px;
-    } */
+
+    .text h1 {
+        font-size: 5em;
+    }
+    .dynamicText {
+        font-size: 2.8em;
+      }
+    
   }
   
   @media screen and (min-width: 1025px) {
@@ -179,6 +230,7 @@
       bottom: 80px;
       left: 20px;
     } */
+     
   }
   
   @media screen and (min-width: 1280px) {

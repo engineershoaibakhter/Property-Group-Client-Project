@@ -16,9 +16,12 @@ const ModernCarousel = () => {
           <h1>
             We Build{" "}
           </h1>
-            <span className={styles.dynamicTextContainer}>
+          <h2>
+          <span className={styles.dynamicTextContainer}>
               <span className={styles.dynamicText}></span>
             </span>
+          </h2>
+            
         </div>
       </div>
     </div>
