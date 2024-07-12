@@ -2,7 +2,7 @@
 .imageContainer {
     width: 100%;
     height: 50vh;
-    background-image: url("https://pomeroypacific.com.au/wp-content/uploads/2023/04/Victoriana-Rothelowman-VIC-02-1-34-scaled.jpg");
+    background-image: url("/images/buildingHomeImage.jpg");
     background-size: cover;
     background-position: center;
   }

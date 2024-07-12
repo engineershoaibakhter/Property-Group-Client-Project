@@ -56,10 +56,6 @@
     background-color: transparent; /* Set to transparent for icons other than social media */
 }
 
-.icon:hover,
-.phoneLink:hover {
-    color: #ff5722;
-}
 
 .phoneLink {
     color: white;

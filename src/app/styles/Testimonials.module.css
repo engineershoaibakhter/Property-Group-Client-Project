@@ -1,8 +1,8 @@
 .Project {
   text-align: center;
     color: white;
-    background-color: #001443;
-    border-top:3px solid #021f65;
+    background-image: url('/images/buildingHomeImage1.jpg');
+    background-size: cover;
 }
 
 .Heading {
@@ -21,6 +21,8 @@
   width: 100%;
   margin: 0 auto;
   margin-bottom: 0px;
+ 
+
 }
 
 .sliderWrapper {

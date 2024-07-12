@@ -3,166 +3,187 @@
     width: 100%;
     height: 80vh;
     overflow: hidden;
-    background-image: url('/images/cars.jpg');
-}
-
-.video {
+  }
+  
+  .video {
     width: 100%;
     height: 100%;
     object-fit: cover;
-}
-
-.slides {
+  }
+  
+  .slides {
     display: flex;
     width: 100%;
     height: 100%;
-}
-
-.text {
+    position: relative;
+  }
+  
+  .text {
     position: absolute;
-    bottom: 50px;
-    left: 50px;
+    top: 50%;
+    transform: translate(70%, -50%);
     color: white;
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 20px;
-    border-radius: 20px;
+    text-align: center;
+  }
+
+  .text h1{
+    display: inline-block;
+    margin-right: 10px;
+    font-size: 4.2em;
+    
+  }
+  
+  .dynamicTextContainer {
+    display: inline-block;
+    background-color: #001443;
+    padding: 0 10px;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: changeText 9s infinite;
+    min-height: 1vh;
 }
 
-
-/* @media screen and (max-width: 700px) {
-    .carousel{
-        height: 85vh;
+.dynamicText {
+    font-size: 2.3em;
+    display: inline-block;
+    animation: slide-in 3s infinite;
+  }
+  
+  @keyframes slide-in {
+    0% {
+      transform: translateX(-100%);
+      opacity: 0;
     }
-    .text {
-        bottom: 20px;
-        left: 20px;
-        padding: 10px;
+    100% {
+      transform: translateX(0);
+      opacity: 1;
     }
-    .text h1,
-    .text h2 {
-        font-size: 20px;
+  }
+  
+  @keyframes changeText {
+    0%, 33.33% {
+      content: "Communities";
     }
-} */
-
-
-
-@media screen and (min-width: 360px) {
-    .carousel{
-        height: 85vh;
+    33.34%, 66.66% {
+      content: "Prosperity";
     }
-    .text {
-        bottom: 30px;
-        left: 10px;
-        padding: 10px;
+    66.67%, 100% {
+      content: "Partnerships";
     }
-}
-
-@media screen and (min-width: 375px) {
-    .carousel{
-        
-        height: 84vh;
+  }
+  
+  .dynamicText::before {
+    content: "Communities";
+    animation: changeTextContent 9s infinite;
+  }
+  
+  @keyframes changeTextContent {
+    0%, 33.33% {
+      content: "Communities";
     }
-    .text {
-        bottom: 20px;
-        left: 20px;
-        padding: 10px;
+    33.34%, 66.66% {
+      content: "Prosperity";
     }
-    .text h1,
-    .text h2 {
-        font-size: 20px;
+    66.67%, 100% {
+      content: "Partnerships";
     }
-}
-
-
-
-@media screen and (min-width: 390px) {
-    .carousel{
-        height: 88vh;
+  }
+  
+  @media screen and (max-width: 700px) {
+    .carousel {
+      height: 85vh;
     }
-}
-
-
-
-@media screen and (min-width: 414px) {
-    .carousel{
-        height: 88vh;
+    /* .text h1 {
+      font-size: 20px;
+    } */
+  }
+  
+  @media screen and (min-width: 360px) {
+    .carousel {
+      height: 85vh;
     }
-}
-
-@media screen and (min-width: 500px) {
-    .carousel{
-        
-        height: 83vh;
+  }
+  
+  @media screen and (min-width: 375px) {
+    .carousel {
+      height: 84vh;
     }
-}
-
-
-
-@media screen and (min-width: 768px) {
-    .carousel{
-        height: 90vh;
+  }
+  
+  @media screen and (min-width: 390px) {
+    .carousel {
+      height: 88vh;
     }
-    .text h1,
-    .text h2 {
-        font-size: 40px;
+  }
+  
+  @media screen and (min-width: 414px) {
+    .carousel {
+      height: 88vh;
     }
-}
-
-@media screen and (min-width: 853px) {
-    .text h1,
-    .text h2 {
-        font-size: 50px;
+  }
+  
+  @media screen and (min-width: 500px) {
+    .carousel {
+      height: 83vh;
     }
-}
-
-@media screen and (min-width: 860px) {
-    .carousel{
-        height: 80vh;
+  }
+  
+  @media screen and (min-width: 768px) {
+    .carousel {
+      height: 90vh;
     }
-    .text h1,
-    .text h2 {
-        font-size: 40px;
+    /* .text h1 {
+      font-size: 40px;
+    } */
+  }
+  
+  @media screen and (min-width: 853px) {
+    /* .text h1 {
+      font-size: 50px;
+    } */
+  }
+  
+  @media screen and (min-width: 860px) {
+    .carousel {
+      height: 80vh;
     }
-}
-
-@media screen and (min-width: 912px) {
-    .carousel{
-        height: 92vh;
+    /* .text h1 {
+      font-size: 40px;
+    } */
+  }
+  
+  @media screen and (min-width: 912px) {
+    .carousel {
+      height: 92vh;
     }
-    .text h1,
-    .text h2 {
-        font-size: 40px;
+    /* .text h1 {
+      font-size: 60px;
+    } */
+  }
+  
+  @media screen and (min-width: 1024px) {
+    .carousel {
+      height: 93vh;
     }
-}
-
-
-
-@media screen and (min-width: 1024px) {
-    .carousel{
-        height: 93vh;
+    /* .text {
+      bottom: 80px;
+      left: 20px;
+    } */
+  }
+  
+  @media screen and (min-width: 1025px) {
+    .carousel {
+      height: 83vh;
     }
-    .text {
-        bottom: 80px;
-        left: 20px;
+    /* .text {
+      bottom: 80px;
+      left: 20px;
+    } */
+  }
+  
+  @media screen and (min-width: 1280px) {
+    .carousel {
+      height: 87vh;
     }
-}
-
-@media screen and (min-width: 1025px) {
-    .carousel{
-        height: 83vh;
-    }
-    .text {
-        bottom: 80px;
-        left: 20px;
-    }
-}
-
-@media screen and (min-width: 1280px) {
-    .carousel{
-        height: 87vh;
-    }
-}
-
-
-
-
+  }
+  

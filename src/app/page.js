@@ -34,7 +34,6 @@ export default function Home() {
         {/* <ViewAllProject /> */}
 
         {/* <LatestNews /> */}
-        {/* <BuildingImage /> */}
         <Testimonials />
         {/* <Services /> */}
         {/* <Portfolio /> */}
@@ -42,6 +41,7 @@ export default function Home() {
         <Partners />
         <Project />
 
+        {/* <BuildingImage /> */}
         <About />
 
         <Location />
