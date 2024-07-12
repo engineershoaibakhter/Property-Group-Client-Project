@@ -34,12 +34,12 @@ export default function Home() {
         {/* <ViewAllProject /> */}
 
         {/* <LatestNews /> */}
-        <Testimonials />
         {/* <Services /> */}
         {/* <Portfolio /> */}
 
         <Partners />
-        <Project />
+        {/* <Project /> */}
+        <Testimonials />
 
         {/* <BuildingImage /> */}
         <About />
