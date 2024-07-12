@@ -146,6 +146,19 @@
   font-size: 1em;
 }
 
+.successMessage {
+  color: green;
+  margin-top: 1rem;
+  font-weight: bold;
+}
+
+.errorMessage {
+  color: red;
+  margin-top: 1rem;
+  font-weight: bold;
+}
+
+
 @media (min-width: 768px) {
   .contactContainer {
     flex-direction: row;
