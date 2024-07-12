@@ -1,6 +1,6 @@
 .about {
-    background-color: #282827;
-    color: rgb(250,123,37);
+    background-color: white;
+    color: #082362;
     padding-top: 30px;
     padding-bottom: 30px;
 }
@@ -27,12 +27,13 @@
     align-items: center; /* Adjust alignment to flex-start */
     justify-content: space-between;
     border-width: 80px;
-    border-color: rgb(250,123,37);
+    border-color: #021541;
     border-radius: 20px;
-    box-shadow: 4px 5px 10px rgba(235, 106, 8, 0.789);
+    box-shadow: 4px 5px 10px #0c44c9;
     padding: 20px;
     width: 100%;
     gap: 40px; /* Add gap to add space between left and right content */
+    background-color: #082362;
 }
 
 .details {

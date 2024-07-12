@@ -10,7 +10,11 @@ const Contact = () => {
         <h2 className={styles.h2}>CONTACT US</h2>
     <div className={styles.contactContainer} id='contact_us'>
       <div className={styles.leftSection}>
-        <div className={styles.contactDetails}>
+      <p>We'd love to hear from you! Whether you have a question, feedback, or simply want to say hello, our team is here to help. Your thoughts and inquiries are important to us, and we are committed to providing you with the best possible support.</p>
+          <h2>Drop Us a Message</h2>
+          <p>For your convenience, we have provided a contact form below. Simply fill out the form, and one of our representatives will get back to you as soon as possible. We strive to respond to all inquiries within 24 hours.</p>
+        
+        {/* <div className={styles.contactDetails}>
           <div className={styles.detailItem}>
             <FontAwesomeIcon icon={faGlobe} className={styles.icon} />
             <div className={styles.textContainer}>
@@ -32,7 +36,7 @@ const Contact = () => {
               <p>info@bcacorp.com.au</p>
             </div>
           </div>
-        </div>
+       </div> */}
       </div>
       <div className={styles.rightSection}>
         <form className={styles.contactForm}>

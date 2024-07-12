@@ -1,5 +1,5 @@
 "use client";
-import React, { useState, useRef, useEffect } from 'react';
+import React, { useState, useRef } from 'react';
 import { MdChevronLeft, MdChevronRight } from 'react-icons/md';
 import styles from '../styles/LatestNews.module.css';
 
@@ -64,7 +64,7 @@ const LatestNews = () => {
 
     return (
         <div className={styles.latestNews} id='news'>
-            <h2 className={styles.title}>Latest News</h2>
+            <h2 className={styles.title}>LATEST NEWS</h2>
             <div className={styles.cardContainer} ref={scrollContainerRef}>
                 {newsData.map((news, index) => (
                     <div key={index} className={styles.card}>

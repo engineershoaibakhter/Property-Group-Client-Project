@@ -1,18 +1,19 @@
 .Project {
   text-align: center;
-  color: white;
-  background-color: #242932;
-  
+    color: white;
+    background-color: #001443;
+    border-top:3px solid #021f65;
 }
 
 .Heading {
   text-align: start;
   padding-top: 20px;
   padding-left: 20px;
-  color: rgb(250,123,37);
+  color: white;
   font-family: 'Jost', sans-serif;
   font-weight: 600;
   font-size: 1.5em;
+  text-transform: uppercase;
 }
 
 .container {
@@ -42,7 +43,8 @@
   justify-content: center;
   transform: translateY(-50%);
   border-width: 1px;
-  background-color: black;
+  color: #07294d;
+  background-color: white;
 }
 
 .leftButton {
@@ -95,7 +97,6 @@
   flex-direction: column;
   justify-content: space-between; /* Ensures the row div is at the bottom */
   height: 100%; /* Adjust according to your needs */
-
 }
 
 .companyName {
@@ -136,6 +137,7 @@
 .authorPosition {
   font-size: 0.9em;
   font-family: 'Jost', sans-serif;
+text-align: start;
 }
 
 

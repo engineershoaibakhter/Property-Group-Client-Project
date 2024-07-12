@@ -101,7 +101,7 @@ const Project = () => {
           className={`${styles.slideButton} ${styles.leftButton}`}
           onClick={handlePrevSlide}
         >
-          <MdChevronLeft style={{ color: 'white' }} />
+          <MdChevronLeft />
         </button>
         <ul className={styles.imageList} ref={imageListRef}>
           {images.map((src, index) => (
@@ -115,7 +115,7 @@ const Project = () => {
           className={`${styles.slideButton} ${styles.rightButton}`}
           onClick={handleNextSlide}
         >
-          <MdChevronRight style={{ color: 'white' }} />
+          <MdChevronRight />
         </button>
       </div>
       <div className={styles.sliderScrollbar}>

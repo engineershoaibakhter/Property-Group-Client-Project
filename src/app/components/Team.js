@@ -1,43 +1,17 @@
-// components/Team.js
+// components/Team.jsx
 import React from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faFacebook, faTwitter, faLinkedin, faInstagram } from '@fortawesome/free-brands-svg-icons';
 import styles from '../styles/Team.module.css';
 
-const TeamMember = ({ name, title, imgSrc, social }) => {
-  const getIcon = (platform) => {
-    switch (platform) {
-      case 'facebook':
-        return faFacebook;
-      case 'twitter':
-        return faTwitter;
-      case 'linkedin':
-        return faLinkedin;
-      case 'instagram':
-        return faInstagram;
-      default:
-        return null;
-    }
-  };
-
+const TeamMember = ({ name, title, imgSrc }) => {
   return (
     <div className={styles.teamMember}>
-      <div className={styles.entryHover}>
-        <h3>{name}</h3>
-        <div className={styles.elPos}>{title}</div>
-        <div className={styles.distSocial}>
-          <ul>
-            {social.map((item, index) => (
-              <li key={index}>
-                <a href={item.link}>
-                  <FontAwesomeIcon icon={getIcon(item.platform)} />
-                </a>
-              </li>
-            ))}
-          </ul>
+      <img src={imgSrc} alt={`${name} image`} className={styles.teamImage} />
+      <div className={styles.overlay}>
+        <div className={styles.text}>
+          <h3>{name}</h3>
+          <p>{title}</p>
         </div>
       </div>
-      <img src={imgSrc} alt={`${name} image`} className={styles.teamImage} />
     </div>
   );
 };
@@ -48,36 +22,28 @@ const Team = () => {
       name: 'Nick Gupta',
       title: 'CO-FOUNDER',
       imgSrc: '/images/man/leftman.png',
-      social: [
-        { platform: 'linkedin', link: '#' }
-      ]
     },
     {
       name: 'Michael Ellis',
-      title: 'Director',
+      title: 'DIRECTOR',
       imgSrc: '/images/man/centerman.png',
-      social: [
-        { platform: 'linkedin', link: '#' }
-      ]
     },
     {
       name: 'Manpreet Dandiwal',
-      title: 'Consultant',
+      title: 'CONSULTANT',
       imgSrc: '/images/man/rightman.png',
-      social: [
-        { platform: 'linkedin', link: '#' }
-      ]
-    }
+    },
   ];
 
   return (
     <div className={styles.teamSection}>
-      <div className={styles.header}>
-        <h2>OUR TEAM</h2>
-        <p>Under the right circumstances, a team can be significantly more creative than any individual</p>
-        <div className={styles.decorativeLine}></div>
-      </div>
+      
       <div className={styles.gallery}>
+        <div className={styles.leftColumn}>
+          <h2>Our great team</h2>
+          <p>Under the right circumstances, a team can be significantly more creative than any individual.</p>
+          <button className={styles.learnMoreBtn}>Learn More</button>
+        </div>
         {teamMembers.map((member, index) => (
           <TeamMember key={index} {...member} />
         ))}
