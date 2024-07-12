@@ -95,7 +95,6 @@
   flex-direction: column;
   justify-content: space-between; /* Ensures the row div is at the bottom */
   height: 100%; /* Adjust according to your needs */
-
 }
 
 .companyName {
@@ -136,6 +135,7 @@
 .authorPosition {
   font-size: 0.9em;
   font-family: 'Jost', sans-serif;
+text-align: start;
 }
 
 

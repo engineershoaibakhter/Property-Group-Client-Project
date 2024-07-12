@@ -37,8 +37,9 @@
     align-items: center;
     justify-content: center;
     transform: translateY(-50%);
-    background-color: black;
+    background-color: white;
     border-radius: 12px;
+    color: #001443;
 
 
   }
@@ -99,7 +100,7 @@
   
   .scrollbarThumb {
     position: absolute;
-    background: orange;
+    background: white;
     top: 0;
     bottom: 0;
     height: 100%;

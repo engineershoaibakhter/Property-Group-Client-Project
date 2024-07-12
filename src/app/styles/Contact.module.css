@@ -1,7 +1,6 @@
 .contact_us{
-
-  color: white;
-  background-color: #242932;
+  color: black;
+  background-color: white;
 }
 
 .contactContainer {
@@ -17,19 +16,21 @@
 }
 
 .rightSection {
-  background: black;
+  background: #082362;
   padding: 20px;
-  border-radius: 30px;
+  /* border-radius: 30px; */
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
   width: 100%;
+  color: white;
 }
 
 .h2 {
-  color: rgb(250,123,37);
-  font-weight: 600;
+  color: #082362;
   font-size: 1.5em;
   text-align: left;
   padding-left: 20px;
+  font-weight: 700;
+  margin-top: 10px;
 }
 
 .contactDetails {
@@ -37,7 +38,19 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100%; /* Ensuring the details take the full width */
+  width: 100%;
+
+}
+
+.leftSection h2{
+  color: #082362;
+  font-weight: 700;
+  font-size: 1.5em;
+}
+
+.leftSection p{
+  font-size: 1.2em;
+
 }
 
 .detailItem {
@@ -50,7 +63,7 @@
 
 .icon {
   font-size: 30px;
-  color: #ff5722;
+  color: #082362;
   margin-right: 10px;
   padding: 10px;
   border-radius: 50px;
@@ -105,10 +118,10 @@
   width: 100%;
   padding: 10px 15px;
   border: 1px solid #5f656b ;
-  border-radius: 15px;
+  /* border-radius: 15px; */
   font-size: 1em;
-  background-color: #242932;
-  color: white;
+  background-color: #ffffff;
+  color: black;
 }
 
 .formGroup textarea {
@@ -117,15 +130,15 @@
 
 .formGroup input::placeholder,
 .formGroup textarea::placeholder{
-  color: #b1b9c0;
+  color: #787e84;
 }
 
 .submitButton {
   padding: 10px 20px;
-  background-color: rgb(255,120,36);
+  background-color: white;
   color: black;
   border: none;
-  border-radius: 15px;
+  /* border-radius: 15px; */
   cursor: pointer;
   height: 45px;
   font-family: 'Jost', sans-serif;

@@ -1,9 +1,9 @@
 .location{
-  background-color: #242932;
-  color: rgb(250,123,37);
+  background-color: #082362;
+  color:white;
 }
 .heading{
-  color: rgb(250,123,37);
+  color: white;
   font-weight: 600;
   font-size: 1.5em;
   text-align: left;
@@ -69,7 +69,7 @@
 .phone,.address, .email{
     text-align: center;
     margin-top: 5vh;
-    color: #ff5722;
+    color: white;
 }
   .content .left-side .details .text-one,
   .content .left-side .details .text-two{

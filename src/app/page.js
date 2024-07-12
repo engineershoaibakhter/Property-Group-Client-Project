@@ -19,20 +19,22 @@ import LatestNews from "./components/LatestNews";
 import ModernCarousel from "./components/ModernCarousel";
 import CompanyVideo from "./components/CompanyVideo";
 import Commercial from "./components/Commercial";
+import News from "./components/News";
 // import Contact from "../components/Contact";
 
 export default function Home() {
   return (
     <>
       <ModernCarousel />
+      <News />
+        <Team />
       <Commercial />
       {/* <CompanyVideo /> */}
         {/* <HomePage /> */}
         {/* <ViewAllProject /> */}
 
-        <Team />
         {/* <LatestNews /> */}
-        <BuildingImage />
+        {/* <BuildingImage /> */}
         <Testimonials />
         {/* <Services /> */}
         {/* <Portfolio /> */}
@@ -42,8 +44,8 @@ export default function Home() {
 
         <About />
 
-        <Contact />
         <Location />
+        <Contact />
       
     </>
   );
