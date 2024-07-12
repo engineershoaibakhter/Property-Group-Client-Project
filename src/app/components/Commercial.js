@@ -9,7 +9,7 @@ const Commercial = () => {
     <div className={styles.commercial}>
     <div className={styles.commercialContainer}>
       <div className={styles.header}>
-        <h2 className={styles.title}>Project</h2>
+        <h2 className={styles.title}>Our Projects</h2>
         <p className={styles.description}>
           High performance businesses need high-performance places to function as the engine-rooms of their success. From the home of Australia’s biggest blue-chip companies to world-class innovation precincts supporting the next wave of entrepreneurs, our commercial neighbourhoods are fueling the future of work.
         </p>

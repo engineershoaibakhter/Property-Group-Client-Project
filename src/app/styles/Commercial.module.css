@@ -20,6 +20,7 @@
     color: white;
   font-weight: 600;
   font-size: 1.5em;
+  text-transform: uppercase;
   }
   
   .description {
@@ -86,7 +87,6 @@
   }
   
   .footer {
-    margin-top: auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -95,12 +95,14 @@
   .leasing {
     font-size: 1em;
     color: #001443;
+
   }
   
   .detailsLink {
     font-size: 1em;
     color: #04287b;
     text-decoration: none;
+    margin-bottom: 15px;
   }
   
   .detailsLink:hover {

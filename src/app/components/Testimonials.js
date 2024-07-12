@@ -141,7 +141,7 @@
               className={`${styles.slideButton} ${styles.leftButton}`}
               onClick={handlePrevSlide}
             >
-              <MdChevronLeft style={{ color: 'white' }} />
+              <MdChevronLeft />
             </button>
             <ul className={styles.imageList} ref={imageListRef}>
               {testimonials.map((content, index) => (
@@ -170,7 +170,7 @@
               className={`${styles.slideButton} ${styles.rightButton}`}
               onClick={handleNextSlide}
             >
-              <MdChevronRight style={{ color: 'white' }} />
+              <MdChevronRight />
             </button>
           </div>
         </div>

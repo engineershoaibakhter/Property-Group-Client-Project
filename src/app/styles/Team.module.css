@@ -32,6 +32,8 @@
 .leftColumn h2{
   color: #07294d;
   font-weight: 700;
+  text-transform: uppercase;
+  font-size: 1.7em;
 }
 
 .teamMember {
