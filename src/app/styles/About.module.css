@@ -125,3 +125,13 @@
         max-width: calc(50% - 10px);
     }
 }
+
+@media screen and (max-width:500px){
+    .container .content{
+        margin: 0px;
+    }
+    .container{
+        margin: 0px;
+        padding: 0px;
+    }
+}
