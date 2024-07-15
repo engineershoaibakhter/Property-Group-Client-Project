@@ -74,7 +74,7 @@
 }
 
 .mapLink {
-  color: #d32f2f;
+  color: #082362;
   text-decoration: none;
 }
 
@@ -99,22 +99,22 @@
 }
 
 .updateButton {
-  background: #d32f2f;
+  background: #082362;
   color: white;
 }
 
 .updateButton:hover {
-  background: #fe0707;
+  background: #0e3dab;
 }
 
 .enquiryButton {
   background: white;
-  color: #d32f2f;
-  border-color: #d32f2f;
+  color:#082362;
+  border-color: #082362;
 }
 
 .enquiryButton:hover {
-  background: #d32f2f;
+  background: #082362;
   color: white;
 }
 
