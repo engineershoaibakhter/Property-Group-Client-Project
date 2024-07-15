@@ -53,10 +53,8 @@ const News = () => {
 
   return (
     <div className={styles.newsSection}>
-      <div className={styles.header}>
         <h2>Latest News</h2>
-        <p>High performance businesses need high-performance places to function as the engine-rooms of their success. From the home of Australia’s biggest blue-chip companies to world-class innovation precincts supporting the next wave of entrepreneurs, our commercial neighbourhoods are fueling the future of work.</p>
-      </div>
+     
       <div className={styles.articles}>
         {newsArticles.map((article, index) => (
           <NewsArticle key={index} {...article} />

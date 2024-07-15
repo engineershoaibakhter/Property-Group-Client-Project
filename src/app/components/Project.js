@@ -92,7 +92,7 @@ const Project = () => {
   }, []);
 
   return (
-    <div className={styles.Project} id='projects'>
+    <div className={styles.Project}>
         <h2 className={styles.Heading}>Our Projects</h2>
     <div className={styles.container}>
       <div className={styles.sliderWrapper}>

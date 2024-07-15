@@ -21,9 +21,9 @@ const NavbarWeb = () => {
       </div>
       <div className={`${styles.menu} ${isOpen ? styles.open : ''}`}>
         <a href="/" onClick={closeMenu}>Home</a>
-        <a href="#projects" onClick={closeMenu}>Projects</a>
-        <a href="#partners" onClick={closeMenu}>Partners</a>
-        <a href="#contact_us" onClick={closeMenu}>Contact Us</a>
+        <a href="/#projects" onClick={closeMenu}>Projects</a>
+        <a href="/#partners" onClick={closeMenu}>Partners</a>
+        <a href="/#contact_us" onClick={closeMenu}>Contact Us</a>
       </div>
       <div className={styles.hamburger} onClick={toggleMenu}>
         <div className={styles.bar}></div>

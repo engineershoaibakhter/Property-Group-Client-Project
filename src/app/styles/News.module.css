@@ -14,21 +14,17 @@
   
   .header h2 {
     color: #ffffff;
-    font-weight: 700;
-    font-size: 1.7rem;
   text-transform: uppercase;
-  }
-  
-  .header p {
-    color: #ffffff;
-    max-width: 60vw;
-    font-size: 1rem;
+  font-family: 'Jost', sans-serif;
+  font-weight: 600;
+  font-size: 1.5em;
   }
   
   .articles {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 1rem;
+  margin-top: 20px;
   }
   
   .newsArticle {

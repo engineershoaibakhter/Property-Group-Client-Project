@@ -6,7 +6,7 @@ import Link from 'next/link';
 
 const Commercial = () => {
   return (
-    <div className={styles.commercial}>
+    <div className={styles.commercial} id='projects'>
     <div className={styles.commercialContainer}>
       <div className={styles.header}>
         <h2 className={styles.title}>Our Projects</h2>
