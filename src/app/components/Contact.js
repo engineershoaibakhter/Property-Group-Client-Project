@@ -44,11 +44,11 @@ const Contact = () => {
             <div className={`${styles.formGroup} ${styles.row}`}>
               <div className={styles.formGroup}>
                 <label htmlFor="name">Name*</label>
-                <input type="text" id="name" name="name" placeholder="Shoaib Akhter" required />
+                <input type="text" id="name" name="name" placeholder="Your Name" required />
               </div>
               <div className={styles.formGroup}>
                 <label htmlFor="email">Email*</label>
-                <input type="email" id="email" name="email" placeholder="shoaib@gmail.com" required />
+                <input type="email" id="email" name="email" placeholder="your_email@gmail.com" required />
               </div>
             </div>
             <div className={styles.formGroup}>

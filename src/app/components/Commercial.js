@@ -6,6 +6,7 @@ import Link from 'next/link';
 
 const Commercial = () => {
   return (
+    
     <div className={styles.commercial} id='projects'>
     <div className={styles.commercialContainer}>
       <div className={styles.header}>
@@ -20,15 +21,15 @@ const Commercial = () => {
           <img src="/images/building.jpg" alt="Asset 1" className={styles.image} />
           </div>
           <div className={styles.cardContent}>
-            <p className={styles.location}>NSW, Rhodes</p>
-            <h4 className={styles.projectName}>Rhodes Quarter</h4>
+            <p className={styles.location}>VIC, Thornhill Park</p>
+            <h4 className={styles.projectName}>Central Square</h4>
             <p className={styles.features}>
-              <span role="img" aria-label="leaf">🍃</span> Features world-leading carbon neutral NABERS & Platinum WELL certified offices.
+              Features world-leading carbon neutral NABERS & Platinum WELL certified offices.
             </p>
             <div className={styles.footer}>
-              <p className={styles.leasing}>Leasing now</p>
+              <Link href={'https://www.pspproperty.com.au/property?property_id=1064509/2-sadie-avenue-thornhill-park'} target="_blank" rel="noopener noreferrer"><button className={styles.leasing}>Leasing now</button></Link> 
               <p>
-                <Link href={'../pages/CommercialDetails'} className={styles.detailsLink}>More details ➔</Link>
+                <Link href={'/CommercialDetails'} target="_blank" rel="noopener noreferrer"><button className={styles.detailsLink}>More details ➔</button></Link> 
               </p>
             </div>
           </div>
@@ -39,14 +40,14 @@ const Commercial = () => {
         
           </div>
           <div className={styles.cardContent}>
-            <p className={styles.location}>NSW, Haymarket</p>
-            <h2 className={styles.projectName}>Central Place Sydney</h2>
+            <p className={styles.location}>VIC, Craigieburn</p>
+            <h2 className={styles.projectName}>Aston Square</h2>
             <p className={styles.features}>
-              <span role="img" aria-label="leaf">🍃</span> Targeting net zero carbon emissions and world-leading WELL & Green Star ratings.
+              Targeting net zero carbon emissions and world-leading WELL & Green Star ratings.
             </p>
             <div className={styles.footer}>
-              <p className={styles.leasing}>Leasing now</p>
-              <Link href={'/pages/CommercialDetails'} className={styles.detailsLink}>More details ➔</Link>
+              <Link href={'https://www.pspproperty.com.au/property?property_id=1241993/179-elevation-boulevard-craigieburn'} target="_blank" rel="noopener noreferrer"><button className={styles.leasing}>Leasing now</button></Link> 
+              <Link href={'/pages/CommercialDetails'} target="_blank" rel="noopener noreferrer"><button className={styles.detailsLink}>More details ➔</button></Link> 
             </div>
           </div>
         </div>

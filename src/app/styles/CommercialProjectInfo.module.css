@@ -84,11 +84,9 @@
 
 .buttons {
   display: flex;
-  gap: 10px;
 }
 
-.updateButton,
-.enquiryButton {
+.updateButton{
   flex: 1;
   padding: 10px 10px;
   font-size: 1em;
@@ -96,9 +94,6 @@
   border-radius: 5px;
   cursor: pointer;
   text-align: center;
-}
-
-.updateButton {
   background: #082362;
   color: white;
 }
@@ -107,16 +102,6 @@
   background: #0e3dab;
 }
 
-.enquiryButton {
-  background: white;
-  color:#082362;
-  border-color: #082362;
-}
-
-.enquiryButton:hover {
-  background: #082362;
-  color: white;
-}
 
 @media (max-width: 768px) {
   .container {
@@ -128,8 +113,7 @@
   .rightContent {
     flex: 1 1 100%;
   }
-  .updateButton,
-.enquiryButton {
+  .updateButton {
   padding: 10px 10px;
 }
 }

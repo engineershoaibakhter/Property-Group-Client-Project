@@ -2,6 +2,7 @@
 import React from 'react';
 import styles from '../styles/Footer.module.css';
 import { FaLinkedin, FaYoutube, FaTwitter, FaFacebook,FaInstagram } from 'react-icons/fa';
+import Link from 'next/link';
 
 const Footer = () => {
   return (
@@ -47,29 +48,19 @@ const Footer = () => {
             <li><a href="#">Development Advisory</a></li>
             <li><a href="#">Project Management</a></li>
             <li><a href="#">Financier Representation</a></li>
-            <li><a href="#">Security</a></li>
           </ul>
         </div>
 
         <div className={styles.footerCol}>
           <ul className={styles.links}>
           <h4>MELBOURNE</h4>
-            <li><a href="#">Level 8/468 St Kilda Road Melbourne VIC 3004</a></li>
-            <li><a href="#">03 9222 4000</a></li>
-            <li><a href="#">michael.ellis@bcacorp.com.au</a></li>
+            <li><Link href="#">Level 8/468 St Kilda Road Melbourne VIC 3004</Link></li>
+            <li><Link href="#">03 9222 4000</Link></li>
+            <li><Link href="mailto:info@bcacorp.com.au">info@bcacorp.com.au</Link></li>
           </ul>
         </div>
 
-        <div className={styles.footerCol}>
-          <ul className={styles.links}>
-            <h4>SUBSCRIPTION</h4>
-            <p>Subscribe us to get latest update</p>
-            <form>
-              <input className={styles.email} type="text" placeholder="Email" required/>
-              <h4 type="submit" className={styles.submitBtn}>Subscribe →</h4>
-            </form>
-          </ul>
-        </div>
+        
 
         
       </div>

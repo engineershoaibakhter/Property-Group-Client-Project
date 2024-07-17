@@ -2,6 +2,7 @@
 
 import React, { useState } from 'react';
 import styles from '../styles/Navbar.module.css';
+import Link from 'next/link';
 
 const NavbarWeb = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -20,10 +21,10 @@ const NavbarWeb = () => {
         <img src={'/weblogo.png'} alt="Company Logo" className={styles.logoImage} />
       </div>
       <div className={`${styles.menu} ${isOpen ? styles.open : ''}`}>
-        <a href="/" onClick={closeMenu}>Home</a>
-        <a href="/#projects" onClick={closeMenu}>Projects</a>
-        <a href="/#partners" onClick={closeMenu}>Partners</a>
-        <a href="/#contact_us" onClick={closeMenu}>Contact Us</a>
+        <Link href="/" onClick={closeMenu}>Home</Link>
+        <Link href="/#projects" onClick={closeMenu}>Projects</Link>
+        <Link href="/#partners" onClick={closeMenu}>Partners</Link>
+        <Link href="/#contact_us" onClick={closeMenu}>Contact Us</Link>
       </div>
       <div className={styles.hamburger} onClick={toggleMenu}>
         <div className={styles.bar}></div>

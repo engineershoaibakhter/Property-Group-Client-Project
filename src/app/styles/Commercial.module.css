@@ -94,15 +94,18 @@
   
   .leasing {
     font-size: 1em;
-    color: #001443;
-
+    color: white;
+    background-color: #04287b;
+    border-color: #04287b;
   }
   
   .detailsLink {
     font-size: 1em;
-    color: #04287b;
     text-decoration: none;
-    margin-bottom: 15px;
+    margin-bottom: 3px;
+    color: white;
+    background-color: #04287b;
+    border-color: #04287b;
   }
   
   .detailsLink:hover {

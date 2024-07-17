@@ -3,11 +3,11 @@
 import React from 'react'
 import styles from '../styles/Gallery.module.css'
 
-const Gallery = () => {
+const Gallery = ({companyName}) => {
   return (
     <div className={styles.Gallery}>
       <h1>Gallery</h1>
-      <p>Central Place Sydney is set to redefine innovation.</p>
+      <p>{companyName} is set to redefine innovation.</p>
       <div className={styles.Images}>
         <div className={styles.image}>
         <img src='/images/commercial/gallery/sixth_image.png' alt='sixth image' />

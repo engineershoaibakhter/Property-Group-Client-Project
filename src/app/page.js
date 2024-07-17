@@ -26,7 +26,7 @@ export default function Home() {
   return (
     <>
       <ModernCarousel />
-      <News />
+      {/* <News /> */}
         <Team />
       <Commercial />
       {/* <CompanyVideo /> */}

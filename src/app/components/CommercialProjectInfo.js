@@ -1,12 +1,13 @@
 import React from 'react'
 import styles from '../styles/CommercialProjectInfo.module.css'
+import Link from 'next/link'
 
-const CommercialProjectInfo = () => {
+const CommercialProjectInfo = ({companyName,locationMap,contactUrl}) => {
   return (
     <div className={styles.container}>
     <div className={styles.leftContent}>
       <p className={styles.description}>
-        Central Place Sydney will be Sydney’s most significant CBD development in over a decade, delivering a highly sustainable urban precinct to attract the best of the international tech and innovation sector to live and work.
+      {companyName} will be most significant CBD development in over a decade, delivering a highly sustainable urban precinct to attract the best of the international tech and innovation sector to live and work.
       </p>
       <ul className={styles.featuresList}>
         <li>~$3 billion mixed-use precinct within Sydney’s new ‘Tech Central’ precinct</li>
@@ -23,11 +24,10 @@ const CommercialProjectInfo = () => {
       <div className={styles.location}>
         <h3>Location</h3>
         <p>14-30 Lee Street, Haymarket NSW 2000</p>
-        <a href="https://www.google.com/maps" target="_blank" rel="noopener noreferrer" className={styles.mapLink}>Google Map</a>
+        <Link href={locationMap} target="_blank" rel="noopener noreferrer" className={styles.mapLink}>Google Map</Link>
       </div>
       <div className={styles.buttons}>
-        <button className={styles.updateButton}>Register for updates</button>
-        <button className={styles.enquiryButton}>Media enquiries</button>
+        <Link href={contactUrl} target='_blank'><button className={styles.updateButton}>Contact ➔</button></Link>
       </div>
     </div>
   </div>

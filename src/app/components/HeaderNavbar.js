@@ -3,6 +3,7 @@ import styles from '../styles/HeaderNavbar.module.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLocationDot, faPhoneVolume, faClock } from '@fortawesome/free-solid-svg-icons';
 import { faFacebookF, faTwitter, faYoutube, faInstagram, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
+import Link from 'next/link';
 
 const HeaderNavbar = () => {
   return (
@@ -25,11 +26,11 @@ const HeaderNavbar = () => {
         </div>
         <span className={styles.BreakLine}>|</span>
         <div className={styles.icons}>
-          <span className={styles.icon}><FontAwesomeIcon icon={faFacebookF} /></span>
-          <span className={styles.icon}><FontAwesomeIcon icon={faTwitter} /></span>
-          <span className={styles.icon}><FontAwesomeIcon icon={faYoutube} /></span>
-          <span className={styles.icon}><FontAwesomeIcon icon={faInstagram} /></span>
-          <span className={styles.icon}><FontAwesomeIcon icon={faLinkedinIn} /></span>
+          <span className={styles.icon}><Link href={"https://www.facebook.com"} ><FontAwesomeIcon icon={faFacebookF} /></Link></span>
+          <span className={styles.icon}><Link href={""}><FontAwesomeIcon icon={faTwitter} /></Link></span>
+          <span className={styles.icon}><Link href={""}><FontAwesomeIcon icon={faYoutube} /></Link></span>
+          <span className={styles.icon}><Link href={""}><FontAwesomeIcon icon={faInstagram} /></Link></span>
+          <span className={styles.icon}><Link href={""}><FontAwesomeIcon icon={faLinkedinIn} /></Link></span>
         </div>
       </div>
     </div>
