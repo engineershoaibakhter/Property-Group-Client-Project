@@ -15,29 +15,29 @@ const Footer = () => {
           <h4>BCA CORP</h4>
             <p>The paragraph will show on here. The paragraph will show on here. The paragraph will show on here. The paragraph will show on here</p>
             <li className={styles.socialIcons}>
-              <a href="#">
+              <Link href={process.env.NEXT_PUBLIC_LINKEDIN_LINK} target='_blank'>
                 <FaLinkedin className={styles.icon}/>
-              </a>
+              </Link>
             </li>
             <li className={styles.socialIcons}>
-              <a href="#">
+              <Link href={process.env.NEXT_PUBLIC_YOUTUBE_LINK} target='_blank'>
                 <FaYoutube className={styles.icon}/>
-              </a>
+              </Link>
             </li>
             <li className={styles.socialIcons}>
-              <a href="#">
+              <Link href={process.env.NEXT_PUBLIC_TWITTER_LINK} target='_blank'>
                 <FaTwitter className={styles.icon}/>
-              </a>
+              </Link>
             </li>
             <li className={styles.socialIcons}>
-              <a href="#">
+              <Link href={process.env.NEXT_PUBLIC_FACEBOOK_LINK} target='_blank'>
                 <FaFacebook className={styles.icon}/>
-              </a>
+              </Link>
             </li>
             <li className={styles.socialIcons}>
-              <a href="#">
+              <Link href={process.env.NEXT_PUBLIC_INSTAGRAM_LINK} target='_blank'>
                 <FaInstagram className={styles.icon}/>
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
@@ -45,20 +45,21 @@ const Footer = () => {
         <div className={styles.footerCol}>
           <ul className={styles.links}>
           <h4>SERVICES</h4>
-            <li><a href="#">Development Advisory</a></li>
-            <li><a href="#">Project Management</a></li>
-            <li><a href="#">Financier Representation</a></li>
+            <li>Development Advisory</li>
+            <li>Project Management</li>
+            <li>Financier Representation</li>
           </ul>
         </div>
 
         <div className={styles.footerCol}>
           <ul className={styles.links}>
           <h4>MELBOURNE</h4>
-            <li><Link href="#">Level 8/468 St Kilda Road Melbourne VIC 3004</Link></li>
-            <li><Link href="#">03 9222 4000</Link></li>
+            <li>Level 8/468 St Kilda Road Melbourne VIC 3004</li>
+            <li><Link href="tel:+61392224000">03 9222 4000</Link></li>
             <li><Link href="mailto:info@bcacorp.com.au">info@bcacorp.com.au</Link></li>
           </ul>
         </div>
+        
 
         
 

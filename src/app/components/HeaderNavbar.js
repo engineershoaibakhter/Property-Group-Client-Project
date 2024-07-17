@@ -16,21 +16,21 @@ const HeaderNavbar = () => {
         <span className={styles.BreakLine}>|</span>
         <div className={styles.NumberContainer}>
           <FontAwesomeIcon icon={faPhoneVolume} className={styles.icon} />
-          <h6 className={styles.h6}><a href="tel:+61392224000" className={styles.phoneLink}>03 9222 4000</a></h6>
+          <h6 className={styles.h6}><Link href="tel:+61392224000" className={styles.phoneLink}>03 9222 4000</Link></h6>
         </div>
       </div>
       <div className={styles.LeftContent}>
         <div className={styles.TimingContainer}>
           <FontAwesomeIcon icon={faPhoneVolume} className={styles.icon} />
-          <h6 className={styles.h6}><a href="tel:+61413066115" className={styles.phoneLink}>04 1306 6115</a></h6>
+          <h6 className={styles.h6}><Link href="tel:+61413066115" className={styles.phoneLink}>04 1306 6115</Link></h6>
         </div>
         <span className={styles.BreakLine}>|</span>
         <div className={styles.icons}>
-          <span className={styles.icon}><Link href={"https://www.facebook.com"} ><FontAwesomeIcon icon={faFacebookF} /></Link></span>
-          <span className={styles.icon}><Link href={""}><FontAwesomeIcon icon={faTwitter} /></Link></span>
-          <span className={styles.icon}><Link href={""}><FontAwesomeIcon icon={faYoutube} /></Link></span>
-          <span className={styles.icon}><Link href={""}><FontAwesomeIcon icon={faInstagram} /></Link></span>
-          <span className={styles.icon}><Link href={""}><FontAwesomeIcon icon={faLinkedinIn} /></Link></span>
+          <span className={styles.icon}><Link href={process.env.NEXT_PUBLIC_FACEBOOK_LINK} target='_blank'><FontAwesomeIcon icon={faFacebookF} /></Link></span>
+          <span className={styles.icon}><Link href={process.env.NEXT_PUBLIC_TWITTER_LINK} target='_blank'><FontAwesomeIcon icon={faTwitter} /></Link></span>
+          <span className={styles.icon}><Link href={process.env.NEXT_PUBLIC_YOUTUBE_LINK} target='_blank'><FontAwesomeIcon icon={faYoutube} /></Link></span>
+          <span className={styles.icon}><Link href={process.env.NEXT_PUBLIC_INSTAGRAM_LINK} target='_blank'><FontAwesomeIcon icon={faInstagram} /></Link></span>
+          <span className={styles.icon}><Link href={process.env.NEXT_PUBLIC_LINKEDIN_LINK} target='_blank'><FontAwesomeIcon icon={faLinkedinIn} /></Link></span>
         </div>
       </div>
     </div>
