@@ -12,6 +12,9 @@ body{
   box-sizing: border-box;
   font-family: 'Jost', sans-serif;
 }
+html {
+  scroll-behavior: smooth;
+}
 a {
   color: inherit;
   text-decoration: none;

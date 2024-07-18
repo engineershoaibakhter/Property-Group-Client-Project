@@ -114,10 +114,28 @@
 
   @media (max-width: 768px) {
     .card {
-      flex: 1 1 100%; 
+      flex: 1 1 100%;
     }
   }
   
+  @media screen and (max-width:400px){
+    
+    .leasing {
+      font-size: 0.7em;
+      color: white;
+      background-color: #04287b;
+      border-color: #04287b;
+    }
+    
+    .detailsLink {
+      font-size: 0.7em;
+      text-decoration: none;
+      margin-bottom: 3px;
+      color: white;
+      background-color: #04287b;
+      border-color: #04287b;
+    }
+  }
 
 
 

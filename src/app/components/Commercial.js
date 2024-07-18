@@ -28,9 +28,8 @@ const Commercial = () => {
             </p>
             <div className={styles.footer}>
               <Link href={'https://www.pspproperty.com.au/property?property_id=1064509/2-sadie-avenue-thornhill-park'} target="_blank" rel="noopener noreferrer"><button className={styles.leasing}>Leasing now</button></Link> 
-              <p>
-                <Link href={'/CommercialDetails'} target="_blank" rel="noopener noreferrer"><button className={styles.detailsLink}>More details ➔</button></Link> 
-              </p>
+                <Link href={'/craigieburn'} target="_blank" rel="noopener noreferrer"><button className={styles.detailsLink}>More details ➔</button></Link> 
+              
             </div>
           </div>
         </div>
@@ -47,7 +46,7 @@ const Commercial = () => {
             </p>
             <div className={styles.footer}>
               <Link href={'https://www.pspproperty.com.au/property?property_id=1241993/179-elevation-boulevard-craigieburn'} target="_blank" rel="noopener noreferrer"><button className={styles.leasing}>Leasing now</button></Link> 
-              <Link href={'/pages/CommercialDetails'} target="_blank" rel="noopener noreferrer"><button className={styles.detailsLink}>More details ➔</button></Link> 
+              <Link href={'/thornhill'} target="_blank" rel="noopener noreferrer"><button className={styles.detailsLink}>More details ➔</button></Link> 
             </div>
           </div>
         </div>

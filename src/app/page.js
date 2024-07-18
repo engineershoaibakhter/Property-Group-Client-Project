@@ -3,7 +3,6 @@ import styles from "./page.module.css";
 import './globals.css';
 import HomePage from "./components/HomePage";
 import Location from "./components/Location"
-import Head from "next/head";
 import ViewAllProject from "./components/ViewAllProject";
 import BuildingImage from "./components/BuildingImage";
 import About from "./components/About";
@@ -25,6 +24,7 @@ import News from "./components/News";
 export default function Home() {
   return (
     <>
+   
       <ModernCarousel />
       {/* <News /> */}
         <Team />

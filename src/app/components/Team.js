@@ -11,8 +11,9 @@ const TeamMember = ({ name, title, imgSrc,linkedIn }) => {
       <img src={imgSrc} alt={`${name} image`} className={styles.teamImage} />
       <div className={styles.overlay}>
         <div className={styles.text}>
-          <h3>{name} <span> <Link href={linkedIn} target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faLinkedinIn} /></Link> </span></h3> 
+          <h3>{name}</h3> 
           <p>{title}</p>
+          <p><Link href={linkedIn} target="_blank"><FontAwesomeIcon icon={faLinkedinIn} /></Link></p>
         </div>
       </div>
     </div>
@@ -25,19 +26,19 @@ const Team = () => {
       name: 'Nick Gupta',
       title: 'CO-FOUNDER',
       imgSrc: '/images/man/leftman.png',
-      linkedIn:'https://linkedin.com',
+      linkedIn:process.env.NEXT_PUBLIC_NICK_GUPTA_LINKEDIN_URL,
     },
     {
       name: 'Michael Ellis',
       title: 'DIRECTOR',
       imgSrc: '/images/man/centerman.png',
-      linkedIn:'https://linkedin.com',
+      linkedIn:process.env.NEXT_PUBLIC_MICHAEL_ELLIS_LINKEDIN_URL,
     },
     {
       name: 'Manpreet Dandiwal',
       title: 'CONSULTANT',
       imgSrc: '/images/man/rightman.png',
-      linkedIn:'https://linkedin.com',
+      linkedIn:process.env.NEXT_PUBLIC_MANPREET_LINKEDIN_URL,
     },
   ];
 

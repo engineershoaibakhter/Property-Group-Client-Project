@@ -31,6 +31,7 @@
     margin: 0;
     font-weight: 600;
     background-color: #082362;
+    background: rgba(0, 47, 108, 0.7);
     padding: 5px;
   }
   
@@ -39,6 +40,7 @@
     margin: 5px 0 0;
     text-align: left;
     background-color: #082362;
+    background: rgba(0, 47, 108, 0.7);
     padding: 10px;
     width: fit-content;
   }
@@ -50,6 +52,21 @@
   
     .carouselContent p {
       font-size: 1em;
+    }
+    .carouselSlide img {
+      width: 100%;
+      height:30vh; 
+      object-fit: cover; 
+    }
+  }
+
+  @media (max-width: 410px) {
+    .carouselContent h1 {
+      font-size: 1.2em;
+    }
+  
+    .carouselContent p {
+      font-size: 0.7em;
     }
     .carouselSlide img {
       width: 100%;
