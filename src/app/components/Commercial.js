@@ -3,6 +3,7 @@
 import React from 'react';
 import styles from '../styles/Commercial.module.css';
 import Link from 'next/link';
+import Image from 'next/image';
 
 const Commercial = () => {
   return (
@@ -18,7 +19,7 @@ const Commercial = () => {
       <div className={styles.cardsContainer}>
         <div className={styles.card}>
         <div className={styles.imageContainer}>
-          <img src="/images/building.jpg" alt="Asset 1" className={styles.image} />
+          <Image src="/images/building.jpg" alt="Asset 1" className={styles.image} width={200} height={100}/>
           </div>
           <div className={styles.cardContent}>
             <p className={styles.location}>VIC, Thornhill Park</p>
@@ -28,14 +29,13 @@ const Commercial = () => {
             </p>
             <div className={styles.footer}>
               <Link href={'https://www.pspproperty.com.au/property?property_id=1064509/2-sadie-avenue-thornhill-park'} target="_blank" rel="noopener noreferrer"><button className={styles.leasing}>Leasing now</button></Link> 
-                <Link href={'/craigieburn'} target="_blank" rel="noopener noreferrer"><button className={styles.detailsLink}>More details ➔</button></Link> 
-              
+              <Link href={'/craigieburn'} target="_blank" rel="noopener noreferrer"><button className={styles.detailsLink}>More details ➔</button></Link> 
             </div>
           </div>
         </div>
         <div className={styles.card}>
         <div className={styles.imageContainer}>
-        <img src="/images/cars.jpg" alt="Asset 2" className={styles.image} />
+        <Image src="/images/cars.jpg" alt="Asset 2" className={styles.image} width={200} height={100}/>
         
           </div>
           <div className={styles.cardContent}>

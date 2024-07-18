@@ -3,6 +3,7 @@
 import React, { useState } from 'react';
 import styles from '../styles/Navbar.module.css';
 import Link from 'next/link';
+import Image from 'next/image';
 
 const NavbarWeb = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -18,7 +19,7 @@ const NavbarWeb = () => {
   return (
     <div className={styles.navbar}>
       <div className={styles.logo}>
-        <img src={'/weblogo.png'} alt="Company Logo" className={styles.logoImage} />
+        <Image src={'/weblogo.png'} alt="Company Logo" className={styles.logoImage} width={100} height={100}/>
       </div>
       <div className={`${styles.menu} ${isOpen ? styles.open : ''}`}>
         <Link href="/" onClick={closeMenu}>Home</Link>

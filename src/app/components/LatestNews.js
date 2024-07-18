@@ -2,6 +2,8 @@
 import React, { useState, useRef } from 'react';
 import { MdChevronLeft, MdChevronRight } from 'react-icons/md';
 import styles from '../styles/LatestNews.module.css';
+import Image from 'next/image';
+
 
 const LatestNews = () => {
     const newsData = [
@@ -68,7 +70,7 @@ const LatestNews = () => {
             <div className={styles.cardContainer} ref={scrollContainerRef}>
                 {newsData.map((news, index) => (
                     <div key={index} className={styles.card}>
-                        <img src={news.image} alt={news.title} className={styles.cardImage} />
+                        <Image src={news.image} alt={news.title} className={styles.cardImage} />
                         <p className={styles.date}>{news.date}</p>
                         <h3 className={styles.cardTitle}>{news.title}</h3>
                     </div>

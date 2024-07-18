@@ -12,7 +12,7 @@ const CommercialLocation = ({locationSrc,companyName}) => {
         width="2000" 
         height="450" 
         style={{border:0}} 
-        allowfullscreen="" 
+        allowFullScreen="" 
         loading="lazy" 
         title="BCA CORP"
         ></iframe>

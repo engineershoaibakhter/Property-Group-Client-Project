@@ -1,4 +1,5 @@
 "use client";
+import Image from 'next/image';
 // components/Partners.js
 import styles from '../styles/Partners.module.css';
 
@@ -18,14 +19,14 @@ const Partners = () => {
       <h2 className={styles.h2}>Our Partners</h2>
     <div className={styles.slider}>
       <div className={styles.slideTrack}>
-        {images.map((src, index) => (
+        {images.map((source, index) => (
           <div className={styles.slide} key={index}>
-            <img src={src} height="100" width="250" alt={`Partner ${index + 1}`} />
+            <Image src={source} height={100} width={250} alt={`Partner ${index + 1}`} />
           </div>
         ))}
-        {images.map((src, index) => (
+        {images.map((source, index) => (
           <div className={styles.slide} key={index + images.length}>
-            <img src={src} height="100" width="250" alt={`Partner ${index + 1}`} />
+            <Image src={source} height={100} width={250} alt={`Partner ${index + 1}`} />
           </div>
         ))}
       </div>

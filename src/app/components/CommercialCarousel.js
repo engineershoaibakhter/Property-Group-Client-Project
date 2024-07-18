@@ -1,4 +1,5 @@
 "use client"
+import Image from 'next/image'
 import styles from '../styles/CommercialCarousel.module.css'
 
 const CommercialCarousel = ({companyName}) => {
@@ -6,7 +7,7 @@ const CommercialCarousel = ({companyName}) => {
     <>
     <div className={styles.carousel}>
       <div className={styles.carouselSlide}>
-        <img src="/images/webimages2.jpg" alt="Central Place Sydney" width={100} height={100} />
+        <Image src="/images/webimages2.jpg" alt="Central Place Sydney" width={200} height={100} />
         <div className={styles.carouselContent}>
           <h1>{companyName}</h1>
           <p>The new home for tomorrow’s game changers.</p>

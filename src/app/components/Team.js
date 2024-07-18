@@ -4,11 +4,12 @@ import styles from '../styles/Team.module.css';
 import Link from 'next/link';
 import { faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import Image from 'next/image';
 
 const TeamMember = ({ name, title, imgSrc,linkedIn }) => {
   return (
     <div className={styles.teamMember}>
-      <img src={imgSrc} alt={`${name} image`} className={styles.teamImage} />
+      <Image src={imgSrc} alt={`${name} image`} className={styles.teamImage} width={100} height={100}/>
       <div className={styles.overlay}>
         <div className={styles.text}>
           <h3>{name}</h3> 

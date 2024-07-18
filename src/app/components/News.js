@@ -1,5 +1,6 @@
 'use client'
 
+import Image from 'next/image';
 import React from 'react';
 import styles from '../styles/News.module.css';
 import { useRouter } from 'next/navigation';
@@ -7,7 +8,7 @@ import { useRouter } from 'next/navigation';
 const NewsArticle = ({ title, date, category, description, imgSrc }) => {
   return (
     <div className={styles.newsArticle}>
-      <img src={imgSrc} alt={title} className={styles.articleImage} />
+      <Image src={imgSrc} alt={title} className={styles.articleImage} />
       <div className={styles.articleContent}>
         <div className={styles.articleMeta}>
           <span className={styles.category}>{category}</span>
