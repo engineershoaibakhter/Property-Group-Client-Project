@@ -68,7 +68,7 @@ const Footer = () => {
       
     </section>
     <div className={styles.copyright}>
-          <p>Copyright 2024 - BCA-CORP | All Rights Reserved</p>
+          <p>Copyright 2024 - BCA Corp | All Rights Reserved</p>
       </div>
     </div>
   );

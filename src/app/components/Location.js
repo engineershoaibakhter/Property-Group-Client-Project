@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import styles from '../styles/Location.module.css';
 
 const Contact = () => {
@@ -17,12 +18,12 @@ const Contact = () => {
           <div className={`${styles.details} ${styles.phone}`}>
             <i className="fas fa-phone-alt"></i>
             <div className={styles.topic}>Phone</div>
-            <div className={styles.textOne}>03 9222 4000</div>
+            <div className={styles.textOne}><Link href="tel:+61392224000">03 9222 4000</Link></div>
           </div>
           <div className={`${styles.details} ${styles.email}`}>
             <i className="fas fa-envelope"></i>
             <div className={styles.topic}>Email</div>
-            <div className={styles.textOne}>michael.ellis@bcacorp.com.au</div>
+            <div className={styles.textOne}><Link href="mailto:info@bcacorp.com.au">info@bcacorp.com.au</Link></div>
           </div>
         </div>
         <div className={`${styles.rightContent} ${styles.rightSide}`}>

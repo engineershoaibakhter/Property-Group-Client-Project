@@ -2,7 +2,7 @@ import React from 'react'
 import styles from '../styles/CommercialProjectInfo.module.css'
 import Link from 'next/link'
 
-const CommercialProjectInfo = ({companyName,locationMap,contactUrl}) => {
+const CommercialProjectInfo = ({companyName,locationMap,contactUrl,location}) => {
   return (
     <div className={styles.container}>
     <div className={styles.leftContent}>
@@ -23,7 +23,7 @@ const CommercialProjectInfo = ({companyName,locationMap,contactUrl}) => {
       </div>
       <div className={styles.location}>
         <h3>Location</h3>
-        <p>14-30 Lee Street, Haymarket NSW 2000</p>
+        <p>{location}</p>
         <Link href={locationMap} target="_blank" rel="noopener noreferrer" className={styles.mapLink}>Google Map</Link>
       </div>
       <div className={styles.buttons}>

@@ -24,23 +24,23 @@ const TeamMember = ({ name, title, imgSrc,linkedIn }) => {
 const Team = () => {
   const teamMembers = [
     {
-      name: 'Nick Gupta',
-      title: 'CO-FOUNDER',
-      imgSrc: '/images/man/leftman.png',
-      linkedIn:process.env.NEXT_PUBLIC_NICK_GUPTA_LINKEDIN_URL,
+      name: 'Manpreet Dandiwal',
+      title: 'Managing Director',
+      imgSrc: '/images/man/rightman.png',
+      linkedIn:process.env.NEXT_PUBLIC_MANPREET_LINKEDIN_URL,
     },
     {
       name: 'Michael Ellis',
-      title: 'DIRECTOR',
+      title: 'Director Construction',
       imgSrc: '/images/man/centerman.png',
       linkedIn:process.env.NEXT_PUBLIC_MICHAEL_ELLIS_LINKEDIN_URL,
     },
     {
-      name: 'Manpreet Dandiwal',
-      title: 'CONSULTANT',
-      imgSrc: '/images/man/rightman.png',
-      linkedIn:process.env.NEXT_PUBLIC_MANPREET_LINKEDIN_URL,
-    },
+      name: 'Nick Gupta',
+      title: 'CO-FOUNDER',
+      imgSrc: '/images/man/leftman.png',
+      linkedIn:process.env.NEXT_PUBLIC_NICK_GUPTA_LINKEDIN_URL,
+    }
   ];
 
   return (

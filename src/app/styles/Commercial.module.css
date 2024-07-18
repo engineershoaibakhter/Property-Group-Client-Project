@@ -97,15 +97,16 @@
     color: white;
     background-color: #04287b;
     border-color: #04287b;
+    min-height:5vh;
   }
   
   .detailsLink {
     font-size: 1em;
     text-decoration: none;
-    margin-bottom: 3px;
     color: white;
     background-color: #04287b;
     border-color: #04287b;
+    min-height:5vh;
   }
   
   .detailsLink:hover {
@@ -122,18 +123,10 @@
     
     .leasing {
       font-size: 0.7em;
-      color: white;
-      background-color: #04287b;
-      border-color: #04287b;
     }
     
     .detailsLink {
       font-size: 0.7em;
-      text-decoration: none;
-      margin-bottom: 3px;
-      color: white;
-      background-color: #04287b;
-      border-color: #04287b;
     }
   }
 
