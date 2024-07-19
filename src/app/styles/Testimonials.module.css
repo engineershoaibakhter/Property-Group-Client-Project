@@ -91,6 +91,7 @@
 
 .CompanyLogoImage{
   margin-bottom: 10px;
+  object-fit: contain;
 }
 
 .companyContent {

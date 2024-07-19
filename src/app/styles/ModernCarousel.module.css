@@ -251,4 +251,10 @@
       height: 87vh;
     }
   }
+
+  @media screen and (min-width: 1500px) {
+    .carousel {
+      height: 96vh;
+    }
+  }
   
