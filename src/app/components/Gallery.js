@@ -11,23 +11,29 @@ const Gallery = ({companyName}) => {
       <p>{companyName} is set to redefine innovation.</p>
       <div className={styles.Images}>
         <div className={styles.image}>
-        <Image src='/images/commercial/gallery/sixth_image.png' alt='sixth image' width={200} height={100}/>
+        <Image src='/images/commercial/gallery/1.jpg' alt='sixth image' width={200} height={100}/>
          
         </div>
         <div className={styles.image}>
-          <Image src='/images/commercial/gallery/second_image.png' alt='second image' width={200} height={100} />
+          <Image src='/images/commercial/gallery/2.jpg' alt='second image' width={200} height={100} />
         </div>
         <div className={styles.image}>
-          <Image src='/images/commercial/gallery/third_image.png' alt='third image' width={200} height={100}/>
+          <Image src='/images/commercial/gallery/3.jpg' alt='third image' width={200} height={100}/>
         </div>
         <div className={styles.image}>
-          <Image src='/images/commercial/gallery/fifth_image.png' alt='fifth image' width={200} height={100}/>
+          <Image src='/images/commercial/gallery/4.jpg' alt='fifth image' width={200} height={100}/>
         </div>
         <div className={styles.image}>
-          <Image src='/images/commercial/gallery/fourth_image.png' alt='first image' width={200} height={100}/>
+          <Image src='/images/commercial/gallery/5.jpg' alt='first image' width={200} height={100}/>
         </div>
         <div className={styles.image}>
-          <Image src='/images/commercial/gallery/sixth_image.png' alt='sixth image' width={200} height={100} />
+          <Image src='/images/commercial/gallery/6.jpg' alt='sixth image' width={200} height={100} />
+        </div>
+        <div className={styles.image}>
+          <Image src='/images/commercial/gallery/7.jpg' alt='sixth image' width={200} height={100} />
+        </div>
+        <div className={styles.image}>
+          <Image src='/images/commercial/gallery/8.jpg' alt='sixth image' width={200} height={100} />
         </div>
       </div>
     </div>
