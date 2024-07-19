@@ -79,6 +79,13 @@
   text-transform: uppercase;
 }
 
+.icon{
+  color: #082362;
+  background-color: white;
+  padding: 6px 10px;
+  border-radius: 50%;
+}
+
 @media (max-width: 768px) {
   .gallery {
     grid-template-columns: 1fr;

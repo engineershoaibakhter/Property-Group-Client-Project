@@ -1,5 +1,7 @@
 import Link from 'next/link';
 import styles from '../styles/Location.module.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faLocationDot, faPhoneVolume, faEnvelope } from '@fortawesome/free-solid-svg-icons';
 
 const Contact = () => {
   return (
@@ -10,18 +12,19 @@ const Contact = () => {
         <div className={`${styles.leftContent} ${styles.leftSide}`}>
           {/* Add your left content here */}
           <div className={`${styles.details} ${styles.address}`}>
-            <i className="fas fa-map-marker-alt"></i>
+          <FontAwesomeIcon icon={faLocationDot} className={styles.icon} />
             <div className={styles.topic}>Address</div>
             <div className={styles.textOne}>Level 8/468 St Kilda Road</div>
             <div className={styles.textTwo}>Melbourne VIC 3004</div>
           </div>
           <div className={`${styles.details} ${styles.phone}`}>
-            <i className="fas fa-phone-alt"></i>
+            {/* <i className="fas fa-phone-alt" id='icon'></i> */}
+          <FontAwesomeIcon icon={faPhoneVolume} className={styles.icon} />
             <div className={styles.topic}>Phone</div>
             <div className={styles.textOne}><Link href="tel:+61392224000">03 9222 4000</Link></div>
           </div>
           <div className={`${styles.details} ${styles.email}`}>
-            <i className="fas fa-envelope"></i>
+          <FontAwesomeIcon icon={faEnvelope} className={styles.icon} />
             <div className={styles.topic}>Email</div>
             <div className={styles.textOne}><Link href="mailto:info@bcacorp.com.au">info@bcacorp.com.au</Link></div>
           </div>

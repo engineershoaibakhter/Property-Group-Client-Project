@@ -14,7 +14,7 @@ const TeamMember = ({ name, title, imgSrc,linkedIn }) => {
         <div className={styles.text}>
           <h3>{name}</h3> 
           <p>{title}</p>
-          <p><Link href={linkedIn} target="_blank"><FontAwesomeIcon icon={faLinkedinIn} /></Link></p>
+          <p><Link href={linkedIn} target="_blank"  ><FontAwesomeIcon icon={faLinkedinIn} className={styles.icon} /></Link></p>
         </div>
       </div>
     </div>

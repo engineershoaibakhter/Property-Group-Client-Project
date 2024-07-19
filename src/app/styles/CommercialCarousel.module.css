@@ -34,18 +34,15 @@
   .carouselContent h1 {
     font-size: 2.5em;
     margin: 0;
+
     font-weight: 600;
-    background-color: #082362;
-    background: rgba(0, 47, 108, 0.7);
-    padding: 5px;
+    padding: 30px 5px 5px 5px;
   }
   
   .carouselContent p {
     font-size: 1em;
     margin: 5px 0 0;
     text-align: left;
-    background-color: #082362;
-    background: rgba(0, 47, 108, 0.7);
     padding: 10px;
     width: fit-content;
   }
@@ -53,6 +50,7 @@
   @media (max-width: 768px) {
     .carouselContent h1 {
       font-size: 1.5em;
+      padding: 5px;
     }
   
     .carouselContent p {

@@ -84,6 +84,7 @@
     width: 48%; /* Adjust width to control the right content width */
 }
 
+
 @media screen and (max-width: 1150px) {
     .content {
         justify-content: space-around;
