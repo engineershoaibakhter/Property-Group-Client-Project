@@ -24,33 +24,33 @@ const Testimonials = () => {
       imgSrc: "/images/testimonials/secondImage.png"
     },
     {
-      companyName: "/images/clients/subway-logo.avif",
+      companyLogo: "/images/clients/subway.png",
       companyInfo: "The integration of Verida’s decentralised identity storage wallet with the cheqd network offers a compelling vision of ‘Not your keys, not your identity’. People’s digital selves should be in their control, and this includes being able to store their credentials outside of the control of Big Tech providers.",
       authorName: "Ankur Banerjee",
       authorPosition: "CTO and Co-Founder, cheqd",
       imgSrc: "/images/testimonials/thirdImage.png"
     },
-    {
-      companyName: "Pakass",
-      companyInfo: "We’re delighted to team up with Verida in our shared vision to enhance private data verification. Our technology, designed to offer secure and private authentication through cryptography technologies, complements Verida’s commitment to privacy and decentralization. Together, we aim to redefine user experience in the digital space.",
-      authorName: "Bing Jiang",
-      authorPosition: "Tech Lead, zkPass",
-      imgSrc: "/images/testimonials/fourImage.png"
-    },
-    {
-      companyName: "PartisiaBlockchain",
-      companyInfo: "We’re delighted to team up with Verida in our shared vision to enhance private data verification. Our technology, designed to offer secure and private authentication through cryptography technologies, complements Verida’s commitment to privacy and decentralization. Together, we aim to redefine user experience in the digital space.",
-      authorName: "Kurt Nielsen",
-      authorPosition: "President of the Board, Partisia Blockchain",
-      imgSrc: "/images/testimonials/firstImage.png"
-    },
-    {
-      companyName: "FinClusive",
-      companyInfo: "Expanding our partnership with Verida with the support of cheqd is very exciting as we work to build a ‘consortia’ of partners. Together, we are enabling a globally transportable KYC/KYB verifiable credential that streamlines essential compliance processes and brings needed privacy controls",
-      authorName: "Amit Sharma",
-      authorPosition: "Founder and CEO, FinClusive",
-      imgSrc: "/images/testimonials/secondImage.png"
-    }
+    // {
+    //   companyLogo: "/images/clients/iga.svg",
+    //   companyInfo: "We’re delighted to team up with Verida in our shared vision to enhance private data verification. Our technology, designed to offer secure and private authentication through cryptography technologies, complements Verida’s commitment to privacy and decentralization. Together, we aim to redefine user experience in the digital space.",
+    //   authorName: "Bing Jiang",
+    //   authorPosition: "Tech Lead, zkPass",
+    //   imgSrc: "/images/testimonials/fourImage.png"
+    // },
+    // {
+    //   companyLogo: "/images/clients/anytimeheader-logo.png",
+    //   companyInfo: "We’re delighted to team up with Verida in our shared vision to enhance private data verification. Our technology, designed to offer secure and private authentication through cryptography technologies, complements Verida’s commitment to privacy and decentralization. Together, we aim to redefine user experience in the digital space.",
+    //   authorName: "Kurt Nielsen",
+    //   authorPosition: "President of the Board, Partisia Blockchain",
+    //   imgSrc: "/images/testimonials/firstImage.png"
+    // },
+    // {
+    //   companyLogo: "/images/clients/subway.png",
+    //   companyInfo: "Expanding our partnership with Verida with the support of cheqd is very exciting as we work to build a ‘consortia’ of partners. Together, we are enabling a globally transportable KYC/KYB verifiable credential that streamlines essential compliance processes and brings needed privacy controls",
+    //   authorName: "Amit Sharma",
+    //   authorPosition: "Founder and CEO, FinClusive",
+    //   imgSrc: "/images/testimonials/secondImage.png"
+    // }
   ];
 
   const handleNextSlide = () => {

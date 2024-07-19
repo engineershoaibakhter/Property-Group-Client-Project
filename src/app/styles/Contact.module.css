@@ -123,7 +123,8 @@
 }
 
 .formGroup textarea {
-  height: 30vh;
+  height: 200px;
+  /* height: 30vh; */
 }
 
 .formGroup input::placeholder,

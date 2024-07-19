@@ -10,50 +10,7 @@ const Commercial = () => {
   const imageListRef = useRef(null);
   const scrollbarThumbRef = useRef(null);
 
-  const testimonials = [
-    {
-      companyLogo: "/images/clients/iga.svg",
-      companyInfo: "The integration of Verida’s decentralised identity storage wallet with the cheqd network offers a compelling vision of ‘Not your keys, not your identity’. People’s digital selves should be in their control, and this includes being able to store their credentials outside of the control of Big Tech providers.",
-      authorName: "Sebastian Rodriguez",
-      authorPosition: "VP of Product, Polygon ID",
-      imgSrc: "/images/testimonials/firstImage.png"
-    },
-    {
-      companyLogo: "/images/clients/anytimeheader-logo.png",
-      companyInfo: "We’re excited to support the Verida team as they add more NEAR features to their excellent product. Ease of use and low switching costs are key to mainstream Web3 adoption, so it’s exciting that the Verida Wallet will soon make DIDs and messaging available to NEAR users on mobile.",
-      authorName: "Illia Polosukhin",
-      authorPosition: "Co-Founder, NEAR",
-      imgSrc: "/images/testimonials/secondImage.png"
-    },
-    {
-      companyName: "/images/clients/subway-logo.avif",
-      companyInfo: "The integration of Verida’s decentralised identity storage wallet with the cheqd network offers a compelling vision of ‘Not your keys, not your identity’. People’s digital selves should be in their control, and this includes being able to store their credentials outside of the control of Big Tech providers.",
-      authorName: "Ankur Banerjee",
-      authorPosition: "CTO and Co-Founder, cheqd",
-      imgSrc: "/images/testimonials/thirdImage.png"
-    },
-    {
-      companyName: "Pakass",
-      companyInfo: "We’re delighted to team up with Verida in our shared vision to enhance private data verification. Our technology, designed to offer secure and private authentication through cryptography technologies, complements Verida’s commitment to privacy and decentralization. Together, we aim to redefine user experience in the digital space.",
-      authorName: "Bing Jiang",
-      authorPosition: "Tech Lead, zkPass",
-      imgSrc: "/images/testimonials/fourImage.png"
-    },
-    {
-      companyName: "PartisiaBlockchain",
-      companyInfo: "We’re delighted to team up with Verida in our shared vision to enhance private data verification. Our technology, designed to offer secure and private authentication through cryptography technologies, complements Verida’s commitment to privacy and decentralization. Together, we aim to redefine user experience in the digital space.",
-      authorName: "Kurt Nielsen",
-      authorPosition: "President of the Board, Partisia Blockchain",
-      imgSrc: "/images/testimonials/firstImage.png"
-    },
-    {
-      companyName: "FinClusive",
-      companyInfo: "Expanding our partnership with Verida with the support of cheqd is very exciting as we work to build a ‘consortia’ of partners. Together, we are enabling a globally transportable KYC/KYB verifiable credential that streamlines essential compliance processes and brings needed privacy controls",
-      authorName: "Amit Sharma",
-      authorPosition: "Founder and CEO, FinClusive",
-      imgSrc: "/images/testimonials/secondImage.png"
-    }
-  ];
+
 
   const handleNextSlide = () => {
     if (imageListRef.current) {
@@ -172,14 +129,14 @@ const Commercial = () => {
                 <Image src="/images/cars.jpg" alt="Asset 1" className={styles.image} width={200} height={100} />
               </div>
               <div className={styles.cardContent}>
-                <p className={styles.location}>VIC, Thornhill Park</p>
-                <h4 className={styles.projectName}>Central Square</h4>
-                <p className={styles.features}>
-                  Features world-leading carbon neutral NABERS & Platinum WELL certified offices.
-                </p>
+              <p className={styles.location}>VIC, Craigieburn</p>
+            <h2 className={styles.projectName}>Aston Square</h2>
+            <p className={styles.features}>
+              Targeting net zero carbon emissions and world-leading WELL & Green Star ratings.
+            </p>
                 <div className={styles.footer}>
-                  <Link href={'https://www.pspproperty.com.au/property?property_id=1064509/2-sadie-avenue-thornhill-park'} target="_blank" rel="noopener noreferrer"><button className={styles.leasing}>Leasing now</button></Link>
-                  <Link href={'/thornhill'}><button className={styles.detailsLink}>More details ➔</button></Link>
+              <Link href={'https://www.pspproperty.com.au/property?property_id=1241993/179-elevation-boulevard-craigieburn'} target="_blank" rel="noopener noreferrer"><button className={styles.leasing}>Leasing now</button></Link> 
+                <Link href={'/craigieburn'}><button className={styles.detailsLink}>More details ➔</button></Link>
                 </div>
               </div>
             </li>
@@ -188,14 +145,14 @@ const Commercial = () => {
                 <Image src="/images/building.jpg" alt="Asset 1" className={styles.image} width={200} height={100} />
               </div>
               <div className={styles.cardContent}>
-                <p className={styles.location}>VIC, Thornhill Park</p>
+                <p className={styles.location}>Clyde Square</p>
                 <h4 className={styles.projectName}>Central Square</h4>
                 <p className={styles.features}>
                   Features world-leading carbon neutral NABERS & Platinum WELL certified offices.
                 </p>
                 <div className={styles.footer}>
                   <Link href={'https://www.pspproperty.com.au/property?property_id=1064509/2-sadie-avenue-thornhill-park'} target="_blank" rel="noopener noreferrer"><button className={styles.leasing}>Leasing now</button></Link>
-                  <Link href={'/thornhill'}><button className={styles.detailsLink}>More details ➔</button></Link>
+                  <Link href={'/clydesquare'}><button className={styles.detailsLink}>More details ➔</button></Link>
                 </div>
               </div>
             </li>
@@ -204,14 +161,14 @@ const Commercial = () => {
                 <Image src="/images/cars.jpg" alt="Asset 1" className={styles.image} width={200} height={100} />
               </div>
               <div className={styles.cardContent}>
-                <p className={styles.location}>VIC, Thornhill Park</p>
+                <p className={styles.location}>Wollert, VIC</p>
                 <h4 className={styles.projectName}>Central Square</h4>
                 <p className={styles.features}>
                   Features world-leading carbon neutral NABERS & Platinum WELL certified offices.
                 </p>
                 <div className={styles.footer}>
                   <Link href={'https://www.pspproperty.com.au/property?property_id=1064509/2-sadie-avenue-thornhill-park'} target="_blank" rel="noopener noreferrer"><button className={styles.leasing}>Leasing now</button></Link>
-                  <Link href={'/thornhill'}><button className={styles.detailsLink}>More details ➔</button></Link>
+                  <Link href={'/wollert'}><button className={styles.detailsLink}>More details ➔</button></Link>
                 </div>
               </div>
             </li>

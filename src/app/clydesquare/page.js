@@ -15,10 +15,11 @@ const ClydeSquare = () => {
   let contactUrl="https://www.pspproperty.com.au/property?property_id=1064509/2-sadie-avenue-thornhill-park"
   let locationMap="https://maps.app.goo.gl/FPkmKLqfQGH87KtL8";
   let location="2 Sadie Av, Thornhill Park VIC 3335, Australia";
+  let pdfFile="pdf/centralsquare.pdf"
   return (
    <>
    <CommercialCarousel companyName={companyName}/>
-   <CommercialProjectInfo companyName={companyName} locationMap={locationMap} contactUrl={contactUrl} location={location}/>
+   <CommercialProjectInfo companyName={companyName} locationMap={locationMap} contactUrl={contactUrl} location={location} pdfFile={pdfFile}/>
    <CommercialService />
    <CentralPlaceSydney companyName={companyName}/>
    <CommercialProjectMoreInfo />

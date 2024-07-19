@@ -38,7 +38,7 @@
 
 .slideButton {
   position: absolute;
-  top: 50%;
+  top: 40%;
   outline: none;
   border-radius: 12px;
   border-color: rgba(255, 255, 255, .1);
@@ -138,27 +138,38 @@
 }
 
 .leasing {
+  flex: 1;
+  padding: 10px 10px;
   font-size: 1em;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  background: #082362;
   color: white;
-  background-color: #04287b;
-  border-color: #04287b;
-  min-height: 5vh;
 }
 
 .detailsLink {
+  flex: 1;
+  padding: 10px 10px;
   font-size: 1em;
-  text-decoration: none;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  background: #082362;
   color: white;
-  background-color: #04287b;
-  border-color: #04287b;
-  min-height: 5vh;
 }
 
-.detailsLink:hover {
-  text-decoration: underline;
+.detailsLink:hover,.leasing:hover {
+  text-decoration: none;
+    background: #0e3dab;
 }
 
 @media (max-width: 768px) {
+  .slideButton{
+    top: 30%;
+  }
   .card {
     flex: 0 0 100%;
     max-width: 100%;

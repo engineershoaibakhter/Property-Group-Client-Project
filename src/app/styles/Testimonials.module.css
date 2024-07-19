@@ -95,7 +95,7 @@
 }
 
 .companyContent {
-  padding: 30px;
+  padding: 30px 40px;
   display: flex;
   flex-direction: column;
   justify-content: space-between; /* Ensures the row div is at the bottom */
@@ -113,6 +113,7 @@
   text-align: start;
   font-weight: 600;
   font-size: 1em;
+
 }
 
 .row {
@@ -161,9 +162,7 @@ text-align: start;
     width: 100%;
   }
 
-  .companyContent {
-    padding: 15px;
-  }
+
   .companyInfo {
     min-height: 5vh;
   }

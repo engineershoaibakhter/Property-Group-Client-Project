@@ -32,7 +32,7 @@
     padding: 20px;
     width: 100%;
     gap: 0px; /* Add gap to add space between left and right content */
-    background-color: #082362;
+    /* background-color: #082362; */
 }
 
 .details {
@@ -42,7 +42,7 @@
 .paragraph {
     font-size: 18px;
     line-height: 1.3em;
-    color: white;
+    color: black;
     font-family: 'Jost', sans-serif;
 }
 
@@ -61,6 +61,7 @@
 
 .card {
     background: rgba(255, 255, 255, 0.1);
+    background: #082362;
     padding: 10px;
     border-radius: 10px;
     text-align: center;
