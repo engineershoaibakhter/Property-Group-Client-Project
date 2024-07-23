@@ -30,13 +30,13 @@ const Testimonials = () => {
       authorPosition: "CTO and Co-Founder, cheqd",
       imgSrc: "/images/testimonials/thirdImage.png"
     },
-    // {
-    //   companyLogo: "/images/clients/iga.svg",
-    //   companyInfo: "We’re delighted to team up with Verida in our shared vision to enhance private data verification. Our technology, designed to offer secure and private authentication through cryptography technologies, complements Verida’s commitment to privacy and decentralization. Together, we aim to redefine user experience in the digital space.",
-    //   authorName: "Bing Jiang",
-    //   authorPosition: "Tech Lead, zkPass",
-    //   imgSrc: "/images/testimonials/fourImage.png"
-    // },
+    {
+      companyLogo: "/images/clients/clean.webp",
+      companyInfo: "Working with Ankur and Michael from BCA Corp at Central Square has been a truly exceptional experience. From our first interaction, their professionalism and commitment to excellence were evident. They made the entire process remarkably easy, ensuring that all our needs were met with a friendly and approachable demeanor.",
+      authorName: "David, Clean Streak Laundry",
+      authorPosition: "Tech Lead, zkPass",
+      imgSrc: "/images/testimonials/fourImage.png"
+    },
     // {
     //   companyLogo: "/images/clients/anytimeheader-logo.png",
     //   companyInfo: "We’re delighted to team up with Verida in our shared vision to enhance private data verification. Our technology, designed to offer secure and private authentication through cryptography technologies, complements Verida’s commitment to privacy and decentralization. Together, we aim to redefine user experience in the digital space.",

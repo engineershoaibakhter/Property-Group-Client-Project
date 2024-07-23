@@ -13,7 +13,7 @@ const Footer = () => {
 <div className={styles.footerCol} id={"footerCol1"}>
           <ul className={styles.links}>
           <h4>BCA CORP</h4>
-            <p>The paragraph will show on here. The paragraph will show on here. The paragraph will show on here. The paragraph will show on here</p>
+            <p>BCA Corp’s experienced and passionate leadership team focuses on wealth creation for investors while delivering assets for the community that all involved can be proud of.</p>
             <li className={styles.socialIcons}>
               <Link href={process.env.NEXT_PUBLIC_LINKEDIN_LINK} target='_blank'>
                 <FaLinkedin className={styles.icon}/>
@@ -45,9 +45,16 @@ const Footer = () => {
         <div className={styles.footerCol}>
           <ul className={styles.links}>
           <h4>SERVICES</h4>
-            <li>Development Advisory</li>
+            <li>Town Planning</li>
             <li>Project Management</li>
-            <li>Financier Representation</li>
+            <li>Civil & Built Form Construction</li>
+            <li>Real Estate Sales & Marketing</li>
+            <li>Funds Management</li>
+            <li>Site Acquisition</li>
+            <li>Development Management</li>
+            <li>Construction Management</li>
+            <li>Development Funding</li>
+            <li>Joint Ventures</li>
           </ul>
         </div>
 

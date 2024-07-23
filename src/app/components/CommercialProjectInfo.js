@@ -2,18 +2,17 @@ import React from 'react'
 import styles from '../styles/CommercialProjectInfo.module.css'
 import Link from 'next/link'
 
-const CommercialProjectInfo = ({companyName,locationMap,contactUrl,location,pdfFile}) => {
+const CommercialProjectInfo = ({locationMap,contactUrl,location,pdfFile,paragraph1,point1,point2,point3}) => {
   return (
     <div className={styles.container}>
     <div className={styles.leftContent}>
       <p className={styles.description}>
-      {companyName} will be most significant CBD development in over a decade, delivering a highly sustainable urban precinct to attract the best of the international tech and innovation sector to live and work.
+      {paragraph1}
       </p>
       <ul className={styles.featuresList}>
-        <li>~$3 billion mixed-use precinct within Sydney’s new ‘Tech Central’ precinct</li>
-        <li>133,000sqm of workspace across three buildings (two towers and a smaller low-rise building)</li>
-        <li>Future workplace for ~15,000 employees</li>
-        <li>700+ jobs to be created during construction</li>
+        <li>{point1}</li>
+        <li>{point2}</li>
+        <li>{point3}</li>
       </ul>
     </div>
     <div className={styles.rightContent}>

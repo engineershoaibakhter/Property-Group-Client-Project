@@ -37,11 +37,10 @@
 }
 
 .icon {
-    color: #082362;
+    color: white;
     margin-right: 10px; /* Adjust margin for balanced spacing */
     transition: color 0.3s ease;
     cursor: pointer;
-    background-color: white;
     padding: 6px 10px;
     border-radius: 50%; /* Use 50% to make it a perfect circle */
     display: flex;
@@ -52,8 +51,7 @@
 .TimingContainer .icon,
 .AddressContainer .icon,
 .NumberContainer .icon {
-    background-color: white !important;
-    color: #082362 !important; 
+    color: white !important; 
     padding: 6px 8px;
     background-color: transparent; /* Set to transparent for icons other than social media */
 }

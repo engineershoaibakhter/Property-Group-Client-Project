@@ -141,8 +141,7 @@
 }
 
 .icon {
-  color: #082362 !important; /* Set icon color to blue */
-  background-color: white !important; /* Set icon background color to white */
+  color: white; 
   padding: 6px 10px;
   border-radius: 50%;
 }

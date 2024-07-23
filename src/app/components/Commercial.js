@@ -172,6 +172,38 @@ const Commercial = () => {
                 </div>
               </div>
             </li>
+            <li className={styles.card}>
+              <div className={styles.imageContainer}>
+                <Image src="/images/cars.jpg" alt="Asset 1" className={styles.image} width={200} height={100} />
+              </div>
+              <div className={styles.cardContent}>
+                <p className={styles.location}>Orrong Tower</p>
+                <h4 className={styles.projectName}>Central Square</h4>
+                <p className={styles.features}>
+                  Features world-leading carbon neutral NABERS & Platinum WELL certified offices.
+                </p>
+                <div className={styles.footer}>
+                  <Link href={'https://www.pspproperty.com.au/property?property_id=1064509/2-sadie-avenue-thornhill-park'} target="_blank" rel="noopener noreferrer"><button className={styles.leasing}>Leasing now</button></Link>
+                  <Link href={'/orrongtower'}><button className={styles.detailsLink}>More details ➔</button></Link>
+                </div>
+              </div>
+            </li>
+            <li className={styles.card}>
+              <div className={styles.imageContainer}>
+                <Image src="/images/cars.jpg" alt="Asset 1" className={styles.image} width={200} height={100} />
+              </div>
+              <div className={styles.cardContent}>
+                <p className={styles.location}>Iramoo Waters</p>
+                <h4 className={styles.projectName}>Central Square</h4>
+                <p className={styles.features}>
+                  Features world-leading carbon neutral NABERS & Platinum WELL certified offices.
+                </p>
+                <div className={styles.footer}>
+                  <Link href={'https://www.pspproperty.com.au/property?property_id=1064509/2-sadie-avenue-thornhill-park'} target="_blank" rel="noopener noreferrer"><button className={styles.leasing}>Leasing now</button></Link>
+                  <Link href={'/iramoo'}><button className={styles.detailsLink}>More details ➔</button></Link>
+                </div>
+              </div>
+            </li>
             {/* Add more cards here */}
           </ul>
           <button

@@ -24,21 +24,21 @@ const TeamMember = ({ name, title, imgSrc,linkedIn }) => {
 const Team = () => {
   const teamMembers = [
     {
-      name: 'Manpreet Dandiwal',
-      title: 'Managing Director',
-      imgSrc: '/images/man/rightman.png',
+      name: 'Nick Gupta',
+      title: 'CO-FOUNDER',
+      imgSrc: '/images/man/leftman.png',
       linkedIn:process.env.NEXT_PUBLIC_MANPREET_LINKEDIN_URL,
     },
     {
       name: 'Michael Ellis',
-      title: 'Director Construction',
+      title: 'Director',
       imgSrc: '/images/man/centerman.png',
       linkedIn:process.env.NEXT_PUBLIC_MICHAEL_ELLIS_LINKEDIN_URL,
     },
     {
-      name: 'Nick Gupta',
-      title: 'CO-FOUNDER',
-      imgSrc: '/images/man/leftman.png',
+      name: 'Manpreet Dandiwal',
+      title: 'Consultant',
+      imgSrc: '/images/man/rightman.png',
       linkedIn:process.env.NEXT_PUBLIC_NICK_GUPTA_LINKEDIN_URL,
     }
   ];
@@ -50,6 +50,7 @@ const Team = () => {
         <div className={styles.leftColumn}>
           <h2>Our great team</h2>
           <p>Under the right circumstances, a team can be significantly more creative than any individual.</p>
+          {/* <Link href={'/wollert'}><button className={styles.learnMoreBtn}>Learn More</button></Link> */}
         </div>
         {teamMembers.map((member, index) => (
           <TeamMember key={index} {...member} />
