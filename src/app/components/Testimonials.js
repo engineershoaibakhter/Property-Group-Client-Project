@@ -31,7 +31,7 @@ const Testimonials = () => {
       imgSrc: "/images/testimonials/thirdImage.png"
     },
     {
-      companyLogo: "/images/clients/clean.webp",
+      companyLogo: "/images/clients/cleanlarge.png",
       companyInfo: "Working with Ankur and Michael from BCA Corp at Central Square has been a truly exceptional experience. From our first interaction, their professionalism and commitment to excellence were evident. They made the entire process remarkably easy, ensuring that all our needs were met with a friendly and approachable demeanor.",
       authorName: "David, Clean Streak Laundry",
       authorPosition: "Tech Lead, zkPass",
