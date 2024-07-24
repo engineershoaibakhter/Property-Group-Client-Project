@@ -10,6 +10,7 @@ import Gallery from "@/app/components/Gallery";
 
 const thornhill = () => {
   let companyName = "Central Square Thornhill Park";
+  let companyDescription ="Local Activity Centre with diverse tenancies and ample parking."
   let locationSrc =
     "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3156.268350411389!2d144.62685307528184!3d-37.71337852830657!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad6f38cf1c4aff5%3A0x7d9f6acd0ada7094!2sCentral%20Square!5e0!3m2!1sen!2s!4v1721211989146!5m2!1sen!2s";
   let contactUrl =
@@ -35,7 +36,7 @@ const thornhill = () => {
   let point7="Central Square is almost fully leased out, reflecting its success in attracting a wide range of tenants to serve the local population."
     return (
     <>
-      <CommercialCarousel companyName={companyName} />
+      <CommercialCarousel companyName={companyName} companyDescription={companyDescription} />
       <CommercialProjectInfo
         locationMap={locationMap}
         contactUrl={contactUrl}

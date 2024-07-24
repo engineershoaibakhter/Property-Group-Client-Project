@@ -25,21 +25,27 @@ const Team = () => {
   const teamMembers = [
     {
       name: 'Nick Gupta',
-      title: 'CO-FOUNDER',
+      title: 'Consultant',
       imgSrc: '/images/man/leftman.png',
-      linkedIn:process.env.NEXT_PUBLIC_MANPREET_LINKEDIN_URL,
+      linkedIn:"https://linkedin.com",
     },
     {
       name: 'Michael Ellis',
       title: 'Director',
       imgSrc: '/images/man/centerman.png',
-      linkedIn:process.env.NEXT_PUBLIC_MICHAEL_ELLIS_LINKEDIN_URL,
+      linkedIn:"https://linkedin.com",
     },
     {
       name: 'Manpreet Dandiwal',
-      title: 'Consultant',
+      title: 'managing director,',
       imgSrc: '/images/man/rightman.png',
-      linkedIn:process.env.NEXT_PUBLIC_NICK_GUPTA_LINKEDIN_URL,
+      linkedIn:"https://linkedin.com",
+    },
+    {
+      name: 'Jarrod Membrey',
+      title: 'General manager',
+      imgSrc: '/images/man/rightman.png',
+      linkedIn:"https://linkedin.com",
     }
   ];
 
@@ -49,8 +55,7 @@ const Team = () => {
       <div className={styles.gallery}>
         <div className={styles.leftColumn}>
           <h2>Our great team</h2>
-          <p>Under the right circumstances, a team can be significantly more creative than any individual.</p>
-          {/* <Link href={'/wollert'}><button className={styles.learnMoreBtn}>Learn More</button></Link> */}
+          <p>Nick Gupta, our Consultant, brings a wealth of expertise to our projects. Michael Ellis, the Director, leads with vision and strategic direction, ensuring our success. Manpreet Dandiwal, the Managing Director, oversees operations with a keen eye for detail. Jarrod Membrey, the General Manager, ensures smooth daily operations and exceptional service.</p>
         </div>
         {teamMembers.map((member, index) => (
           <TeamMember key={index} {...member} />

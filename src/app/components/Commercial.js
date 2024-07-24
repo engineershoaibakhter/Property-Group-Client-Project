@@ -116,7 +116,7 @@ const Commercial = () => {
                 <p className={styles.location}>VIC, Thornhill Park</p>
                 <h4 className={styles.projectName}>Central Square</h4>
                 <p className={styles.features}>
-                  Features world-leading carbon neutral NABERS & Platinum WELL certified offices.
+                Local Activity Centre with diverse tenancies and ample parking.
                 </p>
                 <div className={styles.footer}>
                   <Link href={'https://www.pspproperty.com.au/property?property_id=1064509/2-sadie-avenue-thornhill-park'} target="_blank" rel="noopener noreferrer"><button className={styles.leasing}>Leasing now</button></Link>
@@ -132,7 +132,7 @@ const Commercial = () => {
               <p className={styles.location}>VIC, Craigieburn</p>
             <h2 className={styles.projectName}>Aston Square</h2>
             <p className={styles.features}>
-              Targeting net zero carbon emissions and world-leading WELL & Green Star ratings.
+            Upcoming neighbourhood centre with childcare, gym, and specialty shops.
             </p>
                 <div className={styles.footer}>
               <Link href={'https://www.pspproperty.com.au/property?property_id=1241993/179-elevation-boulevard-craigieburn'} target="_blank" rel="noopener noreferrer"><button className={styles.leasing}>Leasing now</button></Link> 
@@ -148,7 +148,7 @@ const Commercial = () => {
                 <p className={styles.location}>Clyde Square</p>
                 <h4 className={styles.projectName}>Central Square</h4>
                 <p className={styles.features}>
-                  Features world-leading carbon neutral NABERS & Platinum WELL certified offices.
+                Unique mix of commercial, industrial lots, and boutique F&B precinct.
                 </p>
                 <div className={styles.footer}>
                   <Link href={'https://www.pspproperty.com.au/property?property_id=1064509/2-sadie-avenue-thornhill-park'} target="_blank" rel="noopener noreferrer"><button className={styles.leasing}>Leasing now</button></Link>
@@ -164,7 +164,7 @@ const Commercial = () => {
                 <p className={styles.location}>Wollert, VIC</p>
                 <h4 className={styles.projectName}>Central Square</h4>
                 <p className={styles.features}>
-                  Features world-leading carbon neutral NABERS & Platinum WELL certified offices.
+                129 residential lots with over 1Ha green space in Wollert.
                 </p>
                 <div className={styles.footer}>
                   <Link href={'https://www.pspproperty.com.au/property?property_id=1064509/2-sadie-avenue-thornhill-park'} target="_blank" rel="noopener noreferrer"><button className={styles.leasing}>Leasing now</button></Link>
@@ -180,7 +180,7 @@ const Commercial = () => {
                 <p className={styles.location}>Orrong Tower</p>
                 <h4 className={styles.projectName}>Central Square</h4>
                 <p className={styles.features}>
-                  Features world-leading carbon neutral NABERS & Platinum WELL certified offices.
+                Boutique architecturally designed apartment block in Toorak coming soon.
                 </p>
                 <div className={styles.footer}>
                   <Link href={'https://www.pspproperty.com.au/property?property_id=1064509/2-sadie-avenue-thornhill-park'} target="_blank" rel="noopener noreferrer"><button className={styles.leasing}>Leasing now</button></Link>
@@ -196,7 +196,7 @@ const Commercial = () => {
                 <p className={styles.location}>Iramoo Waters</p>
                 <h4 className={styles.projectName}>Central Square</h4>
                 <p className={styles.features}>
-                  Features world-leading carbon neutral NABERS & Platinum WELL certified offices.
+                150+ residential lots, 2Ha green space, wetland, and walking tracks.
                 </p>
                 <div className={styles.footer}>
                   <Link href={'https://www.pspproperty.com.au/property?property_id=1064509/2-sadie-avenue-thornhill-park'} target="_blank" rel="noopener noreferrer"><button className={styles.leasing}>Leasing now</button></Link>

@@ -4,24 +4,9 @@
   background-color: #ffffff;
 }
 
-.learnMoreBtn {
-  background-color: #07294d;
-  color: #fff;
-  border: none;
-  padding: 0.75rem 1.5rem;
-  font-size: 1rem;
-  border-radius: 0.25rem;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
-
-.learnMoreBtn:hover {
-  background: #0e3dab;
-}
-
 .gallery {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   gap: 1rem;
 }
 
@@ -90,7 +75,7 @@
   border-radius: 50%;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1180px) {
   .gallery {
     grid-template-columns: 1fr;
   }

@@ -15,7 +15,7 @@
 
 @keyframes scroll {
   0% { transform: translateX(0); }
-  100% { transform: translateX(calc(-250px * 7)); }
+  100% { transform: translateX(calc(-260px * 7)); }
 }
 
 .slider {
@@ -53,9 +53,10 @@
 .slideTrack {
   animation: scroll 40s linear infinite;
   display: flex;
-  width: calc(250px * 14);
+  width: calc(260px * 14);
 }
 .slide {
   height: 100px;
   width: 250px;
+  margin-right: 60px;
 }

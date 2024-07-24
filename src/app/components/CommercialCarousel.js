@@ -2,7 +2,7 @@
 import Image from 'next/image'
 import styles from '../styles/CommercialCarousel.module.css'
 
-const CommercialCarousel = ({companyName}) => {
+const CommercialCarousel = ({companyName,companyDescription}) => {
   return (
     <>
     <div className={styles.carousel}>
@@ -12,7 +12,7 @@ const CommercialCarousel = ({companyName}) => {
         </div>
         <div className={styles.carouselContent}>
           <h1>{companyName}</h1>
-          <p>The new home for tomorrow’s game changers.</p>
+          <p>{companyDescription}</p>
         </div>
       </div>
     </div>

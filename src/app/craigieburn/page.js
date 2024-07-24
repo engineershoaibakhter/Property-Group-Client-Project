@@ -10,6 +10,7 @@ import Gallery from "@/app/components/Gallery";
 
 const craigieburn = () => {
   let companyName = "Central Square Craigieburn";
+  let companyDescription ="Upcoming neighbourhood centre with childcare, gym, and specialty shops."
   let locationSrc =
     "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3161.1505565089255!2d144.88961027527503!3d-37.59861552177166!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65141017b6dbb%3A0xe9c14ec789587fe6!2s179%20Elevation%20Bvd%2C%20Craigieburn%20VIC%203064%2C%20Australia!5e0!3m2!1sen!2s!4v1721211562391!5m2!1sen!2s";
   let locationMap = "https://maps.app.goo.gl/4hmfPqf3X3AWCSAf9";
@@ -42,7 +43,7 @@ const craigieburn = () => {
 
   return (
     <>
-      <CommercialCarousel companyName={companyName} />
+      <CommercialCarousel companyName={companyName} companyDescription={companyDescription} />
       <CommercialProjectInfo
         companyName={companyName}
         locationMap={locationMap}

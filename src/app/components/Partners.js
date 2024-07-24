@@ -5,13 +5,10 @@ import styles from '../styles/Partners.module.css';
 
 const Partners = () => {
   const images = [
-    'https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/1.png',
-    'https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/2.png',
-    'https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/3.png',
-    'https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/4.png',
-    'https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/5.png',
-    'https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/6.png',
-    'https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/7.png',
+    '/images/clients/clean.webp',
+    '/images/clients/iga.svg',
+    '/images/clients/anytimefitness.jpg',
+    '/images/clients/subway-logo.avif',
   ];
 
   return (
@@ -27,6 +24,11 @@ const Partners = () => {
         {images.map((source, index) => (
           <div className={styles.slide} key={index + images.length}>
             <Image src={source} height={100} width={250} alt={`Partner ${index + 1}`} />
+          </div>
+        ))}
+        {images.map((source, index) => (
+          <div className={styles.slide} key={index + images.length}>
+            <Image src={source} height={100} width={200} alt={`Partner ${index + 1}`} />
           </div>
         ))}
       </div>

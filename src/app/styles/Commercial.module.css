@@ -30,6 +30,8 @@
   color: #c6c5c5;
   font-size: 1.1em;
   font-family: 'Jost', sans-serif;
+
+
 }
 
 .sliderWrapper {
@@ -129,7 +131,13 @@
   margin-bottom: 20px;
   display: flex;
   align-items: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  line-height: 1; /* Adjust this value based on your font size */
+  max-height: 1em;
 }
+
 
 .footer {
   display: flex;
@@ -167,14 +175,22 @@
 }
 
 @media (max-width: 768px) {
-  .slideButton{
+  .slideButton {
     top: 30%;
   }
   .card {
     flex: 0 0 100%;
     max-width: 100%;
   }
+  .features {
+    overflow: visible;
+    text-overflow: clip;
+    white-space: normal;
+    line-height: normal; /* Reset line-height to default */
+    max-height: none; /* Allow the height to grow as needed */
+  }
 }
+
 
 @media screen and (max-width: 400px) {
   .leasing {
