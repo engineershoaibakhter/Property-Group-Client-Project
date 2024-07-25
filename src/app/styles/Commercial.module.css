@@ -29,8 +29,6 @@
   color: #c6c5c5;
   font-size: 1.1em;
   font-family: 'Jost', sans-serif;
-
-
 }
 
 .sliderWrapper {
@@ -213,17 +211,29 @@
   background-color: #001443;
   font-family: 'Jost', sans-serif;
   /* min-height: 100vh; */
+  padding: 20px 0px;
 }
 
-.Heading {
+.header {
   text-align: center;
-  padding-top: 20px;
-  padding-left: 20px;
+  margin-bottom: 40px;
+}
+
+.title {
+  margin-bottom: 10px;
   color: white;
-  font-family: 'Jost', sans-serif;
   font-weight: 600;
   font-size: 1.5em;
   text-transform: uppercase;
+}
+
+.description {
+  line-height: 1.5;
+  color: #c6c5c5;
+  font-size: 1.1em;
+  font-family: 'Jost', sans-serif;
+  text-align: start;
+  padding: 0 20px;
 }
 
 .container {
@@ -289,10 +299,11 @@
 
 .imageItem {
   width: 100%;
-  height: 400px;
+  height: 80vh;
   object-fit: cover;
-  border-radius: 40px;
+  /* border-radius: 40px; */
   border:1px solid rgba(255, 255, 255, .2);
+  background-color: #fff;
 }
 
 .allImage {
@@ -361,8 +372,85 @@ text-align: start;
 }
 
 
+.cardContent {
+  padding: 20px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
 
-@media only screen and (max-width: 1024px) {
+.location {
+  color: black;
+  margin-bottom: 10px;
+}
+
+.projectName {
+  font-size: 1.3em;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: black;
+
+}
+
+.features {
+  font-size: 1em;
+  color: black;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  line-height: 1;
+  max-height: 1em;
+}
+
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.leasing {
+  flex: 1;
+  padding: 10px 10px;
+  font-size: 1em;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  background: #082362;
+  color: white;
+}
+
+.detailsLink {
+  flex: 1;
+  padding: 10px 10px;
+  font-size: 1em;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  background: #082362;
+  color: white;
+}
+
+.detailsLink:hover,.leasing:hover {
+  text-decoration: none;
+    background: #0e3dab;
+}
+
+@media only screen and (max-width: 1500px) {
+
+  .imageItem {
+  height: 45vh;
+  }
+}
+
+
+
+@media only screen and (max-width: 900px) {
 
   .imageList {
     scroll-snap-type: x mandatory;
@@ -374,7 +462,8 @@ text-align: start;
   }
 
   .imageItem {
-    height: auto;
+    /* height: auto; */
+  height: 50vh;
     width: 100%;
   }
 
@@ -384,12 +473,50 @@ text-align: start;
   }
 }
 
+@media (max-width: 768px) {
+  .slideButton {
+    top: 30%;
+  }
+  .card {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .features {
+    overflow: visible;
+    text-overflow: clip;
+    white-space: normal;
+    line-height: normal;
+    max-height: none;
+  }
+  .imageItem{
+  height: 60vh;
+  }
+  .slideButton{
+    top: 40%;
+  }
+}
+
 @media screen and (max-width:500px){
   .slideButton{
     height: 40px;
     width: 40px;
   }
+ 
 }
+
+
+@media screen and (max-width: 490px) {
+  .leasing {
+    font-size: 0.7em;
+  }
+
+  .detailsLink {
+    font-size: 0.7em;
+  }
+  .imageItem{
+    height: 40vh;
+    }
+} 
 
 
 

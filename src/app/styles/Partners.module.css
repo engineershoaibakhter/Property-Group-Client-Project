@@ -7,7 +7,7 @@
 .h2 {
   color: #082360;
   font-weight: 700;
-  font-size: 1.5em;
+  font-size: 1.8em;
   text-transform: uppercase;
   padding-left: 20px;
   text-align: center;
@@ -20,7 +20,7 @@
 
 .slider {
   background: white;
-  height: 170px; /* Increased height to ensure consistent image container height */
+  box-shadow: 0 10px 20px -5px rgba(0, 0, 0, .125);
   margin: auto;
   overflow: hidden;
   position: relative;
@@ -53,14 +53,16 @@
   display: flex;
   align-items: center; /* Center content vertically */
   width: calc(260px * 14);
+  justify-content: space-between; /* Ensure equal spacing between slides */
 }
 
 .slide {
-  height: 150px; /* Consistent height for image containers */
+  height: 150px;
   width: 250px;
-  margin-right: 60px;
+  margin: 0 30px; /* Adjust margin to control spacing */
   display: flex; /* Flexbox to center content */
   justify-content: center; /* Center horizontally */
   align-items: center; /* Center vertically */
   position: relative; /* Needed for next/image to fill container */
+  padding: 0 20px; /* Adding padding to ensure equal spacing */
 }

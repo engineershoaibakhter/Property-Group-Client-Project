@@ -25,7 +25,7 @@ const Partners = () => {
         <div className={styles.slideTrack}>
           {images.map((source, index) => (
             <div className={styles.slide} key={index}>
-              <Image src={source} layout="intrinsic" width={200} height={100} objectFit="contain" alt={`Partner ${index + 1}`} />
+              <Image src={source} layout="responsive" width={100} height={100} objectFit="cover" alt={`Partner ${index + 1}`} />
             </div>
           ))}
         </div>
