@@ -4,7 +4,7 @@
   padding: 30px 0px;
 }
 
-.h2{
+.h2 {
   color: #082360;
   font-weight: 700;
   font-size: 1.5em;
@@ -20,8 +20,7 @@
 
 .slider {
   background: white;
-  box-shadow: 0 10px 20px -5px rgba(0, 0, 0, .125);
-  height: 100px;
+  height: 170px; /* Increased height to ensure consistent image container height */
   margin: auto;
   overflow: hidden;
   position: relative;
@@ -31,7 +30,6 @@
 
 .slider::before,
 .slider::after {
-  background: linear-gradient(to right, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
   content: "";
   height: 100px;
   position: absolute;
@@ -53,10 +51,16 @@
 .slideTrack {
   animation: scroll 40s linear infinite;
   display: flex;
+  align-items: center; /* Center content vertically */
   width: calc(260px * 14);
 }
+
 .slide {
-  height: 100px;
+  height: 150px; /* Consistent height for image containers */
   width: 250px;
   margin-right: 60px;
+  display: flex; /* Flexbox to center content */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  position: relative; /* Needed for next/image to fill container */
 }

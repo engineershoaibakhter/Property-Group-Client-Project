@@ -89,10 +89,15 @@
   padding: 20px;
 }
 
-.CompanyLogoImage{
-  margin-bottom: 10px;
-  object-fit: contain;
+.CompanyLogoImage {
+  width: 100px; 
+  height: 63px; 
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
 
 .companyContent {
   padding: 30px 40px;
@@ -145,6 +150,37 @@
 text-align: start;
 }
 
+.companyContent {
+  padding: 30px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* height: 300px;  */
+  overflow: hidden; 
+}
+
+.companyInfo {
+
+  text-align: start;
+  font-weight: 600;
+  font-size: 1em;
+  line-height: 1.5; 
+  height: 8em; 
+  overflow: hidden; 
+  margin-top: 20px;
+}
+
+.authorName, .authorPosition {
+  margin: 0;
+  font-size: 1em;
+  line-height: 1.5; 
+}
+
+.authorPosition {
+  font-size: 0.9em;
+}
+
+
 
 
 @media only screen and (max-width: 1024px) {
@@ -164,15 +200,21 @@ text-align: start;
   }
 
 
-  .companyInfo {
+  /* .companyInfo {
     min-height: 5vh;
-  }
+  } */
 }
 
-@media screen and (max-width:500px){
+@media screen and (max-width:700px){
   .slideButton{
     height: 40px;
     width: 40px;
+  }
+  .companyInfo {
+   margin-top: 15px;
+   line-height: 1.5; 
+  height: 4.5em; 
+  overflow: hidden;
   }
 }
 

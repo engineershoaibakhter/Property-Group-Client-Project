@@ -11,28 +11,28 @@ const Testimonials = () => {
   const testimonials = [
     {
       companyLogo: "/images/clients/iga.svg",
-      companyInfo: "The integration of Verida’s decentralised identity storage wallet with the cheqd network offers a compelling vision of ‘Not your keys, not your identity’. People’s digital selves should be in their control, and this includes being able to store their credentials outside of the control of Big Tech providers.",
+      companyInfo: "Verida’s decentralized identity storage wallet with the cheqd network offers a robust vision of ‘Not your keys, not your identity’. This allows users to store their credentials securely, outside the control of major tech companies.",
       authorName: "Sebastian Rodriguez",
       authorPosition: "IGA",
       imgSrc: "/images/testimonials/firstImage.png"
     },
     {
       companyLogo: "/images/clients/anytimeheader-logo.png",
-      companyInfo: "We’re excited to support the Verida team as they add more NEAR features to their excellent product. Ease of use and low switching costs are key to mainstream Web3 adoption, so it’s exciting that the Verida Wallet will soon make DIDs and messaging available to NEAR users on mobile.",
+      companyInfo: "Supporting the Verida team to add more NEAR features is thrilling. The Verida Wallet will soon provide DIDs and messaging for NEAR users on mobile, enhancing ease of use and reducing switching costs, thus driving mainstream Web3 adoption.",
       authorName: "Illia Polosukhin",
       authorPosition: "Anytime Fitness",
       imgSrc: "/images/testimonials/secondImage.png"
     },
     {
       companyLogo: "/images/clients/subway.png",
-      companyInfo: "The integration of Verida’s decentralised identity storage wallet with the cheqd network offers a compelling vision of ‘Not your keys, not your identity’. People’s digital selves should be in their control, and this includes being able to store their credentials outside of the control of Big Tech providers.",
+      companyInfo: "Integrating Verida’s decentralized identity wallet with cheqd brings a powerful vision of ‘Not your keys, not your identity’. It ensures that users have full control over their digital identities and credentials.",
       authorName: "Ankur Banerjee",
       authorPosition: "Subway",
       imgSrc: "/images/testimonials/thirdImage.png"
     },
     {
       companyLogo: "/images/clients/cleanlarge.png",
-      companyInfo: "Working with Ankur and Michael from BCA Corp at Central Square has been a truly exceptional experience. From our first interaction, their professionalism and commitment to excellence were evident. They made the entire process remarkably easy, ensuring that all our needs were met with a friendly and approachable demeanor.",
+      companyInfo: "Working with Ankur and Michael from BCA Corp at Central Square has been a truly exceptional experience. From our first interaction, their professionalism and commitment to excellence were evident.",
       authorName: "David",
       authorPosition: "Clean Streak Laundry",
       imgSrc: "/images/testimonials/fourImage.png"
@@ -149,7 +149,9 @@ const Testimonials = () => {
                 <div className={styles.allImage}>
                   <div className={styles.imageItem}>
                     <div className={styles.companyContent}>
-                      <Image src={content.companyLogo} width={100} height={100} alt={'Company Logo'} className={styles.CompanyLogoImage} />
+                      <div className={styles.CompanyLogoImage}>
+                      <Image src={content.companyLogo} layout="responsive" objectFit="cover" width={200} height={100} alt={'Company Logo'} className={styles.CompanyImage}/>
+                      </div>
                       <p className={styles.companyInfo}>{content.companyInfo}</p>
                       <div className={styles.row}>
                         <div className={styles.textContainer}>
