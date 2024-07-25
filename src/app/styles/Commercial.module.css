@@ -313,12 +313,15 @@
 .companyImage{
   width: 100%;
   height: 100%;
-  position: relative
+  position: relative;
+  filter: blur(7px);
+  -webkit-filter: blur(7px);
 }
 
 .CompanyLogoImage{
   width: 100%;
   height: 100%;
+
 }
 
 .companyContent {
@@ -441,16 +444,11 @@ text-align: start;
     background: #0e3dab;
 }
 
-@media only screen and (max-width: 1500px) {
-
-  .imageItem {
-  height: 45vh;
-  }
-}
 
 
 
-@media only screen and (max-width: 900px) {
+
+@media only screen and (max-width: 750px) {
 
   .imageList {
     scroll-snap-type: x mandatory;
