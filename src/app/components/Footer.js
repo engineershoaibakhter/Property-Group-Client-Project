@@ -5,6 +5,7 @@ import { FaLinkedin, FaYoutube, FaTwitter, FaFacebook,FaInstagram } from 'react-
 import Link from 'next/link';
 
 const Footer = () => {
+  const currentYear=new Date().getFullYear();
   return (
     <div className={styles.main_footer}>
     <section className={styles.footer}>
@@ -75,7 +76,7 @@ const Footer = () => {
       
     </section>
     <div className={styles.copyright}>
-          <p>Copyright 2024 - BCA Corp | All Rights Reserved</p>
+          <p>Copyright {currentYear} - BCA Corp | All Rights Reserved</p>
       </div>
     </div>
   );

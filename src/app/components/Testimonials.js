@@ -13,28 +13,28 @@ const Testimonials = () => {
       companyLogo: "/images/clients/iga.svg",
       companyInfo: "The integration of Verida’s decentralised identity storage wallet with the cheqd network offers a compelling vision of ‘Not your keys, not your identity’. People’s digital selves should be in their control, and this includes being able to store their credentials outside of the control of Big Tech providers.",
       authorName: "Sebastian Rodriguez",
-      authorPosition: "VP of Product, Polygon ID",
+      authorPosition: "IGA",
       imgSrc: "/images/testimonials/firstImage.png"
     },
     {
       companyLogo: "/images/clients/anytimeheader-logo.png",
       companyInfo: "We’re excited to support the Verida team as they add more NEAR features to their excellent product. Ease of use and low switching costs are key to mainstream Web3 adoption, so it’s exciting that the Verida Wallet will soon make DIDs and messaging available to NEAR users on mobile.",
       authorName: "Illia Polosukhin",
-      authorPosition: "Co-Founder, NEAR",
+      authorPosition: "Anytime Fitness",
       imgSrc: "/images/testimonials/secondImage.png"
     },
     {
       companyLogo: "/images/clients/subway.png",
       companyInfo: "The integration of Verida’s decentralised identity storage wallet with the cheqd network offers a compelling vision of ‘Not your keys, not your identity’. People’s digital selves should be in their control, and this includes being able to store their credentials outside of the control of Big Tech providers.",
       authorName: "Ankur Banerjee",
-      authorPosition: "CTO and Co-Founder, cheqd",
+      authorPosition: "Subway",
       imgSrc: "/images/testimonials/thirdImage.png"
     },
     {
       companyLogo: "/images/clients/cleanlarge.png",
       companyInfo: "Working with Ankur and Michael from BCA Corp at Central Square has been a truly exceptional experience. From our first interaction, their professionalism and commitment to excellence were evident. They made the entire process remarkably easy, ensuring that all our needs were met with a friendly and approachable demeanor.",
-      authorName: "David, Clean Streak Laundry",
-      authorPosition: "Tech Lead, zkPass",
+      authorName: "David",
+      authorPosition: "Clean Streak Laundry",
       imgSrc: "/images/testimonials/fourImage.png"
     },
     // {

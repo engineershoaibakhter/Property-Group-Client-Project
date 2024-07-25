@@ -8,7 +8,7 @@ const CommercialCarousel = ({companyName,companyDescription}) => {
     <div className={styles.carousel}>
       <div className={styles.carouselSlide}>
         <div className={styles.carouselImage}>
-        <img src="/images/webimages3.jpg" alt="Central Place Sydney"  />
+        <Image fill src="/images/webimages3.jpg" alt="Central Place Sydney"  />
         </div>
         <div className={styles.carouselContent}>
           <h1>{companyName}</h1>
