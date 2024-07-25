@@ -299,7 +299,7 @@
 
 .imageItem {
   width: 100%;
-  height: 80vh;
+  height: 500px;
   object-fit: cover;
   /* border-radius: 40px; */
   border:1px solid rgba(255, 255, 255, .2);
@@ -460,8 +460,7 @@ text-align: start;
   }
 
   .imageItem {
-    /* height: auto; */
-  height: 50vh;
+  /* height: 50vh; */
     width: 100%;
   }
 
@@ -487,7 +486,7 @@ text-align: start;
     max-height: none;
   }
   .imageItem{
-  height: 60vh;
+  /* height: 60vh; */
   }
   .slideButton{
     top: 40%;
@@ -512,7 +511,7 @@ text-align: start;
     font-size: 0.7em;
   }
   .imageItem{
-    height: 40vh;
+    /* height: 40vh; */
     }
 } 
 
