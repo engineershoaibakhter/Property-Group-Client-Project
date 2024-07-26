@@ -385,7 +385,7 @@ const Testimonials = () => {
             {testimonials.map((content, index) => (
               <li key={index} className={styles.imageItemWrapper}>
                 <div className={styles.allImage}>
-                  <div className={styles.imageItem}>
+                  <div className={`${styles.imageItem} ${index === 0 ? styles.firstImage : ''}`}>
                     <div className={styles.companyContent}>
                       <div className={styles.companyImage}>
                       <Image fill src={content.companyImage} alt={'Company Logo'} className={styles.CompanyLogoImage} />
