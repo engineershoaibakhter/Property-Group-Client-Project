@@ -252,7 +252,7 @@ const Testimonials = () => {
     },
     {
       companyImage: "/images/building.jpg",
-      companyLocation: "Clyde Square",
+      companyLocation: "VIC, Clyde Square",
       companyProjectName: "Central Square",
       companyInfo: "Unique mix of commercial, industrial lots, and boutique.",
       leasingLink: "https://www.pspproperty.com.au/property?property_id=1064509/2-sadie-avenue-thornhill-park",
@@ -260,7 +260,7 @@ const Testimonials = () => {
     },
     {
       companyImage: "/images/cars.jpg",
-      companyLocation: "Wollert, VIC",
+      companyLocation: "VIC, Wollert",
       companyProjectName: "Central Square",
       companyInfo: "129 residential lots with over 1Ha green space in Wollert.",
       leasingLink: "https://www.pspproperty.com.au/property?property_id=1064509/2-sadie-avenue-thornhill-park",
@@ -269,7 +269,7 @@ const Testimonials = () => {
     ,
     {
       companyImage: "/images/cars.jpg",
-      companyLocation: "Orrong Tower",
+      companyLocation: "VIC, Orrong Tower",
       companyProjectName: "Central Square",
       companyInfo: "Boutique architecturally designed apartment block soon.",
       leasingLink: "https://www.pspproperty.com.au/property?property_id=1064509/2-sadie-avenue-thornhill-park",
@@ -278,7 +278,7 @@ const Testimonials = () => {
     ,
     {
       companyImage: "/images/cars.jpg",
-      companyLocation: "Iramoo Waters",
+      companyLocation: "VIC, Iramoo Waters",
       companyProjectName: "Central Square",
       companyInfo: "150+ residential lots, 2Ha green space, wetland, and walk.",
       leasingLink: "https://www.pspproperty.com.au/property?property_id=1064509/2-sadie-avenue-thornhill-park",

@@ -47,7 +47,7 @@ const thornhill = () => {
         point2={point2}
         point3={point3}
       />
-      <CommercialService />
+      {/* <CommercialService /> */}
       <CentralPlaceSydney companyName={companyName} paragraph2={paragraph2} paragraph3={paragraph3}/>
       <CommercialProjectMoreInfo point1={point1} point2={point2} point3={point3} point4={point4} point5={point5} point6={point6} point7={point7}/>
       <CommercialLocation locationSrc={locationSrc} companyName={companyName} />

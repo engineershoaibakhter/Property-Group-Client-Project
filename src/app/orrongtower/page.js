@@ -12,10 +12,10 @@ import Gallery from "@/app/components/Gallery"
 const Orrong_Tower = () => {
   let companyName="Central Square Orrong Tower";
   let companyDescription ="Boutique architecturally designed apartment block in Toorak coming soon."
-  let locationSrc="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3156.268350411389!2d144.62685307528184!3d-37.71337852830657!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad6f38cf1c4aff5%3A0x7d9f6acd0ada7094!2sCentral%20Square!5e0!3m2!1sen!2s!4v1721211989146!5m2!1sen!2s";
+  let locationSrc="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12603.290020566874!2d144.99845572794013!3d-37.84104094931178!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad64270233922c7%3A0x5045675218cd9b0!2sToorak%20VIC%203142!5e0!3m2!1sen!2sau!4v1721994170708!5m2!1sen!2sau";
   let contactUrl="https://www.pspproperty.com.au/property?property_id=1064509/2-sadie-avenue-thornhill-park"
-  let locationMap="https://maps.app.goo.gl/FPkmKLqfQGH87KtL8";
-  let location="2 Sadie Av, Thornhill Park VIC 3335, Australia";
+  let locationMap="hhttps://maps.app.goo.gl/gwnDaJo3V4E2k5Xt7";
+  let location="Address Not Available";
   let pdfFile="/pdf/wollert.pdf"
 
   let paragraph1 =
@@ -57,7 +57,8 @@ let point7 =
         point1={point1}
         point2={point2}
         point3={point3}
-      /><CommercialService />
+      />
+      {/* <CommercialService /> */}
     <CentralPlaceSydney companyName={companyName} paragraph2={paragraph2} paragraph3={paragraph3}/>
     <CommercialProjectMoreInfo point1={point1} point2={point2} point3={point3} point4={point4} point5={point5} point6={point6} point7={point7}/>
    <CommercialLocation locationSrc={locationSrc} companyName={companyName}/>

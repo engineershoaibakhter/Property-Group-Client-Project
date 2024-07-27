@@ -25,7 +25,7 @@ const Team = () => {
   const teamMembers = [
     {
       name: 'Nick Gupta',
-      title: 'Consultant',
+      title: 'strategic advisor',
       imgSrc: '/images/man/leftman.png',
       linkedIn:"https://linkedin.com",
     },

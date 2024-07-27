@@ -9,7 +9,7 @@ import CommercialService from "@/app/components/CommercialService";
 import Gallery from "@/app/components/Gallery";
 
 const craigieburn = () => {
-  let companyName = "Central Square Craigieburn";
+  let companyName = "Aston Square Craigieburn";
   let companyDescription ="Upcoming neighbourhood centre with childcare, gym, and specialty shops."
   let locationSrc =
     "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3161.1505565089255!2d144.88961027527503!3d-37.59861552177166!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65141017b6dbb%3A0xe9c14ec789587fe6!2s179%20Elevation%20Bvd%2C%20Craigieburn%20VIC%203064%2C%20Australia!5e0!3m2!1sen!2s!4v1721211562391!5m2!1sen!2s";
@@ -17,7 +17,7 @@ const craigieburn = () => {
   let contactUrl =
     "https://www.pspproperty.com.au/property?property_id=1241993/179-elevation-boulevard-craigieburn";
   let location = "179 Elevation Bvd, Craigieburn VIC 3064, Australia";
-  let pdfFile = "/pdf/wollert.pdf";
+  let pdfFile = "/craigieburn";
   let paragraph1 =
     "This upcoming Neighbourhood activity centre is situated centrally in Aston Estate. Aston Square will have a childcare, Swim school, Gym, anchored by an IGA+ Liquor supermarket. Adding to above, there will be a hand-picked mix of speciality shops and F&B tenancies.";
   
@@ -55,7 +55,7 @@ const craigieburn = () => {
         point2={point2}
         point3={point3}
       />
-      <CommercialService />
+      {/* <CommercialService /> */}
       <CentralPlaceSydney companyName={companyName} paragraph2={paragraph2} paragraph3={paragraph3}/>
       <CommercialProjectMoreInfo point1={point1} point2={point2} point3={point3} point4={point4} point5={point5} point6={point6} point7={point7}/>
       <CommercialLocation locationSrc={locationSrc} companyName={companyName} />

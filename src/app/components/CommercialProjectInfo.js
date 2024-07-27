@@ -18,7 +18,7 @@ const CommercialProjectInfo = ({locationMap,contactUrl,location,pdfFile,paragrap
     <div className={styles.rightContent}>
       <div className={styles.status}>
         <h3>Development Status</h3>
-        <p>DA Approved</p>
+        <p>DA Status To Be Completed</p>
       </div>
       <div className={styles.location}>
         <h3>Location</h3>

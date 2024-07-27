@@ -20,11 +20,11 @@ const HeaderNavbar = () => {
         </div>
       </div>
       <div className={styles.LeftContent}>
-        <div className={styles.TimingContainer}>
+        {/* <div className={styles.TimingContainer}>
           <FontAwesomeIcon icon={faPhoneVolume} className={styles.icon} />
           <h6 className={styles.h6}><Link href="tel:+61413066115" className={styles.phoneLink}>04 1306 6115</Link></h6>
-        </div>
-        <span className={styles.BreakLine}>|</span>
+        </div> */}
+        {/* <span className={styles.BreakLine}>|</span> */}
         <div className={styles.icons}>
           <span ><Link href={process.env.NEXT_PUBLIC_FACEBOOK_LINK} target='_blank'><FontAwesomeIcon icon={faFacebookF} className={styles.icon} /></Link></span>
           <span><Link href={process.env.NEXT_PUBLIC_TWITTER_LINK} target='_blank'><FontAwesomeIcon icon={faTwitter} className={styles.icon} /></Link></span>

@@ -12,12 +12,12 @@ const ClydeSquare = () => {
   let companyName = "Clyde Square";
   let companyDescription ="Unique mix of commercial, industrial lots, and boutique F&B precinct."
   let locationSrc =
-    "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3156.268350411389!2d144.62685307528184!3d-37.71337852830657!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad6f38cf1c4aff5%3A0x7d9f6acd0ada7094!2sCentral%20Square!5e0!3m2!1sen!2s!4v1721211989146!5m2!1sen!2s";
+    "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d50200.73727275419!2d145.31236957781005!3d-38.15074655701739!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad61b347a44eff7%3A0x5045675218ce180!2sClyde%20VIC%203978!5e0!3m2!1sen!2sau!4v1721994097093!5m2!1sen!2sau";
   let contactUrl =
     "https://www.pspproperty.com.au/property?property_id=1064509/2-sadie-avenue-thornhill-park";
-  let locationMap = "https://maps.app.goo.gl/FPkmKLqfQGH87KtL8";
-  let location = "2 Sadie Av, Thornhill Park VIC 3335, Australia";
-  let pdfFile = "pdf/centralsquare.pdf";
+  let locationMap = "https://maps.app.goo.gl/A82YTrgH8LW2Jfo67";
+  let location = "Address Not Available";
+  let pdfFile = "/clydesquare";
 
   let paragraph1 =
     "Clyde Square offers a unique mix of Commercial and Industrial lots. Offering Multiple QSR’s, Service Station with anchored supermarket. Site also offers a childcare, LFR lots with a boutique F&B precinct.";
@@ -57,7 +57,7 @@ const ClydeSquare = () => {
         point2={point2}
         point3={point3}
       />
-      <CommercialService />
+      {/* <CommercialService /> */}
       <CentralPlaceSydney companyName={companyName} paragraph2={paragraph2} paragraph3={paragraph3}/>
       <CommercialProjectMoreInfo point1={point1} point2={point2} point3={point3} point4={point4} point5={point5} point6={point6} point7={point7}/>
       <CommercialLocation locationSrc={locationSrc} companyName={companyName}  />

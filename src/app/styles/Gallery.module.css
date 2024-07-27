@@ -23,6 +23,11 @@
     height: 100%;
   }
   
+  .blurred {
+    filter: blur(12px);
+    -webkit-filter: blur(12px);
+  }
+
   @media (max-width: 768px) {
     .Images {
       grid-template-columns: 1fr;
