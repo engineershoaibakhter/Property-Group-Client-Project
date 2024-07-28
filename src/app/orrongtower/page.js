@@ -16,7 +16,7 @@ const Orrong_Tower = () => {
   let contactUrl="https://www.pspproperty.com.au/property?property_id=1064509/2-sadie-avenue-thornhill-park"
   let locationMap="hhttps://maps.app.goo.gl/gwnDaJo3V4E2k5Xt7";
   let location="Address Not Available";
-  let pdfFile="/pdf/wollert.pdf"
+  // let pdfFile="/pdf/wollert.pdf"
 
   let paragraph1 =
   "Spectacularly designed Apartment Block in the heart of Toorak. A boutique block of architecturally designed Apartments is coming soon.";
@@ -52,7 +52,7 @@ let point7 =
         locationMap={locationMap}
         contactUrl={contactUrl}
         location={location}
-        pdfFile={pdfFile}
+        // pdfFile={pdfFile}
         paragraph1={paragraph1}
         point1={point1}
         point2={point2}

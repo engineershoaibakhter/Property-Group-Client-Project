@@ -12,13 +12,13 @@
 
 .carouselImageContainer {
   width: 100%;
-  height: 100%;
+  height: auto;
   position: relative;
 }
 
 .carouselImage {
   width: 100%;
-  height: 100%;
+  height: auto;
 }
 
 .carouselContent {
@@ -68,7 +68,6 @@
     font-size: 0.8em;
     padding: 0;
   }
-
 }
 
 @media (max-width: 410px) {
@@ -86,5 +85,4 @@
     font-size: 0.6em;
     padding: 0;
   }
-
 }

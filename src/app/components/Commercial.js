@@ -243,7 +243,7 @@ const Testimonials = () => {
       detailsLink: "/thornhill",
     },
     {
-      companyImage: "/images/cars.jpg",
+      companyImage: "/images/coming soon.jpg",
       companyLocation: "VIC, Craigieburn",
       companyProjectName: "Aston Square",
       companyInfo: "Upcoming neighbourhood centre with childcare, and gym.",
@@ -251,7 +251,7 @@ const Testimonials = () => {
       detailsLink: "/craigieburn",
     },
     {
-      companyImage: "/images/building.jpg",
+      companyImage: "/images/coming soon.jpg",
       companyLocation: "VIC, Clyde Square",
       companyProjectName: "Central Square",
       companyInfo: "Unique mix of commercial, industrial lots, and boutique.",
@@ -259,7 +259,7 @@ const Testimonials = () => {
       detailsLink: "/clydesquare",
     },
     {
-      companyImage: "/images/cars.jpg",
+      companyImage: "/images/coming soon.jpg",
       companyLocation: "VIC, Wollert",
       companyProjectName: "Central Square",
       companyInfo: "129 residential lots with over 1Ha green space in Wollert.",
@@ -268,7 +268,7 @@ const Testimonials = () => {
     },
     ,
     {
-      companyImage: "/images/cars.jpg",
+      companyImage: "/images/coming soon.jpg",
       companyLocation: "VIC, Orrong Tower",
       companyProjectName: "Central Square",
       companyInfo: "Boutique architecturally designed apartment block soon.",
@@ -277,7 +277,7 @@ const Testimonials = () => {
     },
     ,
     {
-      companyImage: "/images/cars.jpg",
+      companyImage: "/images/coming soon.jpg",
       companyLocation: "VIC, Iramoo Waters",
       companyProjectName: "Central Square",
       companyInfo: "150+ residential lots, 2Ha green space, wetland, and walk.",

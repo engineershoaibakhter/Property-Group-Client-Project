@@ -13,10 +13,10 @@ const CommercialCarousel = ({ companyName, companyDescription }) => {
             src={image}
             alt='Central Place Sydney'
             layout="responsive"
-            objectFit="responsive"
+            objectFit="cover"
             className={styles.carouselImage}
-            width={200}
-            height={100}
+            width={2000}
+            height={1000}
           />
         </div>
         <div className={styles.carouselContent}>

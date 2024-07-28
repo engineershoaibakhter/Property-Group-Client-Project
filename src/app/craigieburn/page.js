@@ -17,7 +17,7 @@ const craigieburn = () => {
   let contactUrl =
     "https://www.pspproperty.com.au/property?property_id=1241993/179-elevation-boulevard-craigieburn";
   let location = "179 Elevation Bvd, Craigieburn VIC 3064, Australia";
-  let pdfFile = "/craigieburn";
+  // let pdfFile = "/craigieburn";
   let paragraph1 =
     "This upcoming Neighbourhood activity centre is situated centrally in Aston Estate. Aston Square will have a childcare, Swim school, Gym, anchored by an IGA+ Liquor supermarket. Adding to above, there will be a hand-picked mix of speciality shops and F&B tenancies.";
   
@@ -49,7 +49,7 @@ const craigieburn = () => {
         locationMap={locationMap}
         contactUrl={contactUrl}
         location={location}
-        pdfFile={pdfFile}
+        // pdfFile={pdfFile}
         paragraph1={paragraph1}
         point1={point1}
         point2={point2}

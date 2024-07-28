@@ -16,7 +16,7 @@ const Iramoo = () => {
   let contactUrl="https://www.pspproperty.com.au/property?property_id=1064509/2-sadie-avenue-thornhill-park"
   let locationMap="https://maps.app.goo.gl/FPkmKLqfQGH87KtL8";
   let location="Address Not Available";
-  let pdfFile="/pdf/wollert.pdf"
+  // let pdfFile="/"
 
   let paragraph1 =
   "A well-balanced residential subdivision over 13.7Ha in growth area of Thornhill Park offers in access of 150 residential lots and over 2Ha of green space. The development have its own wetland and walking tracks. The masterplanning is underway and will be released shortly.";
@@ -52,7 +52,7 @@ let point7 =
         locationMap={locationMap}
         contactUrl={contactUrl}
         location={location}
-        pdfFile={pdfFile}
+        // pdfFile={pdfFile}
         paragraph1={paragraph1}
         point1={point1}
         point2={point2}
