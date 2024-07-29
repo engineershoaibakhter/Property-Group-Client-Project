@@ -4,7 +4,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center; /* Align items vertically in the center */
-    padding: 8px 30px;
+    padding: 8px 0px;
 }
 
 .RightContent,
@@ -64,18 +64,15 @@
 
 @media screen and (max-width: 850px) {
     .HeaderNavbar {
-        flex-direction: column; /* Stack items vertically on small screens */
-        padding: 8px 15px;
-        text-align: center; /* Center text alignment */
+        padding: 8px 0px;
+        text-align: center;
     }
-    .RightContent {
+    .AddressContainer,.BreakLine {
         display: none;
     }
     .LeftContent {
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
-        width: 100%;
     }
     .BreakLine {
         display: none;
@@ -84,11 +81,20 @@
 
 @media screen and (max-width: 500px) {
     .HeaderNavbar {
-        flex-direction: column; /* Stack items vertically on small screens */
-        padding: 8px 4px;
+        padding: 8px 0px;
         text-align: center; /* Center text alignment */
     }
     .icon {
         padding: 6px 6px;
+    }
+}
+
+@media screen and (max-width:350px){
+    
+    .icon{
+        font-size: 13px;
+    }
+    .h6 {
+        font-size: 13px;
     }
 }

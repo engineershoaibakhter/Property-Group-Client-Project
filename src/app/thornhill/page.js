@@ -18,6 +18,7 @@ const thornhill = () => {
   let locationMap = "https://maps.app.goo.gl/FPkmKLqfQGH87KtL8";
   let location = "2 Sadie Av, Thornhill Park VIC 3335, Australia";
   let pdfFile = "/pdf/centralsquare.pdf";
+  let developmentStatus="DA Status To Be Completed";
   let paragraph1 =
     "Nestled in the growing suburb of Thornhill Park, Central Square is a Local Activity Centre with a mix of tenancies to service local community. Anchored by a Large IGA+ Liquor, the centre offers Health offerings like, Medical Centre, Anytime Fitness Gym, Discount Chemist and Dentist.  ";
   let paragraph2 =
@@ -41,6 +42,7 @@ const thornhill = () => {
         locationMap={locationMap}
         contactUrl={contactUrl}
         location={location}
+        developmentStatus={developmentStatus}
         pdfFile={pdfFile}
         paragraph1={paragraph1}
         point1={point1}

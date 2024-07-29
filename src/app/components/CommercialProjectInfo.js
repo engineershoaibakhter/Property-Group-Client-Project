@@ -2,7 +2,7 @@ import React from 'react'
 import styles from '../styles/CommercialProjectInfo.module.css'
 import Link from 'next/link'
 
-const CommercialProjectInfo = ({ locationMap, contactUrl, location, pdfFile, paragraph1, point1, point2, point3 }) => {
+const CommercialProjectInfo = ({ locationMap, contactUrl, location, pdfFile,developmentStatus, paragraph1, point1, point2, point3 }) => {
   return (
     <div className={styles.container}>
       <div className={styles.leftContent}>
@@ -18,7 +18,7 @@ const CommercialProjectInfo = ({ locationMap, contactUrl, location, pdfFile, par
       <div className={styles.rightContent}>
         <div className={styles.status}>
           <h3>Development Status</h3>
-          <p>DA Status To Be Completed</p>
+          <p>{developmentStatus}</p>
         </div>
         <div className={styles.location}>
           <h3>Location</h3>

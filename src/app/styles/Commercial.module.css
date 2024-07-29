@@ -427,8 +427,12 @@ text-align: start;
   cursor: pointer;
   text-align: center;
   background: #082362;
-  color: white;
-  
+  color: white; 
+}
+
+.leasingButton{
+  max-width: fit-content;
+  padding: 10px 30px;
 }
 
 .detailsLink {
@@ -471,6 +475,10 @@ text-align: start;
 
   .companyInfo {
     min-height: 5vh;
+  }
+
+  .leasingButton{
+    padding: 10px 20px;
   }
 }
 

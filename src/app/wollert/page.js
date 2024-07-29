@@ -17,7 +17,7 @@ const Wollert = () => {
   let locationMap="https://maps.app.goo.gl/ANmatsFjx7BUMdvp6";
   let location="90 Bodycoats Rd, Wollert VIC 3750, Australia";
   let pdfFile="/pdf/wollert.pdf"
-
+  let developmentStatus="To Be Provided";
   let paragraph1 =
   "A smartly designed residential subdivision over 8.16Ha in growth area of Wollert offers 129 residential lots and over 1Ha of green space. The lots will be released to the market for sale in coming months.";
 
@@ -53,6 +53,7 @@ let point7 =
         contactUrl={contactUrl}
         location={location}
         pdfFile={pdfFile}
+        developmentStatus={developmentStatus}
         paragraph1={paragraph1}
         point1={point1}
         point2={point2}

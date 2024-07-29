@@ -18,7 +18,7 @@ const ClydeSquare = () => {
   let locationMap = "https://maps.app.goo.gl/A82YTrgH8LW2Jfo67";
   let location = "Address Not Available";
   // let pdfFile = "/clydesquare";
-
+  let developmentStatus="To Be Provided";
   let paragraph1 =
     "Clyde Square offers a unique mix of Commercial and Industrial lots. Offering Multiple QSR’s, Service Station with anchored supermarket. Site also offers a childcare, LFR lots with a boutique F&B precinct.";
 
@@ -51,6 +51,7 @@ const ClydeSquare = () => {
         locationMap={locationMap}
         contactUrl={contactUrl}
         location={location}
+        developmentStatus={developmentStatus}
         // pdfFile={pdfFile}
         paragraph1={paragraph1}
         point1={point1}

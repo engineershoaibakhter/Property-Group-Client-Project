@@ -255,7 +255,7 @@ const Testimonials = () => {
       companyLocation: "VIC, Clyde Square",
       companyProjectName: "Central Square",
       companyInfo: "Unique mix of commercial, industrial lots, and boutique.",
-      leasingLink: "https://www.pspproperty.com.au/property?property_id=1064509/2-sadie-avenue-thornhill-park",
+      leasingLink: "",
       detailsLink: "/clydesquare",
     },
     {
@@ -263,7 +263,7 @@ const Testimonials = () => {
       companyLocation: "VIC, Wollert",
       companyProjectName: "Central Square",
       companyInfo: "129 residential lots with over 1Ha green space in Wollert.",
-      leasingLink: "https://www.pspproperty.com.au/property?property_id=1064509/2-sadie-avenue-thornhill-park",
+      leasingLink: "",
       detailsLink: "/wollert",
     },
     ,
@@ -272,7 +272,7 @@ const Testimonials = () => {
       companyLocation: "VIC, Orrong Tower",
       companyProjectName: "Central Square",
       companyInfo: "Boutique architecturally designed apartment block soon.",
-      leasingLink: "https://www.pspproperty.com.au/property?property_id=1064509/2-sadie-avenue-thornhill-park",
+      leasingLink: "",
       detailsLink: "/orrongtower",
     },
     ,
@@ -281,7 +281,7 @@ const Testimonials = () => {
       companyLocation: "VIC, Iramoo Waters",
       companyProjectName: "Central Square",
       companyInfo: "150+ residential lots, 2Ha green space, wetland, and walk.",
-      leasingLink: "https://www.pspproperty.com.au/property?property_id=1064509/2-sadie-avenue-thornhill-park",
+      leasingLink: "",
       detailsLink: "/iramoo",
     },
   ];
@@ -365,7 +365,7 @@ const Testimonials = () => {
   }, []);
 
   return (
-    <div className={styles.Project}>
+    <div className={styles.Project} id='projects'>
       <div className={styles.header}>
            <h2 className={styles.title}>Our Projects</h2>
            <p className={styles.description}>
@@ -395,7 +395,14 @@ const Testimonials = () => {
                 <h4 className={styles.projectName}>{content.companyProjectName}</h4>
                 <p className={styles.features}>{content.companyInfo}</p>
                 <div className={styles.footer}>
-                  <Link href={content.leasingLink} target="_blank" rel="noopener noreferrer"><button className={styles.leasing}>Leasing now</button></Link>
+                  {
+                    content.leasingLink !== content.leasingLink.slice(0,2)?(
+                      <Link href={content.leasingLink} target="_blank" rel="noopener noreferrer"><button className={styles.leasing}>Leasing now</button></Link>
+                    ):(
+                      <button className={`${styles.leasing} ${styles.leasingButton}`}>Leasing</button>
+                    )
+
+                  }
                   <Link href={content.detailsLink}><button className={styles.detailsLink}>More details ➔</button></Link>
                 </div>
               </div>
