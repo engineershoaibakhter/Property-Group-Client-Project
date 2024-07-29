@@ -3,7 +3,7 @@ import styles from '../styles/About.module.css';
 const About = () => {
   return (
     <div className={styles.about}>
-        <h1 className={styles.heading}>About US</h1>
+        <h2 className={styles.heading}>About US</h2>
     <div className={styles.container}>
       <div className={styles.content}>
         <div className={`${styles.leftContent}`}>

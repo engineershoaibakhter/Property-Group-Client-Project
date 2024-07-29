@@ -8,7 +8,7 @@ const Gallery = ({companyName}) => {
   const isBlurred = companyName !== "Central Square Thornhill Park";
   return (
     <div className={styles.Gallery}>
-      <h1>Gallery</h1>
+      <h2>Gallery</h2>
       <p>{companyName} is set to redefine innovation.</p>
       <div className={styles.Images}>
         <div className={`${styles.image} ${isBlurred? styles.blurred:""}`}>

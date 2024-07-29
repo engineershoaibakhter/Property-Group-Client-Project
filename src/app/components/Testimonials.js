@@ -133,7 +133,7 @@ const Testimonials = () => {
 
   return (
     <div className={styles.Project}>
-      <h1 className={styles.Heading}>What Our Clients Say</h1>
+      <h2 className={styles.Heading}>What Our Clients Say</h2>
       <div className={styles.container}>
         <div className={styles.sliderWrapper}>
           <button

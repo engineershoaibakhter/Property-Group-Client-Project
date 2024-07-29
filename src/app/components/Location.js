@@ -6,7 +6,7 @@ import { faLocationDot, faPhoneVolume, faEnvelope } from '@fortawesome/free-soli
 const Contact = () => {
   return (
     <div className={styles.location}>
-        <h1 className={styles.heading}>Our Location</h1>
+        <h2 className={styles.heading}>Our Location</h2>
     <div className={styles.container}>
       <div className={styles.content}>
         <div className={`${styles.leftContent} ${styles.leftSide}`}>

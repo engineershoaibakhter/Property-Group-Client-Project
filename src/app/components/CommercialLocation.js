@@ -5,7 +5,7 @@ const CommercialLocation = ({locationSrc,companyName}) => {
   return (
     <div>
         <div className={styles.locationContainer}>
-      <h1>Our Location</h1>
+      <h2>Our Location</h2>
       <p>{companyName} is set to redefine innovation.</p>
       <div className={styles.mapContainer}>
         <iframe src={locationSrc} 

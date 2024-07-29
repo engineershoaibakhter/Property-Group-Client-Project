@@ -6,10 +6,10 @@ import { faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Image from 'next/image';
 
-const TeamMember = ({ name, title, imgSrc,linkedIn }) => {
+const TeamMember = ({ name, title, imgSrc,linkedIn,altText }) => {
   return (
     <div className={styles.teamMember}>
-      <Image src={imgSrc} alt={`${name} image`} className={styles.teamImage} width={100} height={100}/>
+      <Image src={imgSrc} alt={`${altText}`} className={styles.teamImage} width={100} height={100}/>
       <div className={styles.overlay}>
         <div className={styles.text}>
           <h3>{name}</h3> 
@@ -28,24 +28,28 @@ const Team = () => {
       title: 'strategic advisor',
       imgSrc: '/images/man/leftman.png',
       linkedIn:"https://linkedin.com",
+      altText:"Nick Gupta, Strategic Advisor at BCA-CORP"
     },
     {
       name: 'Michael Ellis',
       title: 'Director',
       imgSrc: '/images/man/centerman.png',
       linkedIn:"https://linkedin.com",
+      altText:"Michael Ellis, Director at BCA-CORP"
     },
     {
       name: 'Manpreet Dandiwal',
       title: 'managing director,',
       imgSrc: '/images/man/rightman.png',
       linkedIn:"https://linkedin.com",
+      altText:"Manpreet Dandiwal, Managing Director at BCA-CORP"
     },
     {
       name: 'Jarrod Membrey',
       title: 'General manager',
       imgSrc: '/images/man/rightman.png',
       linkedIn:"https://linkedin.com",
+      altText:"Jarrod Membrey, General Manager at BCA-CORP"
     }
   ];
 
@@ -55,7 +59,7 @@ const Team = () => {
       <div className={styles.gallery}>
         <div className={styles.leftColumn}>
           <h2>Our great team</h2>
-          <p>Nick Gupta, our Consultant, brings a wealth of expertise to our projects. Michael Ellis, the Director, leads with vision and strategic direction, ensuring our success. Manpreet Dandiwal, the Managing Director, oversees operations with a keen eye for detail. Jarrod Membrey, the General Manager, ensures smooth daily operations and exceptional service.</p>
+          <p>Nick Gupta, our Strategic Advisor, brings a wealth of expertise to our projects. Michael Ellis, the Director, leads with vision and strategic direction, ensuring our success. Manpreet Dandiwal, the Managing Director, oversees operations with a keen eye for detail. Jarrod Membrey, the General Manager, ensures smooth daily operations and exceptional service.</p>
         </div>
         {teamMembers.map((member, index) => (
           <TeamMember key={index} {...member} />
