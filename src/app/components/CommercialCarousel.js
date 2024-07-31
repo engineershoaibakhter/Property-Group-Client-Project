@@ -3,19 +3,22 @@ import Image from 'next/image';
 import styles from '../styles/CommercialCarousel.module.css';
 
 const CommercialCarousel = ({ companyName, companyDescription }) => {
-  const image = "/images/webimages5.jpg";
+  const image = "/images/webimages6.jpg";
   const isBlurred = companyName !== "Central Square";
+  
   return (
     <div className={styles.carousel}>
       <div className={styles.carouselSlide}>
         <div className={`${styles.carouselImageContainer} ${isBlurred ? styles.blurred : ''}`}>
-          <Image
+          <img
             src={image}
-            alt='Central Place Sydney'
-            
+            alt={companyName} // Use dynamic alt text for better accessibility
             className={styles.carouselImage}
+            layout="responsive" 
+            fill
             
-            layout="responsive" width={200} height={100} objectFit="cover"
+            objectFit="cover"
+            quality={100} // Use highest quality (default is 75)
           />
         </div>
         <div className={styles.carouselContent}>
