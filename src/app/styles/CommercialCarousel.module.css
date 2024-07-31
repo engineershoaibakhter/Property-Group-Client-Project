@@ -55,15 +55,29 @@
 
 @media screen and (max-width:1500px){
   .carouselContent {
+    top: 40%;
+  }
+  
+  .carouselContent h1 {
+    font-size: 5em;
+  }
+  
+  .carouselContent p {
+    font-size: 2.7em;
+  }
+}
+
+@media screen and (max-width:1300px){
+  .carouselContent {
     top: 30%;
   }
   
   .carouselContent h1 {
-    font-size: 2.5em;
+    font-size: 3em;
   }
   
   .carouselContent p {
-    font-size: 1em;
+    font-size: 1.5em;
   }
 }
 
