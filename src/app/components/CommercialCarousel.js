@@ -3,8 +3,8 @@ import Image from 'next/image';
 import styles from '../styles/CommercialCarousel.module.css';
 
 const CommercialCarousel = ({ companyName, companyDescription }) => {
-  const image = "/images/webimages3.jpg";
-  const isBlurred = companyName !== "Central Square Thornhill Park";
+  const image = "/images/webimages5.jpg";
+  const isBlurred = companyName !== "Central Square";
   return (
     <div className={styles.carousel}>
       <div className={styles.carouselSlide}>
@@ -12,11 +12,10 @@ const CommercialCarousel = ({ companyName, companyDescription }) => {
           <Image
             src={image}
             alt='Central Place Sydney'
-            layout="responsive"
-            objectFit="cover"
+            
             className={styles.carouselImage}
-            width={2000}
-            height={1000}
+            
+            layout="responsive" width={200} height={100} objectFit="cover"
           />
         </div>
         <div className={styles.carouselContent}>

@@ -5,7 +5,7 @@ import styles from '../styles/Gallery.module.css'
 import Image from 'next/image'
 
 const Gallery = ({companyName}) => {
-  const isBlurred = companyName !== "Central Square Thornhill Park";
+  const isBlurred = companyName !== "Central Square";
   return (
     <div className={styles.Gallery}>
       <h2>Gallery</h2>

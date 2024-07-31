@@ -10,7 +10,7 @@
   overflow: hidden;
 }
 
-.carouselImageContainer {
+/* .carouselImageContainer {
   width: 100%;
   height: auto;
   position: relative;
@@ -19,7 +19,7 @@
 .carouselImage {
   width: 100%;
   height: auto;
-}
+} */
 
 .carouselContent {
   position: absolute;
