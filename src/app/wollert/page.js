@@ -10,7 +10,7 @@ import Gallery from "@/app/components/Gallery"
 
 
 const Wollert = () => {
-  let companyName="Central Square Wollert";
+  let companyName="Jarrah Grange Estate";
   let companyDescription ="129 residential lots with over 1Ha green space in Wollert."
   let locationSrc="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3161.7622109235763!2d145.0228195!3d-37.5842167!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad64cf6abac4cdb%3A0x179dcc44794227da!2s90%20Bodycoats%20Rd%2C%20Wollert%20VIC%203750%2C%20Australia!5e0!3m2!1sen!2s!4v1721994020817!5m2!1sen!2s";
   let contactUrl="https://www.pspproperty.com.au/property?property_id=1064509/2-sadie-avenue-thornhill-park"

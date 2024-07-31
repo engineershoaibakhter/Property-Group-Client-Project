@@ -28,7 +28,7 @@ const Testimonials = () => {
     },
     {
       companyImage: "/images/coming soon.jpg",
-      companyLocation: "VIC, Clyde Square",
+      companyLocation: "VIC, Clyde",
       companyProjectName: "Clyde Square",
       companyInfo: "Unique mix of commercial, industrial lots, and boutique.",
       leasingLink: "",
@@ -45,7 +45,7 @@ const Testimonials = () => {
     ,
     {
       companyImage: "/images/coming soon.jpg",
-      companyLocation: "VIC, Orrong Tower",
+      companyLocation: "VIC, Toorak",
       companyProjectName: "Orrong Tower",
       companyInfo: "Boutique architecturally designed apartment block soon.",
       leasingLink: "",
@@ -54,7 +54,7 @@ const Testimonials = () => {
     ,
     {
       companyImage: "/images/coming soon.jpg",
-      companyLocation: "VIC, Iramoo Waters",
+      companyLocation: "VIC, Thornhill Park",
       companyProjectName: "Iramoo Waters",
       companyInfo: "150+ residential lots, 2Ha green space, wetland, and walk.",
       leasingLink: "",
@@ -175,7 +175,7 @@ const Testimonials = () => {
                     content.leasingLink !== content.leasingLink.slice(0,2)?(
                       <Link href={content.leasingLink} target="_blank" rel="noopener noreferrer"><button className={styles.leasing}>Leasing now</button></Link>
                     ):(
-                      <button className={`${styles.leasing} ${styles.leasingButton}`}>Leasing</button>
+                      <button className={`${styles.leasing} ${styles.leasingButton}`}>Leasing now</button>
                     )
 
                   }

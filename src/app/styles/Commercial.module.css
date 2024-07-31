@@ -432,7 +432,7 @@ text-align: start;
 
 .leasingButton{
   max-width: fit-content;
-  padding: 10px 30px;
+  /* padding: 10px 30px; */
 }
 
 .detailsLink {

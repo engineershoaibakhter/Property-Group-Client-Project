@@ -10,8 +10,8 @@ import Footer from "./components/Footer";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "BCA-CORP | Expert Property Development & Management in Australia",
-  description: "BCA-CORP specializes in town planning, project management, and construction, delivering high-performance commercial and residential spaces across Australia.",
+  title: "BCA CORP | Expert Property Development & Management in Australia",
+  description: "BCA CORP specializes in town planning, project management, and construction, delivering high-performance commercial and residential spaces across Australia.",
   keywords:"Property Development, Project Management, Town Planning, Real Estate Sales, Construction, Investment, Melbourne, Thornhill Park, Craigieburn, Clyde Square, Wollert, Orrong Tower, Iramoo Waters"
 };
 
