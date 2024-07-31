@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import emailjs from 'emailjs-com';
 import styles from '../styles/Contact.module.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -8,6 +8,17 @@ import { faGlobe, faPhone, faEnvelope } from '@fortawesome/free-solid-svg-icons'
 const Contact = () => {
   const [formSubmitted, setFormSubmitted] = useState(false);
   const [formError, setFormError] = useState(false);
+
+  useEffect(() => {
+    if (formSubmitted || formError) {
+      const timer = setTimeout(() => {
+        setFormSubmitted(false);
+        setFormError(false);
+      }, 5000);
+
+      return () => clearTimeout(timer);
+    }
+  }, [formSubmitted, formError]);
 
   const sendEmail = (e) => {
     e.preventDefault();

@@ -39,7 +39,7 @@ const Team = () => {
     },
     {
       name: 'Manpreet Dandiwal',
-      title: 'managing director,',
+      title: 'managing director',
       imgSrc: '/images/man/rightman.png',
       linkedIn:"https://www.linkedin.com/in/manpreet-dandiwal-184600112/",
       altText:"Manpreet Dandiwal, Managing Director at BCA CORP"
