@@ -18,13 +18,13 @@
 }
 */
 .carouselImage {
-  height: 100%; 
+  height: 50vh; 
     width: 100%;
 } 
 
 .carouselContent {
   position: absolute;
-  top: 25%;
+  top: 40%;
   left: 20px;
   color: white;
   padding: 20px;
@@ -33,7 +33,7 @@
 }
 
 .carouselContent h1 {
-  font-size: 2.5em;
+  font-size: 6em;
   margin: 0;
   text-align: start;
   font-weight: 600;
@@ -41,7 +41,7 @@
 }
 
 .carouselContent p {
-  font-size: 1em;
+  font-size: 3em;
   margin: 5px 0 0;
   text-align: left;
   padding: 10px 10px 10px 45px;
@@ -53,23 +53,37 @@
   -webkit-filter: blur(15px);
 }
 
+@media screen and (max-width:1500px){
+  .carouselContent {
+    top: 30%;
+  }
+  
+  .carouselContent h1 {
+    font-size: 2.5em;
+  }
+  
+  .carouselContent p {
+    font-size: 1em;
+  }
+}
+
 @media (max-width: 768px) {
   /* .carouselImageContainer {
     height: 200px;
   } */
   .carouselImage {
-    height: 140px; 
+    height: auto; 
     width: 100%;
   }
 
   .carouselContent {
     left: 10px;
     padding: 10px;
-    top: 10%;
+    top: 30%;
   }
   
   .carouselContent h1 {
-    font-size: 1.5em;
+    font-size: 2em;
     padding: 15px 5px 5px 5px;
   }
 
@@ -80,18 +94,16 @@
 }
 
 @media (max-width: 410px) {
-  .carouselImageContainer {
-    height: 150px; /* Adjust height for the smallest screens */
-  }
+
 
   .carouselContent {
     left: 10px;
     padding: 5px;
-    top: 10%;
+    top: 30%;
   }
 
   .carouselContent h1 {
-    font-size: 1em;
+    font-size: 1.5em;
     padding: 20px 5px 5px 5px;
   }
 

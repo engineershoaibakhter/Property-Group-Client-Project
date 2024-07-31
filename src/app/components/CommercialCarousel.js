@@ -3,7 +3,7 @@ import Image from 'next/image';
 import styles from '../styles/CommercialCarousel.module.css';
 
 const CommercialCarousel = ({ companyName, companyDescription }) => {
-  const image = "/images/webimages6.jpg";
+  const image = "/images/download6.jpg";
   const isBlurred = companyName !== "Central Square";
   
   return (
