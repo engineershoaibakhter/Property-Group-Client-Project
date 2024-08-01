@@ -35,8 +35,8 @@
   outline: none;
   border-radius: 12px;
   border-color: rgba(255, 255, 255, .1);
-  height: 2.5rem;
-  width: 2.5rem;
+  height: 45px;
+  width: 50px;
   /* height: 10%;
   width: 3.5%; */
   z-index: 5;
@@ -207,8 +207,8 @@ text-align: start;
 
 @media screen and (max-width:700px){
   .slideButton{
-    /* height: 40px;
-    width: 40px; */
+    height: 40px;
+    width: 40px;
   }
   .companyInfo {
    margin-top: 15px;
