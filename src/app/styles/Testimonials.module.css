@@ -207,8 +207,8 @@ text-align: start;
 
 @media screen and (max-width:700px){
   .slideButton{
-    height: 40px;
-    width: 40px;
+    /* height: 40px;
+    width: 40px; */
   }
   .companyInfo {
    margin-top: 15px;
