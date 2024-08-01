@@ -34,9 +34,8 @@
   -webkit-filter: blur(12px);
 }
 
+
 .overlay {
-  position: absolute;
-  bottom: 0;
   background: #0a1e4e;
   width: 100%;
   transition: .5s ease;
@@ -55,7 +54,6 @@
   margin: 0;
   font-size: 1.1rem;
   border-bottom: 1px solid #acabab;
-  /* padding-bottom: 5px; */
 }
 
 .text p {
@@ -64,13 +62,11 @@
   font-size: 0.7rem;
   font-weight: 300;
   text-transform: uppercase;
-  /* background-color: red; */
 
 }
 
 .icon{
   color: white;
-  /* background-color: white; */
   padding: 3px 6px;
   border-radius: 50%;
 }

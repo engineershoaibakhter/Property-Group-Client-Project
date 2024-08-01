@@ -19,9 +19,9 @@ const NavbarWeb = () => {
   return (
     <div className={styles.navbar}>
       <div className={styles.logo}>
-        {/* <Link href={'/'}> */}
+        <Link href={'/'}>
         <Image src={'/weblogo.png'} alt="Company Logo" className={styles.logoImage} filllayout="responsive" width={200} height={100} objectFit="cover"/>
-        {/* </Link>       */}
+        </Link>      
       </div>
       <div className={`${styles.menu} ${isOpen ? styles.open : ''}`}>
         <Link href="/" onClick={closeMenu}>Home</Link>

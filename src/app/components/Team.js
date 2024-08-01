@@ -9,7 +9,9 @@ import Image from 'next/image';
 const TeamMember = ({ name, title, imgSrc,linkedIn,altText }) => {
   return (
     <div className={styles.teamMember}>
-      <Image src={imgSrc} alt={`${altText}`} className={styles.teamImage} width={100} height={100}/>
+      <div>
+      <Image src={imgSrc} alt={`${altText}`} className={styles.teamImage} width={300} height={300}/>
+      </div>
       <div className={styles.overlay}>
         <div className={styles.text}>
           <h3>{name}</h3> 
