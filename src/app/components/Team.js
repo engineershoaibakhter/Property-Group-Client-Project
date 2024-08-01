@@ -24,11 +24,11 @@ const TeamMember = ({ name, title, imgSrc,linkedIn,altText }) => {
 const Team = () => {
   const teamMembers = [
     {
-      name: 'Nick Gupta',
-      title: 'strategic advisor',
-      imgSrc: '/images/man/leftman.png',
-      linkedIn:"https://www.linkedin.com/in/nitin-gupta-80b48a39/",
-      altText:"Nick Gupta, Strategic Advisor at BCA CORP"
+      name: 'Manpreet Dandiwal',
+      title: 'managing director',
+      imgSrc: '/images/man/rightman.png',
+      linkedIn:"https://www.linkedin.com/in/manpreet-dandiwal-184600112/",
+      altText:"Manpreet Dandiwal, Managing Director at BCA CORP"
     },
     {
       name: 'Michael Ellis',
@@ -38,19 +38,19 @@ const Team = () => {
       altText:"Michael Ellis, Director at BCA CORP"
     },
     {
-      name: 'Manpreet Dandiwal',
-      title: 'managing director',
-      imgSrc: '/images/man/rightman.png',
-      linkedIn:"https://www.linkedin.com/in/manpreet-dandiwal-184600112/",
-      altText:"Manpreet Dandiwal, Managing Director at BCA CORP"
-    },
-    {
       name: 'Jarrod Membrey',
       title: 'General manager',
       imgSrc: '/images/man/rightman.png',
       linkedIn:"https://www.linkedin.com/in/jarrod-membrey-a344216/",
       altText:"Jarrod Membrey, General Manager at BCA CORP"
-    }
+    },
+    {
+      name: 'Nick Gupta',
+      title: 'strategic advisor',
+      imgSrc: '/images/man/leftman.png',
+      linkedIn:"https://www.linkedin.com/in/nitin-gupta-80b48a39/",
+      altText:"Nick Gupta, Strategic Advisor at BCA CORP"
+    },
   ];
 
   return (

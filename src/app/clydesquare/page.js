@@ -17,7 +17,7 @@ const ClydeSquare = () => {
     "https://www.pspproperty.com.au/property?property_id=1064509/2-sadie-avenue-thornhill-park";
   let locationMap = "https://maps.app.goo.gl/A82YTrgH8LW2Jfo67";
   let location = "Address Not Available";
-  // let pdfFile = "/clydesquare";
+  let pdfFile = "/pdf/master_plan_clydesquare.pdf";
   let developmentStatus="To Be Provided";
   let paragraph1 =
     "Clyde Square offers a unique mix of Commercial and Industrial lots. Offering Multiple QSR’s, Service Station with anchored supermarket. Site also offers a childcare, LFR lots with a boutique F&B precinct.";
@@ -52,7 +52,7 @@ const ClydeSquare = () => {
         contactUrl={contactUrl}
         location={location}
         developmentStatus={developmentStatus}
-        // pdfFile={pdfFile}
+        pdfFile={pdfFile}
         paragraph1={paragraph1}
         point1={point1}
         point2={point2}

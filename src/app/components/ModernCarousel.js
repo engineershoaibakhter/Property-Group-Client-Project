@@ -9,8 +9,18 @@ const ModernCarousel = () => {
   return (
     <div className={styles.carousel}>
       <div className={styles.slides}>
-        <video muted autoPlay loop className={styles.video}>
-          <source src="/video/web video_5.mp4" type="video/mp4" />
+        <video 
+        muted 
+        autoPlay 
+        loop 
+        controlsList=""
+        playsInline
+        // muted="muted"
+
+        className={styles.video}>
+          <source 
+          src="/video/web video_5.mp4" 
+          type="video/mp4" />
         </video>
         <div className={styles.text}>
           <h1>

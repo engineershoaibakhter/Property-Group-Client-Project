@@ -16,7 +16,7 @@ const Wollert = () => {
   let contactUrl="https://www.pspproperty.com.au/property?property_id=1064509/2-sadie-avenue-thornhill-park"
   let locationMap="https://maps.app.goo.gl/ANmatsFjx7BUMdvp6";
   let location="90 Bodycoats Rd, Wollert VIC 3750, Australia";
-  let pdfFile="/pdf/wollert.pdf"
+  let pdfFile="/pdf/master_plan_jarrahgrangeestate.pdf"
   let developmentStatus="To Be Provided";
   let paragraph1 =
   "A smartly designed residential subdivision over 8.16Ha in growth area of Wollert offers 129 residential lots and over 1Ha of green space. The lots will be released to the market for sale in coming months.";
