@@ -9,27 +9,27 @@ const Testimonials = () => {
   const scrollbarThumbRef = useRef(null);
 
   const testimonials = [
-    {
-      companyLogo: "/images/testimonials/igatestimonials.svg",
-      companyInfo: "Collaborating with Verida and their decentralized identity solution, integrated with the cheqd network, showcases a strong commitment to user control and privacy. This innovative approach ensures that personal credentials are securely managed outside the influence of major tech giants and remains completely safe.",
-      authorName: "Sebastian Rodriguez",
-      authorPosition: "IGA",
-      imgSrc: "/images/testimonials/firstImage.png"
-    },
-    {
-      companyLogo: "/images/clients/anytimeheader-logo.png",
-      companyInfo: "Partnering with Verida to enhance their offerings with NEAR features is exciting. The upcoming Verida Wallet will enable seamless DIDs and messaging for NEAR users, simplifying the adoption of Web3 technologies and making it more accessible for everyday users, businesses man, developers.",
-      authorName: "Illia Polosukhin",
-      authorPosition: "Anytime Fitness",
-      imgSrc: "/images/testimonials/secondImage.png"
-    },
-    {
-      companyLogo: "/images/clients/subway.png",
-      companyInfo: "The integration of Verida’s identity wallet with cheqd is a significant advancement. It supports a strong vision of decentralized control, giving users full authority over their digital identities and credentials, free from the oversight of large tech companies and providers globally, ensuring greater security, privacy, and user empowerment.",
-      authorName: "Ankur Banerjee",
-      authorPosition: "Subway",
-      imgSrc: "/images/testimonials/thirdImage.png"
-    },
+    // {
+    //   companyLogo: "/images/testimonials/igatestimonials.svg",
+    //   companyInfo: "Collaborating with Verida and their decentralized identity solution, integrated with the cheqd network, showcases a strong commitment to user control and privacy. This innovative approach ensures that personal credentials are securely managed outside the influence of major tech giants and remains completely safe.",
+    //   authorName: "Sebastian Rodriguez",
+    //   authorPosition: "IGA",
+    //   imgSrc: "/images/testimonials/firstImage.png"
+    // },
+    // {
+    //   companyLogo: "/images/clients/anytimeheader-logo.png",
+    //   companyInfo: "Partnering with Verida to enhance their offerings with NEAR features is exciting. The upcoming Verida Wallet will enable seamless DIDs and messaging for NEAR users, simplifying the adoption of Web3 technologies and making it more accessible for everyday users, businesses man, developers.",
+    //   authorName: "Illia Polosukhin",
+    //   authorPosition: "Anytime Fitness",
+    //   imgSrc: "/images/testimonials/secondImage.png"
+    // },
+    // {
+    //   companyLogo: "/images/clients/subway.png",
+    //   companyInfo: "The integration of Verida’s identity wallet with cheqd is a significant advancement. It supports a strong vision of decentralized control, giving users full authority over their digital identities and credentials, free from the oversight of large tech companies and providers globally, ensuring greater security, privacy, and user empowerment.",
+    //   authorName: "Ankur Banerjee",
+    //   authorPosition: "Subway",
+    //   imgSrc: "/images/testimonials/thirdImage.png"
+    // },
     {
       companyLogo: "/images/clients/cleanlarge.png",
       companyInfo: "Working with Ankur and Michael from BCA Corp at Central Square has been a truly exceptional experience. From our first interaction, their professionalism and commitment to excellence were evident. They made the entire process remarkably easy, ensuring that all our needs were met with a friendly and approachable demeanor.",
@@ -136,14 +136,14 @@ const Testimonials = () => {
       <h2 className={styles.Heading}>What Our Clients Say</h2>
       <div className={styles.container}>
         <div className={styles.sliderWrapper}>
-          <button
+          {/* <button
             id="prev-slide"
             className={`${styles.slideButton} ${styles.leftButton}`}
             onClick={handlePrevSlide}
           >
-            {/* <MdChevronLeft />  */}
             {'<'}
-          </button>
+          </button> */}
+            {/* <MdChevronLeft />  */}
           <ul className={styles.imageList} ref={imageListRef}>
             {testimonials.map((content, index) => (
               <li key={index} className={styles.imageItemWrapper}>
@@ -168,14 +168,14 @@ const Testimonials = () => {
               </li>
             ))}
           </ul>
-          <button
+          {/* <button
             id="next-slide"
             className={`${styles.slideButton} ${styles.rightButton}`}
             onClick={handleNextSlide}
           >
-            {/* <MdChevronRight /> */}
             {'>'}
-          </button>
+          </button> */}
+            {/* <MdChevronRight /> */}
         </div>
       </div>
     </div>

@@ -28,7 +28,7 @@ const Testimonials = () => {
     },
     {
       companyImage: "/images/coming soon.jpg",
-      companyLocation: "VIC, Clyde",
+      companyLocation: "VIC, Clyde North",
       companyProjectName: "Clyde Square",
       companyInfo: "Unique mix of commercial, industrial lots, and boutique.",
       leasingLink: "",
@@ -155,7 +155,8 @@ const Testimonials = () => {
             className={`${styles.slideButton} ${styles.leftButton}`}
             onClick={handlePrevSlide}
           >
-            <MdChevronLeft />
+            {/* <MdChevronLeft /> */}
+            {'<'}
           </button>
           <ul className={styles.imageList} ref={imageListRef}>
             {testimonials.map((content, index) => (
@@ -193,7 +194,8 @@ const Testimonials = () => {
             className={`${styles.slideButton} ${styles.rightButton}`}
             onClick={handleNextSlide}
           >
-            <MdChevronRight />
+            {/* <MdChevronRight /> */}
+            {'>'}
           </button>
         </div>
       </div>
