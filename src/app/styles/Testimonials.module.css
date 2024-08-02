@@ -35,8 +35,8 @@
   outline: none;
   border-radius: 12px;
   border-color: rgba(255, 255, 255, .1);
-  height: 6dvh;
-  width: 6dvh;
+  height: 6dvh !important;
+  width: 6dvh !important;
   /* height: 10%;
   width: 3.5%; */
   z-index: 5;
