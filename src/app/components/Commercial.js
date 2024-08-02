@@ -19,7 +19,7 @@ const Testimonials = () => {
       detailsLink: "/thornhill",
     },
     {
-      companyImage: "/images/coming soon.jpg",
+      companyImage: "/images/commercial/aston.jpg",
       companyLocation: "VIC, Craigieburn",
       companyProjectName: "Aston Square",
       companyInfo: "Upcoming neighbourhood centre with childcare, and gym.",
@@ -35,7 +35,7 @@ const Testimonials = () => {
       detailsLink: "/clydesquare",
     },
     {
-      companyImage: "/images/coming soon.jpg",
+      companyImage: "/images/commercial/woolert.jpg",
       companyLocation: "VIC, Wollert",
       companyProjectName: "Jarrah Grange Estate",
       companyInfo: "129 residential lots with over 1Ha green space in Wollert.",
