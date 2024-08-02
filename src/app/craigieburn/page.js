@@ -16,6 +16,7 @@ const craigieburn = () => {
   let locationMap = "https://maps.app.goo.gl/4hmfPqf3X3AWCSAf9";
   let contactUrl =
     "https://www.pspproperty.com.au/property?property_id=1241993/179-elevation-boulevard-craigieburn";
+  let carouselImage = "/images/astonCarousel.jpg";
   let location = "179 Elevation Bvd, Craigieburn VIC 3064, Australia";
   let pdfFile = "/pdf/master_plan_astonsquare.pdf";
   let developmentStatus="Construction Underway Late 2024";
@@ -44,7 +45,7 @@ const craigieburn = () => {
 
   return (
     <>
-      <CommercialCarousel companyName={companyName} companyDescription={companyDescription} />
+      <CommercialCarousel companyName={companyName} companyDescription={companyDescription} carouselImage={carouselImage}/>
       <CommercialProjectInfo
         companyName={companyName}
         locationMap={locationMap}

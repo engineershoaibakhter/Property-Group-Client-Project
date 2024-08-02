@@ -71,9 +71,11 @@ const Team = () => {
           <h2>Our great team</h2>
           <p>Nick Gupta, our Strategic Advisor, brings a wealth of expertise to our projects. Michael Ellis, the Director, leads with vision and strategic direction, ensuring our success. Manpreet Dandiwal, the Managing Director, oversees operations with a keen eye for detail. Jarrod Membrey, the General Manager, ensures smooth daily operations and exceptional service.</p>
         </div>
-        {teamMembers.map((member, index) => (
-          <TeamMember key={index} {...member} index={index} />
-        ))}
+        <div className={styles.teamMemberContainer}>
+          {teamMembers.map((member, index) => (
+            <TeamMember key={index} {...member} index={index} />
+          ))}
+        </div>
       </div>
     </div>
   );
