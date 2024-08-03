@@ -49,10 +49,10 @@
   border-color: rgba(255, 255, 255, .1);
   /* height: 45px;
   width: 50px; */
-  min-height: 8dvh !important;
-  min-width: 8dvh !important;
-  max-height: 8dvh !important;
-  max-width: 8dvh !important;
+  min-height: 45px !important;
+  min-width: 50px !important;
+  max-height: 45px !important;
+  max-width: 50px !important;
   z-index: 5;
   display: flex;
   cursor: pointer;

@@ -16,6 +16,7 @@ const Iramoo = () => {
   let contactUrl="https://www.pspproperty.com.au/property?property_id=1064509/2-sadie-avenue-thornhill-park"
   let locationMap="https://maps.app.goo.gl/FPkmKLqfQGH87KtL8";
   let location="Address Not Available";
+  let carouselImage = "/images/download6.jpg";
   // let pdfFile="/"
   let developmentStatus="To Be Provided";
 
@@ -47,7 +48,7 @@ let point7 =
 
   return (
    <>
-   <CommercialCarousel companyName={companyName} companyDescription={companyDescription}/>
+   <CommercialCarousel companyName={companyName} companyDescription={companyDescription} carouselImage={carouselImage}/>
    <CommercialProjectInfo
         companyName={companyName}
         locationMap={locationMap}

@@ -19,6 +19,7 @@ const ClydeSquare = () => {
   let location = "Address Not Available";
   let pdfFile = "/pdf/master_plan_clydesquare.pdf";
   let developmentStatus="To Be Provided";
+  let carouselImage = "/images/download6.jpg";
   let paragraph1 =
     "Clyde Square offers a unique mix of Commercial and Industrial lots. Offering Multiple QSR’s, Service Station with anchored supermarket. Site also offers a childcare, LFR lots with a boutique F&B precinct.";
 
@@ -43,9 +44,10 @@ const ClydeSquare = () => {
   let point7 =
     "Together, these elements make Clyde Square a comprehensive and dynamic development that meets a wide range of commercial, industrial, and community needs.";
 
+
   return (
     <>
-      <CommercialCarousel companyName={companyName} companyDescription={companyDescription} />
+      <CommercialCarousel companyName={companyName} companyDescription={companyDescription} carouselImage={carouselImage} />
       <CommercialProjectInfo
         companyName={companyName}
         locationMap={locationMap}

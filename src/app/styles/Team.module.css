@@ -30,11 +30,19 @@
 .teamMember {
   position: relative;
   width: 100%;
+  transition: transform 0.5s ease;
+
+}
+.imageContainer{
+  width: auto;
+  height: auto;
+  overflow: hidden;
 }
 
 .teamImage {
   width: 100%;
   height: 100%;
+  transition: transform 0.5s ease;
 }
 
 .teamImageBlur {
@@ -42,6 +50,12 @@
   height: 100%;
   filter: blur(12px);
   -webkit-filter: blur(12px);
+  transition: transform 0.5s ease; /* Smooth transition for the zoom effect */
+}
+
+.teamMember:hover .teamImage,
+.teamMember:hover .teamImageBlur {
+  transform: scale(1.1); /* Zoom in on hover */
 }
 
 .overlay {
@@ -53,6 +67,8 @@
   font-size: 20px;
   padding: 10px 0px;
   text-align: center;
+  transition: transform 0.5s ease;
+  
 }
 
 .teamMember .overlay {

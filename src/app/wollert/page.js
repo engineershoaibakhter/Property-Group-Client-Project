@@ -1,5 +1,6 @@
 "use client"
 
+import react,{useEffect,useState} from 'react';
 import CentralPlaceSydney from "@/app/components/CentralPlaceSydney"
 import CommercialCarousel from "@/app/components/CommercialCarousel"
 import CommercialLocation from "@/app/components/CommercialLocation"
@@ -42,11 +43,29 @@ let point6 =
 let point7 =
   "Making this subdivision an attractive choice for those looking to build their dream home in a flourishing community.";
 
+  const [carouselImage, setCarouselImage] = useState("/images/wollertcarousel.jpg");
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth <= 768) {
+        setCarouselImage("/images/commercial/woolert.jpg");
+      } else {
+        setCarouselImage("/images/wollertcarousel.jpg");
+      }
+    };
+
+    window.addEventListener('resize', handleResize);
+    handleResize(); // Set the initial image
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
 
 
   return (
    <>
-   <CommercialCarousel companyName={companyName} companyDescription={companyDescription}/>
+   <CommercialCarousel companyName={companyName} companyDescription={companyDescription} carouselImage={carouselImage}/>
    <CommercialProjectInfo
         companyName={companyName}
         locationMap={locationMap}

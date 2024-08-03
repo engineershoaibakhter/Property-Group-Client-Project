@@ -9,13 +9,20 @@ const Testimonials = () => {
   const scrollbarThumbRef = useRef(null);
 
   const testimonials = [
-    // {
-    //   companyLogo: "/images/testimonials/igatestimonials.svg",
-    //   companyInfo: "Collaborating with Verida and their decentralized identity solution, integrated with the cheqd network, showcases a strong commitment to user control and privacy. This innovative approach ensures that personal credentials are securely managed outside the influence of major tech giants and remains completely safe.",
-    //   authorName: "Sebastian Rodriguez",
-    //   authorPosition: "IGA",
-    //   imgSrc: "/images/testimonials/firstImage.png"
-    // },
+    {
+      companyLogo: "/images/testimonials/igatestimonials.svg",
+      companyInfo: "Working with BCA Corp has been a game-changer for our supermarket. Their proactive collaboration and seamless integration have significantly assisted us in smooth supermarket mobilisation. The intuitive design and reliability of their system have not only streamlined our processes but also improved our overall efficiency. Their support team is responsive and knowledgeable, making the transition smooth and hassle-free. We highly recommend BCA Corp to any business looking to partner with them and  achieve tangible results.",
+      authorName: "Tripti Gupta",
+      authorPosition: "IGA",
+      imgSrc: "/images/testimonials/firstImage.png"
+    },
+    {
+      companyLogo: "/images/clients/cleanlarge.png",
+      companyInfo: "Working with Ankur and Michael from BCA Corp at Central Square has been a truly exceptional experience. From our first interaction, their professionalism and commitment to excellence were evident. They made the entire process remarkably easy, ensuring that all our needs were met with a friendly and approachable demeanor. Ankur and Michael were consistently responsive, addressing our enquiries and concerns promptly, which greatly facilitated our collaboration. Their proactive communication and attention to detail made us feel valued and confident in every decision.",
+      authorName: "David",
+      authorPosition: "Clean Streak Laundry",
+      imgSrc: "/images/testimonials/fourImage.png"
+    },
     // {
     //   companyLogo: "/images/clients/anytimeheader-logo.png",
     //   companyInfo: "Partnering with Verida to enhance their offerings with NEAR features is exciting. The upcoming Verida Wallet will enable seamless DIDs and messaging for NEAR users, simplifying the adoption of Web3 technologies and making it more accessible for everyday users, businesses man, developers.",
@@ -23,34 +30,14 @@ const Testimonials = () => {
     //   authorPosition: "Anytime Fitness",
     //   imgSrc: "/images/testimonials/secondImage.png"
     // },
-    // {
-    //   companyLogo: "/images/clients/subway.png",
-    //   companyInfo: "The integration of Verida’s identity wallet with cheqd is a significant advancement. It supports a strong vision of decentralized control, giving users full authority over their digital identities and credentials, free from the oversight of large tech companies and providers globally, ensuring greater security, privacy, and user empowerment.",
-    //   authorName: "Ankur Banerjee",
-    //   authorPosition: "Subway",
-    //   imgSrc: "/images/testimonials/thirdImage.png"
-    // },
     {
-      companyLogo: "/images/clients/cleanlarge.png",
-      companyInfo: "Working with Ankur and Michael from BCA Corp at Central Square has been a truly exceptional experience. From our first interaction, their professionalism and commitment to excellence were evident. They made the entire process remarkably easy, ensuring that all our needs were met with a friendly and approachable demeanor.",
-      authorName: "David",
-      authorPosition: "Clean Streak Laundry",
-      imgSrc: "/images/testimonials/fourImage.png"
+      companyLogo: "/images/clients/subway.png",
+      companyInfo: "Subway Thornhill Park is thrilled to have partnered with BCA Corp for our latest store in Thornhill Park. BCA Corp's exceptional expertise and commitment to excellence were evident throughout the entire process. From the initial design phase to the final build, their team demonstrated remarkable professionalism and attention to detail.We look forward to collaborating with BCA Corp on future projects and highly recommend their services to any organization seeking a reliable and innovative development partner.",
+      authorName: "Jolly",
+      authorPosition: "Subway",
+      imgSrc: "/images/testimonials/thirdImage.png"
     },
-    // {
-    //   companyLogo: "/images/clients/anytimeheader-logo.png",
-    //   companyInfo: "We’re delighted to team up with Verida in our shared vision to enhance private data verification. Our technology, designed to offer secure and private authentication through cryptography technologies, complements Verida’s commitment to privacy and decentralization. Together, we aim to redefine user experience in the digital space.",
-    //   authorName: "Kurt Nielsen",
-    //   authorPosition: "President of the Board, Partisia Blockchain",
-    //   imgSrc: "/images/testimonials/firstImage.png"
-    // },
-    // {
-    //   companyLogo: "/images/clients/subway.png",
-    //   companyInfo: "Expanding our partnership with Verida with the support of cheqd is very exciting as we work to build a ‘consortia’ of partners. Together, we are enabling a globally transportable KYC/KYB verifiable credential that streamlines essential compliance processes and brings needed privacy controls",
-    //   authorName: "Amit Sharma",
-    //   authorPosition: "Founder and CEO, FinClusive",
-    //   imgSrc: "/images/testimonials/secondImage.png"
-    // }
+    
   ];
 
   const handleNextSlide = () => {
@@ -136,13 +123,13 @@ const Testimonials = () => {
       <h2 className={styles.Heading}>What Our Clients Say</h2>
       <div className={styles.container}>
         <div className={styles.sliderWrapper}>
-          {/* <button
+          <button
             id="prev-slide"
             className={`${styles.slideButton} ${styles.leftButton}`}
             onClick={handlePrevSlide}
           >
             {'<'}
-          </button> */}
+          </button>
             {/* <MdChevronLeft />  */}
           <ul className={styles.imageList} ref={imageListRef}>
             {testimonials.map((content, index) => (
@@ -168,13 +155,13 @@ const Testimonials = () => {
               </li>
             ))}
           </ul>
-          {/* <button
+          <button
             id="next-slide"
             className={`${styles.slideButton} ${styles.rightButton}`}
             onClick={handleNextSlide}
           >
             {'>'}
-          </button> */}
+          </button>
             {/* <MdChevronRight /> */}
         </div>
       </div>

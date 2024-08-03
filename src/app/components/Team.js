@@ -8,7 +8,7 @@ import Image from 'next/image';
 const TeamMember = ({ name, title, imgSrc, linkedIn, altText, index }) => {
   return (
     <div className={styles.teamMember}>
-      <div>
+      <div className={styles.imageContainer}>
         <Image 
           src={imgSrc} 
           alt={altText} 
@@ -69,7 +69,7 @@ const Team = () => {
       <div className={styles.gallery}>
         <div className={styles.leftColumn}>
           <h2>Our great team</h2>
-          <p>Nick Gupta, our Strategic Advisor, brings a wealth of expertise to our projects. Michael Ellis, the Director, leads with vision and strategic direction, ensuring our success. Manpreet Dandiwal, the Managing Director, oversees operations with a keen eye for detail. Jarrod Membrey, the General Manager, ensures smooth daily operations and exceptional service.</p>
+          <p>Manpreet Dandiwal, the Managing Director, oversees operations with a keen eye for detail. Michael Ellis, the Director, leads with vision and strategic direction, ensuring our success. Jarrod Membrey, the General Manager, ensures smooth daily operations and exceptional service. Nick Gupta, our Strategic Advisor, brings a wealth of expertise to our projects.</p>
         </div>
         <div className={styles.teamMemberContainer}>
           {teamMembers.map((member, index) => (

@@ -17,6 +17,7 @@ const Orrong_Tower = () => {
   let locationMap="hhttps://maps.app.goo.gl/gwnDaJo3V4E2k5Xt7";
   let location="Address Not Available";
   // let pdfFile="/pdf/wollert.pdf"
+  let carouselImage = "/images/download6.jpg";
   let developmentStatus="To Be Provided";
   let paragraph1 =
   "Spectacularly designed Apartment Block in the heart of Toorak. A boutique block of architecturally designed Apartments is coming soon.";
@@ -46,7 +47,7 @@ let point7 =
 
   return (
    <>
-   <CommercialCarousel companyName={companyName} companyDescription={companyDescription}/>
+   <CommercialCarousel companyName={companyName} companyDescription={companyDescription} carouselImage={carouselImage}/>
    <CommercialProjectInfo
         companyName={companyName}
         locationMap={locationMap}

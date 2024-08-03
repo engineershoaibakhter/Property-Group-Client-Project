@@ -1,5 +1,6 @@
 "use client";
 
+import react,{useEffect,useState} from 'react';
 import CentralPlaceSydney from "@/app/components/CentralPlaceSydney";
 import CommercialCarousel from "@/app/components/CommercialCarousel";
 import CommercialLocation from "@/app/components/CommercialLocation";
@@ -16,7 +17,6 @@ const craigieburn = () => {
   let locationMap = "https://maps.app.goo.gl/4hmfPqf3X3AWCSAf9";
   let contactUrl =
     "https://www.pspproperty.com.au/property?property_id=1241993/179-elevation-boulevard-craigieburn";
-  let carouselImage = "/images/astonCarousel.jpg";
   let location = "179 Elevation Bvd, Craigieburn VIC 3064, Australia";
   let pdfFile = "/pdf/master_plan_astonsquare.pdf";
   let developmentStatus="Construction Underway Late 2024";
@@ -42,6 +42,25 @@ const craigieburn = () => {
   let point6 = "As this development takes shape, it promises to become a central meeting point and service hub for residents";
   let point7 =
     "Offering a blend of essential amenities, retail experiences, and community support services.";
+
+    const [carouselImage, setCarouselImage] = useState("/images/astonCarousel.jpg");
+
+    useEffect(() => {
+      const handleResize = () => {
+        if (window.innerWidth <= 768) {
+          setCarouselImage("/images/commercial/aston.jpg");
+        } else {
+          setCarouselImage("/images/astonCarousel.jpg");
+        }
+      };
+
+      window.addEventListener('resize', handleResize);
+    handleResize(); // Set the initial image
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
 
   return (
     <>

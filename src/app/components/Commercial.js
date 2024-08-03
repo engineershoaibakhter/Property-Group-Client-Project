@@ -53,7 +53,7 @@ const Testimonials = () => {
     },
     ,
     {
-      companyImage: "/images/coming soon.jpg",
+      companyImage: "/images/commercial/iroomo.jpg",
       companyLocation: "VIC, Thornhill Park",
       companyProjectName: "Iramoo Waters",
       companyInfo: "150+ residential lots, 2Ha green space, wetland, and walk.",
