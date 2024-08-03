@@ -9,7 +9,7 @@ import CommercialProjectMoreInfo from "@/app/components/CommercialProjectMoreInf
 import CommercialService from "@/app/components/CommercialService";
 import Gallery from "@/app/components/Gallery";
 
-const craigieburn = () => {
+const Craigieburn = () => {
   let companyName = "Aston Square";
   let companyDescription ="Upcoming neighbourhood centre with childcare, gym, and specialty shops."
   let locationSrc =
@@ -86,4 +86,4 @@ const craigieburn = () => {
   );
 };
 
-export default craigieburn;
+export default Craigieburn;
