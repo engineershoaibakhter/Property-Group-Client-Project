@@ -160,6 +160,7 @@ const Testimonials = () => {
             id="next-slide"
             className={`${styles.slideButton} ${styles.rightButton}`}
             onClick={handleNextSlide}
+            style={{backgroundColor:"red",padding:"0px 10px 5px 10px",margin:0,color:'white'}}
           >
             {'>'}
           </button>

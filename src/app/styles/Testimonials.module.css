@@ -37,11 +37,11 @@
   /* max-height: 6dvh !important;
   max-width: 6dvh !important; */
   z-index: 5;
-  display: flex;
+  /* display: flex; */
   cursor: pointer;
   font-size: 2.2rem;
-  align-items: center;
-  justify-content: center;
+  /* align-items: center; */
+  /* justify-content: center; */
   transform: translateY(-50%);
   border-width: 1px;
   color: #07294d;
@@ -188,10 +188,10 @@
   } */
 
   .slideButton{
-    min-height: 8vh !important;
+    /* min-height: 8vh !important;
     min-width: 8vw !important;
     max-height: 8vh !important;
-    max-width: 8vw !important;
+    max-width: 8vw !important; */
     background-color: rgb(218, 9, 9);
   }
   .companyInfo {
