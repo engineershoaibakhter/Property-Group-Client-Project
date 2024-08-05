@@ -3,6 +3,8 @@ import React, { useState, useRef, useEffect } from 'react';
 import { MdChevronLeft, MdChevronRight } from 'react-icons/md';
 import styles from '../styles/Testimonials.module.css';
 import Image from 'next/image';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons';
 
 const Testimonials = () => {
   const imageListRef = useRef(null);
@@ -129,7 +131,8 @@ const Testimonials = () => {
             onClick={handlePrevSlide}
             style={{backgroundColor:"blue",padding:"0 10px",margin:0,color:'white'}}
           >
-            {'<'}
+          <FontAwesomeIcon icon={faChevronLeft} />
+            
           </button>
             {/* <MdChevronLeft />  */}
           <ul className={styles.imageList} ref={imageListRef}>
@@ -162,7 +165,7 @@ const Testimonials = () => {
             onClick={handleNextSlide}
             style={{backgroundColor:"red",padding:"0px 10px 5px 10px",margin:0,color:'white'}}
           >
-            {'>'}
+             <FontAwesomeIcon icon={faChevronRight} />
           </button>
             {/* <MdChevronRight /> */}
         </div>
