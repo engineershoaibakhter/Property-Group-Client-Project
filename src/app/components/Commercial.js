@@ -4,6 +4,8 @@ import { MdChevronLeft, MdChevronRight } from 'react-icons/md';
 import styles from '../styles/Commercial.module.css';
 import Image from 'next/image';
 import Link from 'next/link';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons';
 
 const Testimonials = () => {
   const imageListRef = useRef(null);
@@ -154,9 +156,9 @@ const Testimonials = () => {
             id="prev-slide"
             className={`${styles.slideButton} ${styles.leftButton}`}
             onClick={handlePrevSlide}
+            style={{padding:"0px 10px 0px 10px"}}
           >
-            {/* <MdChevronLeft /> */}
-            {'<'}
+                      <FontAwesomeIcon icon={faChevronLeft} />
           </button>
           <ul className={styles.imageList} ref={imageListRef}>
             {testimonials.map((content, index) => (
@@ -193,9 +195,9 @@ const Testimonials = () => {
             id="next-slide"
             className={`${styles.slideButton} ${styles.rightButton}`}
             onClick={handleNextSlide}
+            style={{padding:"0px 10px 0px 10px"}}
           >
-            {/* <MdChevronRight /> */}
-            {'>'}
+                         <FontAwesomeIcon icon={faChevronRight} />
           </button>
         </div>
       </div>
