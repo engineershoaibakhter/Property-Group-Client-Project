@@ -1,3 +1,5 @@
+/* YourStyles.module.css */
+
 .Project {
   text-align: center;
   color: white;
@@ -34,25 +36,13 @@
   outline: none;
   border-radius: 12px;
   border-color: rgba(255, 255, 255, .1);
-  /* max-height: 6dvh !important;
-  max-width: 6dvh !important; */
   z-index: 5;
-  /* display: flex; */
   cursor: pointer;
   font-size: 1.6rem;
-  /* align-items: center; */
-  /* justify-content: center; */
   transform: translateY(-50%);
-  /* border-width: 1px; */
   color: #07294d;
   background-color: white;
-
-  /* min-height: 5vh !important;
-  min-width: 2vw !important;
-  max-height: 5vh !important;
-  max-width: 3vw !important; */
-  /* padding: 0; */
-  /* margin: 0; */
+  padding: 0 10px;
 }
 
 .leftButton {
@@ -71,7 +61,6 @@
   scrollbar-width: none;
   padding: 0;
   margin-bottom: 0px;
-  
 }
 
 .imageList::-webkit-scrollbar {
@@ -90,6 +79,9 @@
   object-fit: cover;
   border-radius: 40px;
   border: 1px solid rgba(255, 255, 255, .2);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .allImage {
@@ -97,20 +89,24 @@
 }
 
 .CompanyLogoImage {
-  width: 100px; 
-  min-height: 5rem; 
+  width: 100px;
+  height: 100px;
   text-align: center;
   display: flex;
-  justify-content: start;
+  justify-content: center;
   align-items: start;
+}
 
+.CompanyLogoImage img {
+  max-width: 100%;
+  max-height: 100%;
 }
 
 .companyContent {
   padding: 30px 40px;
   display: flex;
   flex-direction: column;
-  justify-content: start;
+  justify-content: space-between;
   height: 100%;
   text-align: start;
 }
@@ -124,11 +120,12 @@
   font-weight: 600;
   font-size: 1em;
   margin: 0;
+  min-height: 15rem;
 }
 
 .row {
   display: flex;
-  align-items: start;
+  align-items: center;
 }
 
 .row img {
@@ -154,6 +151,15 @@
   text-align: start;
 }
 
+@media screen and (max-width:1200px){
+  .CompanyLogoImage {
+    min-height: 3rem;
+  }
+  .companyInfo {
+    min-height: 19.5rem;
+  }
+}
+
 @media only screen and (max-width: 1024px) {
   .imageList {
     scroll-snap-type: x mandatory;
@@ -168,42 +174,21 @@
     height: auto;
     width: 100%;
   }
-}
-
-@media screen and (max-width:1000px){
-  .slideButton{
-    /* min-height: 6vh !important;
-    min-width: 4vw !important;
-    max-height: 6vh !important;
-    max-width: 4vw !important;
-    background-color: rgb(9, 218, 33); */
+  .companyInfo {
+    min-height: 15rem;
   }
 }
 
 @media screen and (max-width: 700px) {
-  /* .slideButton {
-    height: 40px;
-    width: 40px;
-  } */
-
-  .slideButton{
-    /* min-height: 8vh !important;
-    min-width: 8vw !important;
-    max-height: 8vh !important;
-    max-width: 8vw !important; */
-  }
   .companyInfo {
     margin-top: 15px;
     min-height: 22rem;
   }
-  
 }
 
 @media screen and (max-width: 400px) {
-
   .companyInfo {
     margin-top: 15px;
     min-height: 39rem;
   }
-  
 }
