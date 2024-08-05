@@ -169,6 +169,16 @@
   }
 }
 
+@media screen and (max-width:1000px){
+  .slideButton{
+    min-height: 6vh !important;
+    min-width: 4vw !important;
+    max-height: 6vh !important;
+    max-width: 4vw !important;
+    background-color: rgb(9, 218, 33);
+  }
+}
+
 @media screen and (max-width: 700px) {
   /* .slideButton {
     height: 40px;
