@@ -129,7 +129,7 @@ const Testimonials = () => {
             id="prev-slide"
             className={`${styles.slideButton} ${styles.leftButton}`}
             onClick={handlePrevSlide}
-            style={{backgroundColor:"blue",padding:"1px 10px 0px 10px",margin:0,color:'white'}}
+            style={{backgroundColor:"yellow",padding:"2px 10px 0px 10px",margin:0,color:'white'}}
           >
           <FontAwesomeIcon icon={faChevronLeft} />
             
