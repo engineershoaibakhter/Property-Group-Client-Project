@@ -129,7 +129,7 @@ const Testimonials = () => {
             id="prev-slide"
             className={`${styles.slideButton} ${styles.leftButton}`}
             onClick={handlePrevSlide}
-            style={{padding:"2px 10px 0px 10px"}}
+            style={{padding:"0px 10px 0px 10px"}}
           >
           <FontAwesomeIcon icon={faChevronLeft} />
             
@@ -163,7 +163,7 @@ const Testimonials = () => {
             id="next-slide"
             className={`${styles.slideButton} ${styles.rightButton}`}
             onClick={handleNextSlide}
-            style={{padding:"2px 10px 0px 10px"}}
+            style={{padding:"0px 10px 0px 10px"}}
           >
              <FontAwesomeIcon icon={faChevronRight} />
           </button>
