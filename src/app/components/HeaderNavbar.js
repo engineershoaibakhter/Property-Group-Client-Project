@@ -26,7 +26,7 @@ const HeaderNavbar = () => {
         </div> */}
         {/* <span className={styles.BreakLine}>|</span> */}
         <div className={styles.icons}>
-          <span ><Link href={process.env.NEXT_PUBLIC_FACEBOOK_LINK} target='_blank'><FontAwesomeIcon icon={faFacebookF} className={styles.icon} /></Link></span>
+<FontAwesomeIcon icon={faFacebookF} className={styles.icon} />
           <span><Link href={process.env.NEXT_PUBLIC_TWITTER_LINK} target='_blank'><FontAwesomeIcon icon={faTwitter} className={styles.icon} /></Link></span>
           <span><Link href={process.env.NEXT_PUBLIC_YOUTUBE_LINK} target='_blank'><FontAwesomeIcon icon={faYoutube} className={styles.icon} /></Link></span>
           <span><Link href={process.env.NEXT_PUBLIC_INSTAGRAM_LINK} target='_blank'><FontAwesomeIcon icon={faInstagram} className={styles.icon} /></Link></span>
