@@ -53,6 +53,7 @@
   min-width: 50px !important;
   max-height: 45px !important;
   max-width: 50px !important;
+  background-color: rgb(205, 202, 202);
   z-index: 5;
   display: flex;
   cursor: pointer;
@@ -62,7 +63,7 @@
   transform: translateY(-50%);
   border-width: 1px;
   color: #07294d;
-  background-color: white;
+  /* background-color: white; */
 }
 
 .leftButton {
@@ -303,10 +304,9 @@ text-align: start;
 
 @media screen and (max-width:500px){
   .slideButton{
-    height: 40px;
-    width: 40px;
+    /* height: 40px;
+    width: 40px; */
   }
- 
 }
 
 
