@@ -39,11 +39,11 @@
   z-index: 5;
   /* display: flex; */
   cursor: pointer;
-  font-size: 1.2rem;
+  font-size: 1.6rem;
   /* align-items: center; */
   /* justify-content: center; */
   transform: translateY(-50%);
-  border-width: 1px;
+  /* border-width: 1px; */
   color: #07294d;
   background-color: white;
 
