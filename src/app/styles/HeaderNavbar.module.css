@@ -34,7 +34,6 @@
 .icons {
     display: flex;
     align-items: center;
-    background-color: rgb(189, 134, 134);
 }
 
 .icon {
@@ -47,7 +46,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: blueviolet;
+
 }
 
 .TimingContainer .icon,
