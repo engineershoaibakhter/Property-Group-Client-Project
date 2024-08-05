@@ -127,6 +127,7 @@ const Testimonials = () => {
             id="prev-slide"
             className={`${styles.slideButton} ${styles.leftButton}`}
             onClick={handlePrevSlide}
+            style={{backgroundColor:"blue",padding:"0 10px",margin:0,color:'white'}}
           >
             {'<'}
           </button>
