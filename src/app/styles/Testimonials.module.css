@@ -34,8 +34,8 @@
   outline: none;
   border-radius: 12px;
   border-color: rgba(255, 255, 255, .1);
-  max-height: 6dvh !important;
-  max-width: 6dvh !important;
+  /* max-height: 6dvh !important;
+  max-width: 6dvh !important; */
   z-index: 5;
   display: flex;
   cursor: pointer;
@@ -46,6 +46,12 @@
   border-width: 1px;
   color: #07294d;
   background-color: white;
+
+  min-height: 5vh !important;
+  min-width: 2vw !important;
+  max-height: 5vh !important;
+  max-width: 3vw !important;
+  background-color: rgb(205, 202, 202);
 }
 
 .leftButton {
@@ -164,10 +170,10 @@
 }
 
 @media screen and (max-width: 700px) {
-  .slideButton {
+  /* .slideButton {
     height: 40px;
     width: 40px;
-  }
+  } */
   .companyInfo {
     margin-top: 15px;
     min-height: 22rem;
