@@ -16,8 +16,9 @@ const Iramoo = () => {
   let contactUrl="https://www.pspproperty.com.au/property?property_id=1064509/2-sadie-avenue-thornhill-park"
   let locationMap="https://maps.app.goo.gl/FPkmKLqfQGH87KtL8";
   let location="Address Not Available";
-  let carouselImage = "/images/download6.jpg";
+  let carouselImage = "/images/iroomocarousel.jpg";
   // let pdfFile="/"
+  
   let developmentStatus="To Be Provided";
 
   let paragraph1 =

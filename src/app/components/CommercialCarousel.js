@@ -3,7 +3,7 @@ import Image from 'next/image';
 import styles from '../styles/CommercialCarousel.module.css';
 
 const CommercialCarousel = ({ companyName, companyDescription,carouselImage }) => {
-  const isBlurred = (companyName !== "Central Square" && companyName !== "Aston Square" && companyName !== "Jarrah Grange Estate");
+  const isBlurred = (companyName !== "Central Square" && companyName !== "Aston Square" && companyName !== "Jarrah Grange Estate" && companyName !== "Iramoo Waters");
   
   return (
     <div className={styles.carousel}>
