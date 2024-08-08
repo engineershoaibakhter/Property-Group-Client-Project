@@ -12,7 +12,7 @@ const TeamMember = ({ name, title, imgSrc, linkedIn, altText, index }) => {
         <Image 
           src={imgSrc} 
           alt={altText} 
-          className={index < 3 ? styles.teamImage : styles.teamImageBlur} 
+          className={styles.teamImage} 
           width={300} 
           height={300} 
         />
@@ -58,7 +58,7 @@ const Team = () => {
     {
       name: 'Nick Gupta',
       title: 'Strategic Advisor',
-      imgSrc: '/images/man/leftman.png',
+      imgSrc: '/images/man/nick .jpg',
       linkedIn: "https://www.linkedin.com/in/nitin-gupta-80b48a39/",
       altText: "Nick Gupta, Strategic Advisor at BCA CORP"
     },
